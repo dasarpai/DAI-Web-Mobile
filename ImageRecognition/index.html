@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis</title>
+</head>
+<body>
+    <h1>Upload an Image for Analysis</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="file" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>
+    <pre id="result"></pre>
+
+    <script>
+        document.getElementById('uploadForm').onsubmit = async function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch('http://127.0.0.1:8000/analyze-image/', {
+                    method: 'GET',
+                    body: formData
+                });
+                if (response.ok) {
+                    const result = await response.json();
+                    document.getElementById('result').textContent = JSON.stringify(result, null, 2);
+                } else {
+                    document.getElementById('result').textContent = 'Error: ' + response.statusText;
+                }
+            } catch (error) {
+                document.getElementById('result').textContent = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

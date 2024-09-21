@@ -1,0 +1,2105 @@
+
+<!doctype html>
+<head lang="en-US">
+
+<meta name="google-play-app" content="app-id=com.analyticsvidhya.android">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="//www.google-analytics.com" rel="dns-prefetch">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="pingback" href="https://www.analyticsvidhya.com/xmlrpc.php">
+<link rel='icon' id='favicon' type='image/png' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'><link rel='apple-touch-icon' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'><link rel='apple-touch-icon' sizes='76x76' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'><link rel='apple-touch-icon' sizes='114x114' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'><link rel='apple-touch-icon' sizes='144x144' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'><link href="https://www.analyticsvidhya.com/wp-content/themes/Curated/custom/custom_style.css?ver=4.9.7.19" rel="preload stylesheet" as=style>
+<link href="https://www.analyticsvidhya.com/wp-content/themes/Curated/custom/footer_style.css?ver=1.1.1" rel="preload stylesheet" as=style>
+<link href="https://www.analyticsvidhya.com/wp-content/themes/Curated/custom/special-offer-strip-2.css?ver=2.3.1" rel="preload stylesheet" as=style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="preload stylesheet" as=style>
+<link href="https://www.analyticsvidhya.com/wp-content/themes/Curated/static/css/bootstrap-responsive.css?ver=1.0" rel="preload stylesheet" as=style>
+<link href="https://www.analyticsvidhya.com/wp-content/themes/Curated/static/css/font-tm.css?ver=1.0" rel="preload stylesheet" as=style>
+<link href="https://www.analyticsvidhya.com/wp-content/themes/Curated/static/css/basix.css?ver=1.0" rel="preload stylesheet" as=style>
+<link href="https://www.analyticsvidhya.com/wp-content/themes/Curated/static/css/basix-responsive.css?ver=1.0" rel="preload stylesheet" as=style>
+<script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Open+Sans:700', 'Raleway:600', 'Roboto:400&amp;subset=latin']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+<style>
+.stb-container-css {margin: 10px 10px 10px 10px;}.stb-box {}.stb-caption-box {}.stb-body-box {}
+/* Class Dependent Parameters */
+.stb-border.stb-alert-container {border: 1px none #FF4F4A;}.stb-side.stb-alert-container {background: #FF4F4A;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF4F4A', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #FF4F4A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FF4F4A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #FF4F4A 30%,#504848 90%);background: -o-linear-gradient(top,  #FF4F4A 30%,#504848 90%);background: -ms-linear-gradient(top,  #FF4F4A 30%,#504848 90%);background: linear-gradient(#FF4F4A 30%, #504848 90%);}.stb-side-none.stb-alert-container {background: #FFE7E6;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE7E6', endColorstr='#fb7d78',GradientType=0 );background: -moz-linear-gradient(top,  #FFE7E6 30%, #fb7d78 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FFE7E6), color-stop(90%,#fb7d78));background: -webkit-linear-gradient(top,  #FFE7E6 30%,#fb7d78 90%);background: -o-linear-gradient(top,  #FFE7E6 30%,#fb7d78 90%);background: -ms-linear-gradient(top,  #FFE7E6 30%,#fb7d78 90%);background: linear-gradient(#FFE7E6 30%, #fb7d78 90%);}.stb-alert_box {background: #FFE7E6;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE7E6', endColorstr='#fb7d78',GradientType=0 );background: -moz-linear-gradient(top,  #FFE7E6 30%, #fb7d78 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FFE7E6), color-stop(90%,#fb7d78));background: -webkit-linear-gradient(top,  #FFE7E6 30%,#fb7d78 90%);background: -o-linear-gradient(top,  #FFE7E6 30%,#fb7d78 90%);background: -ms-linear-gradient(top,  #FFE7E6 30%,#fb7d78 90%);background: linear-gradient(#FFE7E6 30%, #fb7d78 90%);color: #000000;}.stb-alert-caption_box {background: #FF4F4A;background: -moz-linear-gradient(top,  #FF4F4A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FF4F4A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #FF4F4A 30%,#504848 90%);background: -o-linear-gradient(top,  #FF4F4A 30%,#504848 90%);background: -ms-linear-gradient(top,  #FF4F4A 30%,#504848 90%);background: linear-gradient(#FF4F4A 30%, #504848 90%);color: #FFFFFF;}.stb-alert-body_box {background: #FFE7E6;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE7E6', endColorstr='#fb7d78',GradientType=0 );background: -moz-linear-gradient(top,  #FFE7E6 30%, #fb7d78 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FFE7E6), color-stop(90%,#fb7d78));background: -webkit-linear-gradient(top,  #FFE7E6 30%,#fb7d78 90%);background: -o-linear-gradient(top,  #FFE7E6 30%,#fb7d78 90%);background: -ms-linear-gradient(top,  #FFE7E6 30%,#fb7d78 90%);background: linear-gradient(#FFE7E6 30%, #fb7d78 90%);color: #000000;}.stb-border.stb-black-container {border: 1px none #6E6E6E;}.stb-side.stb-black-container {background: #333333;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #333333 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#333333), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #333333 30%,#504848 90%);background: -o-linear-gradient(top,  #333333 30%,#504848 90%);background: -ms-linear-gradient(top,  #333333 30%,#504848 90%);background: linear-gradient(#333333 30%, #504848 90%);}.stb-side-none.stb-black-container {background: #000000;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );background: -moz-linear-gradient(top,  #000000 30%, #000000 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#000000), color-stop(90%,#000000));background: -webkit-linear-gradient(top,  #000000 30%,#000000 90%);background: -o-linear-gradient(top,  #000000 30%,#000000 90%);background: -ms-linear-gradient(top,  #000000 30%,#000000 90%);background: linear-gradient(#000000 30%, #000000 90%);}.stb-black_box {background: #000000;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );background: -moz-linear-gradient(top,  #000000 30%, #000000 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#000000), color-stop(90%,#000000));background: -webkit-linear-gradient(top,  #000000 30%,#000000 90%);background: -o-linear-gradient(top,  #000000 30%,#000000 90%);background: -ms-linear-gradient(top,  #000000 30%,#000000 90%);background: linear-gradient(#000000 30%, #000000 90%);color: #FFFFFF;}.stb-black-caption_box {background: #333333;background: -moz-linear-gradient(top,  #333333 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#333333), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #333333 30%,#504848 90%);background: -o-linear-gradient(top,  #333333 30%,#504848 90%);background: -ms-linear-gradient(top,  #333333 30%,#504848 90%);background: linear-gradient(#333333 30%, #504848 90%);color: #FFFFFF;}.stb-black-body_box {background: #000000;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );background: -moz-linear-gradient(top,  #000000 30%, #000000 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#000000), color-stop(90%,#000000));background: -webkit-linear-gradient(top,  #000000 30%,#000000 90%);background: -o-linear-gradient(top,  #000000 30%,#000000 90%);background: -ms-linear-gradient(top,  #000000 30%,#000000 90%);background: linear-gradient(#000000 30%, #000000 90%);color: #FFFFFF;}.stb-border.stb-custom-container {border: 1px none #f844ee;}.stb-side.stb-custom-container {background: #f844ee;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f844ee', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #f844ee 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#f844ee), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #f844ee 30%,#504848 90%);background: -o-linear-gradient(top,  #f844ee 30%,#504848 90%);background: -ms-linear-gradient(top,  #f844ee 30%,#504848 90%);background: linear-gradient(#f844ee 30%, #504848 90%);}.stb-side-none.stb-custom-container {background: #f7cdf5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7cdf5', endColorstr='#f77df1',GradientType=0 );background: -moz-linear-gradient(top,  #f7cdf5 30%, #f77df1 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#f7cdf5), color-stop(90%,#f77df1));background: -webkit-linear-gradient(top,  #f7cdf5 30%,#f77df1 90%);background: -o-linear-gradient(top,  #f7cdf5 30%,#f77df1 90%);background: -ms-linear-gradient(top,  #f7cdf5 30%,#f77df1 90%);background: linear-gradient(#f7cdf5 30%, #f77df1 90%);}.stb-custom_box {background: #f7cdf5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7cdf5', endColorstr='#f77df1',GradientType=0 );background: -moz-linear-gradient(top,  #f7cdf5 30%, #f77df1 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#f7cdf5), color-stop(90%,#f77df1));background: -webkit-linear-gradient(top,  #f7cdf5 30%,#f77df1 90%);background: -o-linear-gradient(top,  #f7cdf5 30%,#f77df1 90%);background: -ms-linear-gradient(top,  #f7cdf5 30%,#f77df1 90%);background: linear-gradient(#f7cdf5 30%, #f77df1 90%);color: #000000;}.stb-custom-caption_box {background: #f844ee;background: -moz-linear-gradient(top,  #f844ee 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#f844ee), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #f844ee 30%,#504848 90%);background: -o-linear-gradient(top,  #f844ee 30%,#504848 90%);background: -ms-linear-gradient(top,  #f844ee 30%,#504848 90%);background: linear-gradient(#f844ee 30%, #504848 90%);color: #ffffff;}.stb-custom-body_box {background: #f7cdf5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7cdf5', endColorstr='#f77df1',GradientType=0 );background: -moz-linear-gradient(top,  #f7cdf5 30%, #f77df1 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#f7cdf5), color-stop(90%,#f77df1));background: -webkit-linear-gradient(top,  #f7cdf5 30%,#f77df1 90%);background: -o-linear-gradient(top,  #f7cdf5 30%,#f77df1 90%);background: -ms-linear-gradient(top,  #f7cdf5 30%,#f77df1 90%);background: linear-gradient(#f7cdf5 30%, #f77df1 90%);color: #000000;}.stb-border.stb-download-container {border: 1px none #65ADFE;}.stb-side.stb-download-container {background: #65ADFE;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65ADFE', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #65ADFE 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#65ADFE), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #65ADFE 30%,#504848 90%);background: -o-linear-gradient(top,  #65ADFE 30%,#504848 90%);background: -ms-linear-gradient(top,  #65ADFE 30%,#504848 90%);background: linear-gradient(#65ADFE 30%, #504848 90%);}.stb-side-none.stb-download-container {background: #DFF0FF;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DFF0FF', endColorstr='#2e7cb9',GradientType=0 );background: -moz-linear-gradient(top,  #DFF0FF 30%, #2e7cb9 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#DFF0FF), color-stop(90%,#2e7cb9));background: -webkit-linear-gradient(top,  #DFF0FF 30%,#2e7cb9 90%);background: -o-linear-gradient(top,  #DFF0FF 30%,#2e7cb9 90%);background: -ms-linear-gradient(top,  #DFF0FF 30%,#2e7cb9 90%);background: linear-gradient(#DFF0FF 30%, #2e7cb9 90%);}.stb-download_box {background: #DFF0FF;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DFF0FF', endColorstr='#2e7cb9',GradientType=0 );background: -moz-linear-gradient(top,  #DFF0FF 30%, #2e7cb9 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#DFF0FF), color-stop(90%,#2e7cb9));background: -webkit-linear-gradient(top,  #DFF0FF 30%,#2e7cb9 90%);background: -o-linear-gradient(top,  #DFF0FF 30%,#2e7cb9 90%);background: -ms-linear-gradient(top,  #DFF0FF 30%,#2e7cb9 90%);background: linear-gradient(#DFF0FF 30%, #2e7cb9 90%);color: #000000;}.stb-download-caption_box {background: #65ADFE;background: -moz-linear-gradient(top,  #65ADFE 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#65ADFE), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #65ADFE 30%,#504848 90%);background: -o-linear-gradient(top,  #65ADFE 30%,#504848 90%);background: -ms-linear-gradient(top,  #65ADFE 30%,#504848 90%);background: linear-gradient(#65ADFE 30%, #504848 90%);color: #FFFFFF;}.stb-download-body_box {background: #DFF0FF;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DFF0FF', endColorstr='#2e7cb9',GradientType=0 );background: -moz-linear-gradient(top,  #DFF0FF 30%, #2e7cb9 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#DFF0FF), color-stop(90%,#2e7cb9));background: -webkit-linear-gradient(top,  #DFF0FF 30%,#2e7cb9 90%);background: -o-linear-gradient(top,  #DFF0FF 30%,#2e7cb9 90%);background: -ms-linear-gradient(top,  #DFF0FF 30%,#2e7cb9 90%);background: linear-gradient(#DFF0FF 30%, #2e7cb9 90%);color: #000000;}.stb-border.stb-grey-container {border: 1px none #BBBBBB;}.stb-side.stb-grey-container {background: #BBBBBB;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BBBBBB', endColorstr='#6e6e6e',GradientType=0 );background: -moz-linear-gradient(top,  #BBBBBB 30%, #6e6e6e 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#BBBBBB), color-stop(90%,#6e6e6e));background: -webkit-linear-gradient(top,  #BBBBBB 30%,#6e6e6e 90%);background: -o-linear-gradient(top,  #BBBBBB 30%,#6e6e6e 90%);background: -ms-linear-gradient(top,  #BBBBBB 30%,#6e6e6e 90%);background: linear-gradient(#BBBBBB 30%, #6e6e6e 90%);}.stb-side-none.stb-grey-container {background: #EEEEEE;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEEEEE', endColorstr='#ababab',GradientType=0 );background: -moz-linear-gradient(top,  #EEEEEE 30%, #ababab 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#EEEEEE), color-stop(90%,#ababab));background: -webkit-linear-gradient(top,  #EEEEEE 30%,#ababab 90%);background: -o-linear-gradient(top,  #EEEEEE 30%,#ababab 90%);background: -ms-linear-gradient(top,  #EEEEEE 30%,#ababab 90%);background: linear-gradient(#EEEEEE 30%, #ababab 90%);}.stb-grey_box {background: #EEEEEE;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEEEEE', endColorstr='#ababab',GradientType=0 );background: -moz-linear-gradient(top,  #EEEEEE 30%, #ababab 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#EEEEEE), color-stop(90%,#ababab));background: -webkit-linear-gradient(top,  #EEEEEE 30%,#ababab 90%);background: -o-linear-gradient(top,  #EEEEEE 30%,#ababab 90%);background: -ms-linear-gradient(top,  #EEEEEE 30%,#ababab 90%);background: linear-gradient(#EEEEEE 30%, #ababab 90%);color: #000000;}.stb-grey-caption_box {background: #BBBBBB;background: -moz-linear-gradient(top,  #BBBBBB 30%, #6e6e6e 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#BBBBBB), color-stop(90%,#6e6e6e));background: -webkit-linear-gradient(top,  #BBBBBB 30%,#6e6e6e 90%);background: -o-linear-gradient(top,  #BBBBBB 30%,#6e6e6e 90%);background: -ms-linear-gradient(top,  #BBBBBB 30%,#6e6e6e 90%);background: linear-gradient(#BBBBBB 30%, #6e6e6e 90%);color: #FFFFFF;}.stb-grey-body_box {background: #EEEEEE;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEEEEE', endColorstr='#ababab',GradientType=0 );background: -moz-linear-gradient(top,  #EEEEEE 30%, #ababab 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#EEEEEE), color-stop(90%,#ababab));background: -webkit-linear-gradient(top,  #EEEEEE 30%,#ababab 90%);background: -o-linear-gradient(top,  #EEEEEE 30%,#ababab 90%);background: -ms-linear-gradient(top,  #EEEEEE 30%,#ababab 90%);background: linear-gradient(#EEEEEE 30%, #ababab 90%);color: #000000;}.stb-border.stb-info-container {border: 1px none #7AD975;}.stb-side.stb-info-container {background: #7AD975;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7AD975', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #7AD975 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#7AD975), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #7AD975 30%,#504848 90%);background: -o-linear-gradient(top,  #7AD975 30%,#504848 90%);background: -ms-linear-gradient(top,  #7AD975 30%,#504848 90%);background: linear-gradient(#7AD975 30%, #504848 90%);}.stb-side-none.stb-info-container {background: #E2F8DE;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E2F8DE', endColorstr='#79b06e',GradientType=0 );background: -moz-linear-gradient(top,  #E2F8DE 30%, #79b06e 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#E2F8DE), color-stop(90%,#79b06e));background: -webkit-linear-gradient(top,  #E2F8DE 30%,#79b06e 90%);background: -o-linear-gradient(top,  #E2F8DE 30%,#79b06e 90%);background: -ms-linear-gradient(top,  #E2F8DE 30%,#79b06e 90%);background: linear-gradient(#E2F8DE 30%, #79b06e 90%);}.stb-info_box {background: #E2F8DE;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E2F8DE', endColorstr='#79b06e',GradientType=0 );background: -moz-linear-gradient(top,  #E2F8DE 30%, #79b06e 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#E2F8DE), color-stop(90%,#79b06e));background: -webkit-linear-gradient(top,  #E2F8DE 30%,#79b06e 90%);background: -o-linear-gradient(top,  #E2F8DE 30%,#79b06e 90%);background: -ms-linear-gradient(top,  #E2F8DE 30%,#79b06e 90%);background: linear-gradient(#E2F8DE 30%, #79b06e 90%);color: #000000;}.stb-info-caption_box {background: #7AD975;background: -moz-linear-gradient(top,  #7AD975 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#7AD975), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #7AD975 30%,#504848 90%);background: -o-linear-gradient(top,  #7AD975 30%,#504848 90%);background: -ms-linear-gradient(top,  #7AD975 30%,#504848 90%);background: linear-gradient(#7AD975 30%, #504848 90%);color: #FFFFFF;}.stb-info-body_box {background: #E2F8DE;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E2F8DE', endColorstr='#79b06e',GradientType=0 );background: -moz-linear-gradient(top,  #E2F8DE 30%, #79b06e 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#E2F8DE), color-stop(90%,#79b06e));background: -webkit-linear-gradient(top,  #E2F8DE 30%,#79b06e 90%);background: -o-linear-gradient(top,  #E2F8DE 30%,#79b06e 90%);background: -ms-linear-gradient(top,  #E2F8DE 30%,#79b06e 90%);background: linear-gradient(#E2F8DE 30%, #79b06e 90%);color: #000000;}.stb-border.stb-section-container {border: 1px none #2982C5;}.stb-side.stb-section-container {background: #2982C5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2982C5', endColorstr='#2944f2',GradientType=0 );background: -moz-linear-gradient(top,  #2982C5 30%, #2944f2 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#2982C5), color-stop(90%,#2944f2));background: -webkit-linear-gradient(top,  #2982C5 30%,#2944f2 90%);background: -o-linear-gradient(top,  #2982C5 30%,#2944f2 90%);background: -ms-linear-gradient(top,  #2982C5 30%,#2944f2 90%);background: linear-gradient(#2982C5 30%, #2944f2 90%);}.stb-side-none.stb-section-container {background: #2982C5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2982C5', endColorstr='#294ee3',GradientType=0 );background: -moz-linear-gradient(top,  #2982C5 30%, #294ee3 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#2982C5), color-stop(90%,#294ee3));background: -webkit-linear-gradient(top,  #2982C5 30%,#294ee3 90%);background: -o-linear-gradient(top,  #2982C5 30%,#294ee3 90%);background: -ms-linear-gradient(top,  #2982C5 30%,#294ee3 90%);background: linear-gradient(#2982C5 30%, #294ee3 90%);}.stb-section_box {background: #2982C5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2982C5', endColorstr='#294ee3',GradientType=0 );background: -moz-linear-gradient(top,  #2982C5 30%, #294ee3 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#2982C5), color-stop(90%,#294ee3));background: -webkit-linear-gradient(top,  #2982C5 30%,#294ee3 90%);background: -o-linear-gradient(top,  #2982C5 30%,#294ee3 90%);background: -ms-linear-gradient(top,  #2982C5 30%,#294ee3 90%);background: linear-gradient(#2982C5 30%, #294ee3 90%);color: #000000;}.stb-section-caption_box {background: #2982C5;background: -moz-linear-gradient(top,  #2982C5 30%, #2944f2 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#2982C5), color-stop(90%,#2944f2));background: -webkit-linear-gradient(top,  #2982C5 30%,#2944f2 90%);background: -o-linear-gradient(top,  #2982C5 30%,#2944f2 90%);background: -ms-linear-gradient(top,  #2982C5 30%,#2944f2 90%);background: linear-gradient(#2982C5 30%, #2944f2 90%);color: #FFFFFF;}.stb-section-body_box {background: #2982C5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2982C5', endColorstr='#294ee3',GradientType=0 );background: -moz-linear-gradient(top,  #2982C5 30%, #294ee3 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#2982C5), color-stop(90%,#294ee3));background: -webkit-linear-gradient(top,  #2982C5 30%,#294ee3 90%);background: -o-linear-gradient(top,  #2982C5 30%,#294ee3 90%);background: -ms-linear-gradient(top,  #2982C5 30%,#294ee3 90%);background: linear-gradient(#2982C5 30%, #294ee3 90%);color: #000000;}.stb-border.stb-warning-container {border: 1px none #FE9A05;}.stb-side.stb-warning-container {background: #FE9A05;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FE9A05', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #FE9A05 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FE9A05), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #FE9A05 30%,#504848 90%);background: -o-linear-gradient(top,  #FE9A05 30%,#504848 90%);background: -ms-linear-gradient(top,  #FE9A05 30%,#504848 90%);background: linear-gradient(#FE9A05 30%, #504848 90%);}.stb-side-none.stb-warning-container {background: #FEFFD5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFFD5', endColorstr='#f0d208',GradientType=0 );background: -moz-linear-gradient(top,  #FEFFD5 30%, #f0d208 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FEFFD5), color-stop(90%,#f0d208));background: -webkit-linear-gradient(top,  #FEFFD5 30%,#f0d208 90%);background: -o-linear-gradient(top,  #FEFFD5 30%,#f0d208 90%);background: -ms-linear-gradient(top,  #FEFFD5 30%,#f0d208 90%);background: linear-gradient(#FEFFD5 30%, #f0d208 90%);}.stb-warning_box {background: #FEFFD5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFFD5', endColorstr='#f0d208',GradientType=0 );background: -moz-linear-gradient(top,  #FEFFD5 30%, #f0d208 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FEFFD5), color-stop(90%,#f0d208));background: -webkit-linear-gradient(top,  #FEFFD5 30%,#f0d208 90%);background: -o-linear-gradient(top,  #FEFFD5 30%,#f0d208 90%);background: -ms-linear-gradient(top,  #FEFFD5 30%,#f0d208 90%);background: linear-gradient(#FEFFD5 30%, #f0d208 90%);color: #000000;}.stb-warning-caption_box {background: #FE9A05;background: -moz-linear-gradient(top,  #FE9A05 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FE9A05), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #FE9A05 30%,#504848 90%);background: -o-linear-gradient(top,  #FE9A05 30%,#504848 90%);background: -ms-linear-gradient(top,  #FE9A05 30%,#504848 90%);background: linear-gradient(#FE9A05 30%, #504848 90%);color: #FFFFFF;}.stb-warning-body_box {background: #FEFFD5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFFD5', endColorstr='#f0d208',GradientType=0 );background: -moz-linear-gradient(top,  #FEFFD5 30%, #f0d208 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#FEFFD5), color-stop(90%,#f0d208));background: -webkit-linear-gradient(top,  #FEFFD5 30%,#f0d208 90%);background: -o-linear-gradient(top,  #FEFFD5 30%,#f0d208 90%);background: -ms-linear-gradient(top,  #FEFFD5 30%,#f0d208 90%);background: linear-gradient(#FEFFD5 30%, #f0d208 90%);color: #000000;}</style>
+
+<title>Analytics Community | Analytics Discussions | Big Data Discussion</title>
+<meta name="description" content="Here at Analytics Vidhya, beginners or professionals feel free to ask any questions on business analytics, data science, big data, data visualizations tools &amp; techniques." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.analyticsvidhya.com/blog/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Analytics Community | Analytics Discussions | Big Data Discussion" />
+<meta property="og:description" content="Here at Analytics Vidhya, beginners or professionals feel free to ask any questions on business analytics, data science, big data, data visualizations tools &amp; techniques." />
+<meta property="og:url" content="https://www.analyticsvidhya.com/blog/" />
+<meta property="og:site_name" content="Analytics Vidhya" />
+<meta property="article:publisher" content="https://www.facebook.com/AnalyticsVidhya/" />
+<meta property="article:modified_time" content="2019-07-23T11:04:59+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@analyticsvidhya" />
+<meta name="twitter:site" content="@analyticsvidhya" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.analyticsvidhya.com/#website","url":"https://www.analyticsvidhya.com/","name":"Analytics Vidhya","description":"Learn everything about Analytics","potentialAction":[{"@type":"SearchAction","target":"https://www.analyticsvidhya.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.analyticsvidhya.com/blog/#webpage","url":"https://www.analyticsvidhya.com/blog/","name":"Analytics Community | Analytics Discussions | Big Data Discussion","isPartOf":{"@id":"https://www.analyticsvidhya.com/#website"},"datePublished":"2015-01-31T03:54:44+00:00","dateModified":"2019-07-23T11:04:59+00:00","description":"Here at Analytics Vidhya, beginners or professionals feel free to ask any questions on business analytics, data science, big data, data visualizations tools & techniques.","breadcrumb":{"@id":"https://www.analyticsvidhya.com/blog/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.analyticsvidhya.com/blog/"]}]},{"@type":"BreadcrumbList","@id":"https://www.analyticsvidhya.com/blog/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://www.analyticsvidhya.com/","url":"https://www.analyticsvidhya.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://www.analyticsvidhya.com/blog/","url":"https://www.analyticsvidhya.com/blog/","name":"Blog"}}]}]}</script>
+
+<link rel='dns-prefetch' href='//www.analyticsvidhya.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.analyticsvidhya.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.analyticsvidhya.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.2.2' type='text/css' media='all' />
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}
+</style>
+<link rel='stylesheet' id='dgd-scrollbox-plugin-core-css' href='https://www.analyticsvidhya.com/wp-content/plugins/dreamgrow-scroll-triggered-box/css/style.css?ver=2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='stbCoreCSS-css' href='https://www.analyticsvidhya.com/wp-content/plugins/wp-special-textboxes/css/stb-core.css?ver=5.9.109' type='text/css' media='all' />
+<link rel='stylesheet' id='wpss-style-css' href='https://www.analyticsvidhya.com/wp-content/plugins/wordpress-simple-survey/assets/build/css/wpss-pkg.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpss-custom-db-style-css' href='https://www.analyticsvidhya.com/wp-content/plugins/wordpress-simple-survey/assets/css/custom-performance.css?ver=5.5.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' id='dgd-scrollbox-plugin-js-extra'>
+/* <![CDATA[ */
+var $DGD = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"0a0eb1cc16","debug":"","permalink":"https:\/\/www.analyticsvidhya.com\/blog\/","title":"Blog","thumbnail":"","scripthost":"\/wp-content\/plugins\/dreamgrow-scroll-triggered-box\/","scrollboxes":[{"trigger":{"action":"scroll","scroll":"0","delaytime":"0","element":""},"vpos":"center","hpos":"center","cookieLifetime":"0","hide_mobile":"1","receiver_email":"0","thankyou":"","submit_auto_close":"5","hide_submitted":"1","delay_auto_close":"0","lightbox":{"enabled":"1","color":"#000000","opacity":"0.7","blur":"2"},"theme":"none","widget_enabled":"1","height":"500","width":"800","jsCss":{"padding":"0","margin":"0","backgroundColor":"","boxShadow":"0px","borderColor":"","borderWidth":"0px","borderRadius":"0px","backgroundImageUrl":""},"closeImageUrl":"","transition":{"from":"b","effect":"none","speed":"400"},"social":{"facebook":"","twitter":"","google":"","pinterest":"","stumbleupon":"","linkedin":""},"id":"dgd_scrollbox-67322","mode":"stb","voff":0,"hoff":0}]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/dreamgrow-scroll-triggered-box/js/script.js?ver=2.3' defer='defer' id='dgd-scrollbox-plugin-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/wordpress-simple-survey/assets/build/js/wpss-pkg.min.js?ver=3.0.0' defer='defer' id='wpss-pkg-js'></script>
+<link rel="https://api.w.org/" href="https://www.analyticsvidhya.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.analyticsvidhya.com/wp-json/wp/v2/pages/12645" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.analyticsvidhya.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.analyticsvidhya.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.5.1" />
+<link rel='shortlink' href='https://www.analyticsvidhya.com/?p=12645' />
+<link rel="alternate" type="application/json+oembed" href="https://www.analyticsvidhya.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.analyticsvidhya.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw_url){window.open(pinw_url, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+//-->
+</script>
+<script type="text/javascript">/* <![CDATA[ */ jQuery.post("https://www.analyticsvidhya.com/wp-admin/admin-ajax.php", { action: "wmp_update", id: 12645, token: "299be135c3" }); /* ]]> */</script>
+<style type="text/css">
+
+
+
+                #yith-topbar-countdown.topbar-countdown-container{
+
+                    
+                                            background-color: #ee3d24;
+                    
+                    
+                    background-repeat:repeat;
+                    background-position:top left;
+                    background-attachment:scroll;
+                }
+
+                #yith-topbar-countdown .countdown_slogan{
+                    color: #FFFFFF;
+font-size: 14px;
+font-family: 'Roboto';
+font-weight: 400;
+font-style: normal;
+                }
+
+                #yith-topbar-countdown .countdown_information .countdown .num {color: #ffffff;
+font-size: 14px;
+font-family: 'Roboto';
+font-weight: 700;
+font-style: normal;
+}
+
+                #yith-topbar-countdown .countdown_information .countdown_slogan strong{
+                    color: #ffffff;
+font-size: 14px;
+font-family: 'Roboto';
+font-weight: 700;
+font-style: normal;
+                }
+
+                #yith-topbar-countdown .countdown_information .message,
+                #yith-topbar-countdown .countdown_information .countdown-label{
+                    color: #FFFFFF;
+font-size: 14px;
+font-family: 'Roboto';
+font-weight: 400;
+font-style: normal;
+                }
+
+                #yith-topbar-countdown .countdown_button {
+
+                                            background-color: #ee3d24;
+                    
+                    color: #FFFFFF;
+font-size: 14px;
+font-family: 'Roboto';
+font-weight: 700;
+font-style: normal;
+                }
+
+                #yith-topbar-countdown .countdown_button a{color: #FFFFFF;
+font-size: 14px;
+font-family: 'Roboto';
+font-weight: 700;
+font-style: normal;
+}
+
+                #yith-topbar-countdown .countdown_button:hover {
+                                            background-color: #821919;
+                                    }
+
+            </style>
+<link rel='canonical' href='https://www.analyticsvidhya.com/blog/' />
+<style type="text/css"></style>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MPSM42V');</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40101183-1', 'auto');
+  ga('require', 'GTM-PBZGQJ4');
+  //ga('send', 'pageview');
+  ga('send', 'pageview', {
+     'dimension1': 'NA',
+     'dimension2': 'NA'
+     });
+</script>
+<meta property="fb:pages" content="452065408218678" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="application/javascript" src="https://sdki.truepush.com/sdk/v2.0.2/app.js" async></script>
+<script>
+    var truepush = window.truepush || [];
+    truepush.push(function(){
+      truepush.Init({
+        id: "5f2968e91e8ca92c6cc55c46"
+      },
+        function(error){
+        if(error) console.log(error);
+})
+    })
+</script>
+</head>
+<body class="page-template page-template-page-builder page-template-page-builder-php page page-id-12645 mh-body chrome">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPSM42V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="sale-strip" id="sale-strip" style="display: none;">
+<a id="href_id">
+</a>
+<div id="clockdiv" style="display: none;">
+<span>
+ <h4 class="days" id="day"></h4>
+<sup>D</sup>
+</span>
+<span>
+<h4 class="hours" id="hour"></h4>
+<sup>H</sup>
+</span>
+<span>
+<h4 class="minutes" id="minute"></h4>
+<sup>M</sup>
+</span>
+<span>
+<h4 class="seconds" id="second"></h4>
+<sup>S</sup>
+</span>
+</div>
+</div>
+<div id="body-maha" class="body-maha" data-tmloader="https://www.analyticsvidhya.com/wp-content/themes/Curated/images/ellipsis.gif">
+<nav id="mobile-bar-sticky" role="navigation" class="mobile-bar bar-sticky">
+<div id="close-mobile-bar"><i class="tm-cancel"></i></div>
+<div id="search-mobile-bar"><form action="https://www.analyticsvidhya.com/" class="searchform" method="get">
+<button class="search-button"><i class="tm-search"></i></button>
+<input type="text" name="s" class="search-input" value="Search" onfocus="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';" autocomplete="off" />
+</form></div>
+<ul id="menu-main-menu" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/blog/?utm_source=home_blog_navbar">Blog</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/blog-archive/">Blog Archive</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-2498"><span></span><a href="https://www.analyticsvidhya.com/blog/category/machine-learning/">Machine Learning</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-3761"><span></span><a href="https://www.analyticsvidhya.com/blog/category/deep-learning/">Deep Learning</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-4121"><span></span><a href="https://www.analyticsvidhya.com/blog/category/career/">Career</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-3118"><span></span><a href="https://www.analyticsvidhya.com/blog/category/stories/">Stories</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/blog/category/podcast/">DataHack Radio</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/">Learning Paths</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-business-analyst-sas/">SAS Business Analyst</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/">LeaRn Data Science on R</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-data-science-python/">Data Science in Python</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/weka-gui-learn-machine-learning/">DATA SCIENCE IN WEKA</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/tableau-learning-path/">Data Visualization with Tableau</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/qlikview-learning-path/">Data Visualization with QlikView</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/newbie-d3-js-expert-complete-path-create-interactive-visualization-d3-js/">Interactive Data Stories with D3.js</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/">Glossary</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mh-navcat-5288"><span></span><a href="https://courses.analyticsvidhya.com">Courses</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><span></span><a href="https://courses.analyticsvidhya.com/courses/applied-machine-learning-beginner-to-professional?utm_source=home_blog_navbar">Applied Machine Learning &#8211; Beginner to Professional</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><span></span><a href="https://courses.analyticsvidhya.com/courses/introduction-to-data-science-2?utm_source=home_blog_navbar">INTRODUCTION TO DATA SCIENCE</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><span></span><a href="https://courses.analyticsvidhya.com/courses/natural-language-processing-nlp?utm_source=home_blog_navbar">Natural Language Processing (NLP) Using Python</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><span></span><a href="https://courses.analyticsvidhya.com/courses/computer-vision-using-deep-learning-version2?utm_source=home_blog_navbar">Computer Vision using Deep Learning 2.0</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><span></span><a href="https://courses.analyticsvidhya.com/collections/?utm_source=blog-navbar">More Courses</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><span></span><a href="https://datahack.analyticsvidhya.com/contest/all">Hackathons</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-170"><span></span><a href="https://jobs.analyticsvidhya.com/?utm_source=home_blog_navbar">Jobs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><span></span><a href="https://courses.analyticsvidhya.com/bundles/certified-ai-ml-blackbelt-plus/?utm-source=blog-navbar&amp;utm-medium=web">AI &#038; ML BLACKBELT+</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/ascend-pro/?utm_source=blog&amp;utm_medium=navbar&amp;utm_campaign=ascend_pro"><span style='color:#EE3D24'>Ascend Pro</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/contact/">Contact</a></li>
+</ul> </nav>
+
+<div id='body-background'>
+
+<div id="off-canvas-body" class="off-canvas-body animati-on">
+
+<div id="top-bar-sticky" class="bar-sticky">
+<div class="top-bar">
+
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div id="top-right-nav">
+<div class="social-top">
+<ul><li><a target="_blank" href="https://www.facebook.com/AnalyticsVidhya"><i class="tm-facebook"></i></a></li><li><a target="_blank" href="https://twitter.com/analyticsvidhya"><i class="tm-twitter"></i></a></li><li><a target="_blank" href="https://plus.google.com/+Analyticsvidhya/posts"><i class="tm-googleplus"></i></a></li><li><a target="_blank" href="https://in.linkedin.com/company/analytics-vidhya"><i class="tm-linkedin"></i></a></li></ul>
+</div>
+<div class="top-user">
+<i class='tm-user'></i>
+<a class="login-modal-closer" data-reveal-id="cur-register" data-animation="fade" data-dismissmodalclass="register-reveal-modal" id="login1"></a><span id="regiter1"></span>
+</div>
+</div>
+<nav id="top-nav-wrapper" class="ul-nav">
+<ul id="menu-top" class="menu"><li id="menu-item-42575" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-42575 mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com">Home</a></li>
+<li id="menu-item-64144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64144 mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/myfeed/?utm-source=blog&#038;utm-medium=top-icon/">My Feed</a></li>
+<li id="menu-item-12992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12992 mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/blog-archive/">Blog Archive</a></li>
+<li id="menu-item-12952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12952 mh-navcat-0"><span></span><a href="https://discuss.analyticsvidhya.com">Discuss</a></li>
+<li id="menu-item-39605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39605 mh-navcat-0"><span></span><a href="https://www.analyticsvidhya.com/corporate/">Corporate</a></li>
+</ul> </nav>
+<nav id="top-mobile-wrapper" class="ul-nav">
+<ul><li><a><i class="tm-menu"></i></a></li></ul>
+</nav>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="main-logo-ads-wrap">
+<div class="main-logo-ads">
+
+<div class="container">
+<div class="row ">
+<div class="col-sm-12">
+
+<div id="thelogo" class="logo ">
+<a href="https://www.analyticsvidhya.com/blog/">
+<img alt="Analytics Vidhya - Learn everything about Analytics" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/Av-Logo-250x71-1.jpg" data-retina="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/Av-Logo-250x71-1.jpg" data-first="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/Av-Logo-250x71-1.jpg" />
+</a>
+</div>
+<h2 class='site-outline'>Learn everything about Analytics</h2>
+
+<div id="main-ads" class="main-ads-right">
+<div><a href="https://www.analyticsvidhya.com/back-channel/download-starter-kit.php?utm_source=ml-interview-guide&id=10"><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/08/Machine-Learning-Interview-Guide.png"></a></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div id="main-nav">
+<div id="main-nav-bar" class="main-nav-bar clearfix ">
+<div id="main-search" class=" clearfix">
+<div id="con-search">
+<div class="container">
+<div class="cols-sm12">
+<div id="main-search-form">
+<span class="close-search-form"><i class="tm-cancel"></i></span>
+<span class="loading-search-result"><img src="https://www.analyticsvidhya.com/wp-content/themes/Curated/images/ellipsis.gif" alt=""></span>
+<form action="https://www.analyticsvidhya.com/" class="searchform" method="get">
+<button class="search-button"><i class="tm-search"></i></button>
+<input type="text" name="s" class="search-input" value="Search" onfocus="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';" autocomplete="off" />
+</form> <div class="search-result">
+<div class="container search-result-content"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='maha-notification container'><div id="main-notif"></div></div>
+<div class="container clearfix">
+</div>
+
+<div class="container clearfix">
+<div class="row clearfix">
+<div class="col-sm-12 clearfix">
+
+
+<div id="search-nav" class="search-nav clearfix">
+<span class="open-search-form"><i class="tm-search"></i></span>
+</div>
+
+
+<nav id="main-nav-wrapper" class="main-ul-nav clearfix">
+<div id="thelogosmall" class="logo">
+<a href="https://www.analyticsvidhya.com/blog/">
+<img alt="Analytics Vidhya - Learn everything about Analytics" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/Av-logo-138x40-1.jpg" data-retina="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/Av-logo-319x90-1.jpg" data-first="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/Av-logo-138x40-1.jpg" />
+</a>
+</div>
+<ul id="menu-main-menu-1" class="menu"><li id="menu-item-37781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mh-navcat-0"><a href="https://www.analyticsvidhya.com/blog/?utm_source=home_blog_navbar">Blog</a><div class="nav-sub-wrap container"><div class="nsw clearfix row">
+<div class="nav-sub-menus"><ul>
+<li id="menu-item-55484" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mh-navcat-0"><a href="https://www.analyticsvidhya.com/blog-archive/">Blog Archive</a><div class="nav-sub-wrap container"><div class="nsw clearfix row">
+<div class="nav-sub-menus"><ul>
+<li id="menu-item-47251" class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-2498"><a href="https://www.analyticsvidhya.com/blog/category/machine-learning/">Machine Learning</a></li>
+<li id="menu-item-47265" class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-3761"><a href="https://www.analyticsvidhya.com/blog/category/deep-learning/">Deep Learning</a></li>
+<li id="menu-item-47191" class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-4121"><a href="https://www.analyticsvidhya.com/blog/category/career/">Career</a></li>
+<li id="menu-item-27174" class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-3118"><a href="https://www.analyticsvidhya.com/blog/category/stories/">Stories</a></li>
+<li id="menu-item-45209" class="menu-item menu-item-type-taxonomy menu-item-object-category mh-navcat-0"><a href="https://www.analyticsvidhya.com/blog/category/podcast/">DataHack Radio</a></li>
+</ul></div>
+</div></div>
+</li>
+<li id="menu-item-12170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children mh-navcat-0"><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/">Learning Paths</a><div class="nav-sub-wrap container"><div class="nsw clearfix row">
+<div class="nav-sub-menus"><ul>
+<li id="menu-item-12503" class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-business-analyst-sas/">SAS Business Analyst</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-14416" class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/">LeaRn Data Science on R</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-12171" class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-data-science-python/">Data Science in Python</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-13207" class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/weka-gui-learn-machine-learning/">DATA SCIENCE IN WEKA</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-23077" class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/tableau-learning-path/">Data Visualization with Tableau</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-12320" class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/qlikview-learning-path/">Data Visualization with QlikView</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-23078" class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/newbie-d3-js-expert-complete-path-create-interactive-visualization-d3-js/">Interactive Data Stories with D3.js</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+</ul></div>
+</div></div>
+</li>
+<li id="menu-item-55487" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><a href="https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/">Glossary</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+</ul></div>
+</div></div>
+</li>
+<li id="menu-item-44643" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mh-navcat-5288"><a href="https://courses.analyticsvidhya.com">Courses</a><div class="nav-sub-wrap container"><div class="nsw clearfix row">
+<div class="nav-sub-menus"><ul>
+<li id="menu-item-53978" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><a href="https://courses.analyticsvidhya.com/courses/applied-machine-learning-beginner-to-professional?utm_source=home_blog_navbar">Applied Machine Learning &#8211; Beginner to Professional</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-44644" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><a href="https://courses.analyticsvidhya.com/courses/introduction-to-data-science-2?utm_source=home_blog_navbar">INTRODUCTION TO DATA SCIENCE</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-48965" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><a href="https://courses.analyticsvidhya.com/courses/natural-language-processing-nlp?utm_source=home_blog_navbar">Natural Language Processing (NLP) Using Python</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-48964" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><a href="https://courses.analyticsvidhya.com/courses/computer-vision-using-deep-learning-version2?utm_source=home_blog_navbar">Computer Vision using Deep Learning 2.0</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-44646" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><a href="https://courses.analyticsvidhya.com/collections/?utm_source=blog-navbar">More Courses</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+</ul></div>
+</div></div>
+</li>
+<li id="menu-item-24638" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><a href="https://datahack.analyticsvidhya.com/contest/all">Hackathons</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-55521" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-170"><a href="https://jobs.analyticsvidhya.com/?utm_source=home_blog_navbar">Jobs</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-37784" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><a href="https://courses.analyticsvidhya.com/bundles/certified-ai-ml-blackbelt-plus/?utm-source=blog-navbar&amp;utm-medium=web">AI &#038; ML BLACKBELT+</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-69325" class="menu-item menu-item-type-custom menu-item-object-custom mh-navcat-0"><a href="https://www.analyticsvidhya.com/ascend-pro/?utm_source=blog&amp;utm_medium=navbar&amp;utm_campaign=ascend_pro"><span style='color:#EE3D24'>Ascend Pro</span></a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+<li id="menu-item-24641" class="menu-item menu-item-type-post_type menu-item-object-page mh-navcat-0"><a href="https://www.analyticsvidhya.com/contact/">Contact</a><div class="nav-sub-wrap container"><div class="nsw clearfix row"></div></div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="page-wrapper">
+<div class="mh-el moz-slide">
+<div class="container">
+<div id="mh_el5faffbe86457b" class="wrap-moz-slide moz-slider maha_royalSlider moz-boxed up-up">
+<div class="i-slide rsContent"><div class="bContainer"><div class="moz-item big" data-url="https://www.analyticsvidhya.com/blog/2020/11/how-to-transition-data-science-different-backgrounds/"> <div class="wrap-moz-item zoom-zoom">
+<div class="moz-item-cover zoom-it three" style="background-image: url(https://cdn.analyticsvidhya.com/wp-content/uploads/2019/06/Transition-to-data-science-850x433.jpg)">
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/how-to-transition-data-science-different-backgrounds/" title="8 Thoughts on How to Transition into Data Science from Different Backgrounds">
+
+</a>
+</div>
+<div class="detail">
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-13T15:00:00+05:30">
+November 13, 2020 </time>
+</div>
+
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/how-to-transition-data-science-different-backgrounds/" title="8 Thoughts on How to Transition into Data Science from Different Backgrounds">
+<h2>8 Thoughts on How to Transition into Data Science from Different Backgrounds</h2>
+</a>
+</div>
+</div>
+</div><div class="moz-item medium" data-url="https://www.analyticsvidhya.com/blog/2020/11/fine-grained-sentiment-analysis-of-smartphone-review/"> <div class="wrap-moz-item zoom-zoom">
+<div class="moz-item-cover zoom-it three" style="background-image: url(https://cdn.analyticsvidhya.com/wp-content/uploads/2020/08/Sentiment-Analysis-850x478.jpg)">
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/fine-grained-sentiment-analysis-of-smartphone-review/" title="Fine-Grained Sentiment Analysis of Smartphone Review">
+
+</a>
+</div>
+<div class="detail">
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-13T11:48:59+05:30">
+November 13, 2020 </time>
+</div>
+
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/fine-grained-sentiment-analysis-of-smartphone-review/" title="Fine-Grained Sentiment Analysis of Smartphone Review">
+<h2>Fine-Grained Sentiment Analysis of Smartphone Review</h2>
+</a>
+</div>
+</div>
+</div><div class="small2"><div class="moz-item small" data-url="https://www.analyticsvidhya.com/blog/2020/11/14-must-have-skills-to-become-a-data-scientist-with-resources/"> <div class="wrap-moz-item zoom-zoom">
+<div class="moz-item-cover zoom-it three" style="background-image: url(https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/skills-to-become-a-Data-Scientist-850x421.jpg)">
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/14-must-have-skills-to-become-a-data-scientist-with-resources/" title="14 Must-Have Skills to Become a Data Scientist (with Resources!)">
+
+</a>
+</div>
+<div class="detail">
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-12T15:50:03+05:30">
+November 12, 2020 </time>
+</div>
+
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/14-must-have-skills-to-become-a-data-scientist-with-resources/" title="14 Must-Have Skills to Become a Data Scientist (with Resources!)">
+<h2>14 Must-Have Skills to Become a Data Scientist (with Resources!)</h2>
+</a>
+</div>
+</div>
+</div><div class="moz-item small" data-url="https://www.analyticsvidhya.com/blog/2020/11/kaggle-grandmaster-series-exclusive-interview-with-2x-kaggle-grandmaster-firat-gonen/"> <div class="wrap-moz-item zoom-zoom">
+<div class="moz-item-cover zoom-it three" style="background-image: url(https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/Exclusive-interview-with-Firat-Gonen-850x421.jpg)">
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/kaggle-grandmaster-series-exclusive-interview-with-2x-kaggle-grandmaster-firat-gonen/" title="Kaggle Grandmaster Series &#8211; Exclusive Interview with 2x Kaggle Grandmaster Firat Gonen">
+
+</a>
+</div>
+<div class="detail">
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-12T15:49:06+05:30">
+November 12, 2020 </time>
+</div>
+
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/kaggle-grandmaster-series-exclusive-interview-with-2x-kaggle-grandmaster-firat-gonen/" title="Kaggle Grandmaster Series &#8211; Exclusive Interview with 2x Kaggle Grandmaster Firat Gonen">
+<h2>Kaggle Grandmaster Series &#8211; Exclusive Interview with 2x Kaggle Grandmaster Firat Gonen</h2>
+</a>
+</div>
+</div>
+</div></div></div></div><div class="i-slide rsContent"><div class="bContainer"><div class="moz-item medium" data-url="https://www.analyticsvidhya.com/blog/2020/11/data-engineering-for-beginners-partitioning-vs-bucketing-in-apache-hive/"> <div class="wrap-moz-item zoom-zoom">
+<div class="moz-item-cover zoom-it three" style="background-image: url(https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/Partitioning-vs-Bucketing-in-Apache-Hive-850x531.jpg)">
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/data-engineering-for-beginners-partitioning-vs-bucketing-in-apache-hive/" title="Data Engineering for Beginners &#8211; Partitioning vs Bucketing in Apache Hive">
+
+</a>
+</div>
+<div class="detail">
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-12T14:54:52+05:30">
+November 12, 2020 </time>
+</div>
+
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/data-engineering-for-beginners-partitioning-vs-bucketing-in-apache-hive/" title="Data Engineering for Beginners &#8211; Partitioning vs Bucketing in Apache Hive">
+<h2>Data Engineering for Beginners &#8211; Partitioning vs Bucketing in Apache Hive</h2>
+</a>
+</div>
+</div>
+</div><div class="moz-item medium" data-url="https://www.analyticsvidhya.com/blog/2020/11/deep-unsupervised-learning-in-energy-sector-autoencoders-in-action/"> <div class="wrap-moz-item zoom-zoom">
+<div class="moz-item-cover zoom-it three" style="background-image: url(https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/featured_image-1-850x421.jpg)">
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/deep-unsupervised-learning-in-energy-sector-autoencoders-in-action/" title="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action">
+
+</a>
+</div>
+<div class="detail">
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-12T14:49:13+05:30">
+November 12, 2020 </time>
+</div>
+
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/deep-unsupervised-learning-in-energy-sector-autoencoders-in-action/" title="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action">
+<h2>Deep Unsupervised Learning in Energy Sector – Autoencoders in Action</h2>
+</a>
+</div>
+</div>
+</div><div class="moz-item big" data-url="https://www.analyticsvidhya.com/blog/2020/11/introduction-to-spark-mllib-for-big-data-and-machine-learning/"> <div class="wrap-moz-item zoom-zoom">
+<div class="moz-item-cover zoom-it three" style="background-image: url(https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/67681SPMLLibH1-850x428.png)">
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/introduction-to-spark-mllib-for-big-data-and-machine-learning/" title="Introduction to Spark MLlib for Big Data and Machine Learning">
+
+</a>
+</div>
+<div class="detail">
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-11T16:44:18+05:30">
+November 11, 2020 </time>
+</div>
+
+<a class="moz-url" href="https://www.analyticsvidhya.com/blog/2020/11/introduction-to-spark-mllib-for-big-data-and-machine-learning/" title="Introduction to Spark MLlib for Big Data and Machine Learning">
+<h2>Introduction to Spark MLlib for Big Data and Machine Learning</h2>
+</a>
+</div>
+</div>
+</div></div></div>
+</div>
+</div>
+</div>
+<div class="mh-el">
+<div class="container">
+
+<div class="row">
+<div class="col-sm-12">
+<div class="block-cap">
+<h3>Latest Articles</h3>
+</div>
+</div>
+</div>
+<div class="row block-streams el-block-5 up-up">
+<div class="late-show">
+<div class="blocked-carousel" id="mh_el5faffbe87b4cc">
+<div class="carousel-wrapper">
+<div class="col-sm-3 swiper-slide post-53766 post type-post status-publish format-standard has-post-thumbnail category-beginner category-career category-data-science category-listicle category-profile-building tag-career tag-data-science tag-data-science-transition tag-deep-learning tag-machine-learning tag-quora">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/datascience22/">Pranav Dar</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-13T15:00:00+05:30">
+November 13, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/how-to-transition-data-science-different-backgrounds/" rel="bookmark" title="8 Thoughts on How to Transition into Data Science from Different Backgrounds">
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/06/Transition-to-data-science-262x141.jpg" alt="8 Thoughts on How to Transition into Data Science from Different Backgrounds" title="8 Thoughts on How to Transition into Data Science from Different Backgrounds" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/how-to-transition-data-science-different-backgrounds/" rel="bookmark" title="8 Thoughts on How to Transition into Data Science from Different Backgrounds">
+8 Thoughts on How to Transition into Data Science from Different Backgrounds </a>
+</h3>
+<meta content="8 Thoughts on How to Transition into Data Science from Different Backgrounds" />
+</article> </div>
+<div class="col-sm-3 swiper-slide post-73144 post type-post status-publish format-standard has-post-thumbnail category-advanced category-classification category-nlp category-python-2 category-technique category-text category-unstructured-data tag-exploratory-data-analysis tag-fine-grained-sentiment-analysis tag-natural-language-processing tag-sentiment-analysis tag-textblob">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/guest-blog/">Guest Blog</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-13T11:48:59+05:30">
+November 13, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/fine-grained-sentiment-analysis-of-smartphone-review/" rel="bookmark" title="Fine-Grained Sentiment Analysis of Smartphone Review">
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/08/Sentiment-Analysis-262x141.jpg" alt="Fine-Grained Sentiment Analysis of Smartphone Review" title="Fine-Grained Sentiment Analysis of Smartphone Review" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/fine-grained-sentiment-analysis-of-smartphone-review/" rel="bookmark" title="Fine-Grained Sentiment Analysis of Smartphone Review">
+Fine-Grained Sentiment Analysis of Smartphone Review </a>
+</h3>
+<meta content="Fine-Grained Sentiment Analysis of Smartphone Review" />
+</article> </div>
+<div class="col-sm-3 swiper-slide post-72931 post type-post status-publish format-standard has-post-thumbnail category-career category-data-science category-listicle tag-big-data tag-communication tag-curiosity tag-data-manipulation tag-data-visualization tag-machine-learning tag-storytelling tag-structured-thinking">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/ram_dewani/">Ram Dewani</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-12T15:50:03+05:30">
+November 12, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/14-must-have-skills-to-become-a-data-scientist-with-resources/" rel="bookmark" title="14 Must-Have Skills to Become a Data Scientist (with Resources!)">
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/skills-to-become-a-Data-Scientist-262x141.jpg" alt="14 Must-Have Skills to Become a Data Scientist (with Resources!)" title="14 Must-Have Skills to Become a Data Scientist (with Resources!)" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/14-must-have-skills-to-become-a-data-scientist-with-resources/" rel="bookmark" title="14 Must-Have Skills to Become a Data Scientist (with Resources!)">
+14 Must-Have Skills to Become a Data Scientist (with Resources!) </a>
+</h3>
+<meta content="14 Must-Have Skills to Become a Data Scientist (with Resources!)" />
+</article> </div>
+<div class="col-sm-3 swiper-slide post-73062 post type-post status-publish format-standard has-post-thumbnail category-beginner category-career category-interviews-2 tag-firat-gonen tag-kaggle">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/avcontentteam/">Analytics Vidhya</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-12T15:49:06+05:30">
+November 12, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/kaggle-grandmaster-series-exclusive-interview-with-2x-kaggle-grandmaster-firat-gonen/" rel="bookmark" title="Kaggle Grandmaster Series &#8211; Exclusive Interview with 2x Kaggle Grandmaster Firat Gonen">
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/Exclusive-interview-with-Firat-Gonen-262x141.jpg" alt="Kaggle Grandmaster Series &#8211; Exclusive Interview with 2x Kaggle Grandmaster Firat Gonen" title="Kaggle Grandmaster Series &#8211; Exclusive Interview with 2x Kaggle Grandmaster Firat Gonen" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/kaggle-grandmaster-series-exclusive-interview-with-2x-kaggle-grandmaster-firat-gonen/" rel="bookmark" title="Kaggle Grandmaster Series &#8211; Exclusive Interview with 2x Kaggle Grandmaster Firat Gonen">
+Kaggle Grandmaster Series &#8211; Exclusive Interview with 2x Kaggle Grandmaster Firat Gonen </a>
+</h3>
+<meta content="Kaggle Grandmaster Series &#8211; Exclusive Interview with 2x Kaggle Grandmaster Firat Gonen" />
+</article> </div>
+<div class="col-sm-3 swiper-slide post-72656 post type-post status-publish format-standard has-post-thumbnail category-beginner category-data-engineering category-hadoop category-technique tag-apache-hive tag-bucketing tag-partitioning">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/lakshayarora/">LAKSHAY ARORA</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-12T14:54:52+05:30">
+November 12, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/data-engineering-for-beginners-partitioning-vs-bucketing-in-apache-hive/" rel="bookmark" title="Data Engineering for Beginners &#8211; Partitioning vs Bucketing in Apache Hive">
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/Partitioning-vs-Bucketing-in-Apache-Hive-262x141.jpg" alt="Data Engineering for Beginners &#8211; Partitioning vs Bucketing in Apache Hive" title="Data Engineering for Beginners &#8211; Partitioning vs Bucketing in Apache Hive" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/data-engineering-for-beginners-partitioning-vs-bucketing-in-apache-hive/" rel="bookmark" title="Data Engineering for Beginners &#8211; Partitioning vs Bucketing in Apache Hive">
+Data Engineering for Beginners &#8211; Partitioning vs Bucketing in Apache Hive </a>
+</h3>
+<meta content="Data Engineering for Beginners &#8211; Partitioning vs Bucketing in Apache Hive" />
+</article> </div>
+<div class="col-sm-3 swiper-slide post-73077 post type-post status-publish format-standard has-post-thumbnail category-advanced category-autoencoder category-deep-learning category-python-2 category-unsupervised tag-energy tag-lstm">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/pattabhiramansrinivasangmail-com/"><span class="__cf_email__" data-cfemail="740415000015161c1d061519151a07061d1a1d021507151a341319151d185a171b19">[email&#160;protected]</span></a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-12T14:49:13+05:30">
+November 12, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/deep-unsupervised-learning-in-energy-sector-autoencoders-in-action/" rel="bookmark" title="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action">
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/featured_image-1-262x141.jpg" alt="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action" title="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/deep-unsupervised-learning-in-energy-sector-autoencoders-in-action/" rel="bookmark" title="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action">
+Deep Unsupervised Learning in Energy Sector – Autoencoders in Action </a>
+</h3>
+<meta content="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action" />
+</article> </div>
+<div class="col-sm-3 swiper-slide post-73053 post type-post status-publish format-standard has-post-thumbnail category-beginner category-classification category-data-engineering category-spark tag-apache-spark tag-blogathon">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/mankayarkarasi/">mankayarkarasi</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-11T16:44:18+05:30">
+November 11, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/introduction-to-spark-mllib-for-big-data-and-machine-learning/" rel="bookmark" title="Introduction to Spark MLlib for Big Data and Machine Learning">
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/67681SPMLLibH1-262x141.png" alt="Introduction to Spark MLlib for Big Data and Machine Learning" title="Introduction to Spark MLlib for Big Data and Machine Learning" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/introduction-to-spark-mllib-for-big-data-and-machine-learning/" rel="bookmark" title="Introduction to Spark MLlib for Big Data and Machine Learning">
+Introduction to Spark MLlib for Big Data and Machine Learning </a>
+</h3>
+<meta content="Introduction to Spark MLlib for Big Data and Machine Learning" />
+</article> </div>
+<div class="col-sm-3 swiper-slide post-72390 post type-post status-publish format-standard has-post-thumbnail category-advanced category-deep-learning category-maths category-reinforcement-learning-2 tag-baseline tag-policy-gradients">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/guest-blog/">Guest Blog</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-11T15:19:15+05:30">
+November 11, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/baseline-for-policy-gradients/" rel="bookmark" title="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know">
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/1kSw-njRsFwVlqbTElIX8oQ-262x141.jpeg" alt="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know" title="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/baseline-for-policy-gradients/" rel="bookmark" title="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know">
+Baseline for Policy Gradients that All Deep Learning Enthusists Must Know </a>
+</h3>
+<meta content="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know" />
+</article> </div>
+<div class="col-sm-3 swiper-slide post-72273 post type-post status-publish format-standard has-post-thumbnail category-beginner category-sql category-technique tag-data-types">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/hs13/">Himanshi Singh</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-10T15:40:50+05:30">
+November 10, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/guide-data-types-mysql-data-science-beginners/" rel="bookmark" title="A Guide to Data Types in MySQL for Data Science Beginners">
+
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/A-Guide-to-Data-Types-in-MySQL-for-Beginners-in-Data-Science-262x141.jpg" alt="A Guide to Data Types in MySQL for Data Science Beginners" title="A Guide to Data Types in MySQL for Data Science Beginners" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/guide-data-types-mysql-data-science-beginners/" rel="bookmark" title="A Guide to Data Types in MySQL for Data Science Beginners">
+A Guide to Data Types in MySQL for Data Science Beginners </a>
+</h3>
+<meta content="A Guide to Data Types in MySQL for Data Science Beginners" />
+</article> </div>
+<div class="col-sm-3 swiper-slide post-72942 post type-post status-publish format-standard has-post-thumbnail category-advanced category-nlp category-sports category-technique category-text category-unsupervised category-use-cases tag-blogathon tag-ipl tag-text-analysis tag-text-mining tag-tweet tag-twitter tag-twitter-mining">
+<article class="item-medium-simple post-box-normal">
+<div class="meta-info no-bottom">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/samprita/">samprita</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-10T14:29:21+05:30">
+November 10, 2020 </time>
+</div>
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/text-mining-simplified-ipl-2020-tweet-analysis-with-r/" rel="bookmark" title="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R">
+<img width="262" height="141" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/79320Cricket-e1426153649896-1-1-262x141.jpg" alt="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R" title="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R" />
+</a>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/text-mining-simplified-ipl-2020-tweet-analysis-with-r/" rel="bookmark" title="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R">
+Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R </a>
+</h3>
+<meta content="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R" />
+</article> </div>
+</div>
+<div class="carousel-prev"><i class="tm-chevron-left"></i></div>
+<div class="carousel-next"><i class="tm-chevron-right"></i></div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+		    	jQuery(document).ready(function($){
+		    		$("#mh_el5faffbe87b4cc").each(function(){
+				    	$("#mh_el5faffbe87b4cc .carousel-wrapper").carouFredSel({
+							// auto: 5400,
+							auto: {
+								play: false
+							},
+							infinite: true,
+							circular: true,
+							responsive: true,
+					        items: {
+								width : 280,
+						        visible: {
+						            min: 1,
+						            max: 4
+						        }
+						    },
+							swipe: {
+								onMouse: true,
+								onTouch: true
+							},
+							scroll: {
+						    	items: 1,
+						    	easing: 'easeInOutCubic',
+					            duration: 500
+						    },
+							prev: "#mh_el5faffbe87b4cc .carousel-prev",
+							next: "#mh_el5faffbe87b4cc .carousel-next"
+
+						}).parents('.late-show').slideDown();
+		    	});
+	    	});
+		    </script>
+</div>
+</div>
+</div><div class="mh-el page-sidebar">
+
+<div class="container">
+<div class="row">
+<div class="col-sm-8">
+<div class="mh-el">
+
+<div class="row">
+<div class="col-sm-12">
+<div class="block-cap">
+<h3>Popular Articles</h3>
+</div>
+</div>
+</div>
+<div class="row block-streams el-block-7">
+<div class="up-up-child col-sm-6 post-18770 post type-post status-publish format-standard has-post-thumbnail category-algorithm category-business-analytics category-classification category-clustering category-intermediate category-listicle category-machine-learning category-python-2 category-r category-regression category-structured-data category-supervised category-unsupervised tag-c4-5 tag-cart tag-catboost tag-data-science tag-decision-tree tag-gbm tag-k-means tag-knn tag-lightgbm tag-linear-regression tag-live-coding tag-logistic-regression tag-machine-learning tag-naive-bayes tag-neural-network tag-random-forest tag-reinforcement tag-supervised-learning tag-svm tag-unsupervised tag-xgboost">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/" rel="bookmark" title="Commonly used Machine Learning Algorithms (with Python and R Codes)">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2017/09/machine--100x72.png" alt="Commonly used Machine Learning Algorithms (with Python and R Codes)" title="Commonly used Machine Learning Algorithms (with Python and R Codes)" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/" rel="bookmark" title="Commonly used Machine Learning Algorithms (with Python and R Codes)">
+Commonly used Machine Learning Algorithms (with Python and R Codes) </a>
+</h3>
+<meta content="Commonly used Machine Learning Algorithms (with Python and R Codes)" />
+<div class="meta-info">
+<time class="entry-date" datetime="2017-09-09T00:00:26+05:30">
+September 9, 2017 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-22387 post type-post status-publish format-standard has-post-thumbnail category-beginner category-classification category-data-science category-machine-learning category-programming category-python-2 category-structured-data category-supervised tag-apply tag-box-plots tag-categorical-variable tag-data-cleaning tag-data-exploration tag-data-frames tag-data-mining tag-data-munging tag-data-science tag-data-structure tag-data-wrangling tag-decision-tree tag-dictionary tag-distribution-analysis tag-installing-python tag-ipython tag-lists tag-live-coding tag-logistic-regression tag-matplotlib tag-mean tag-merge tag-numpy tag-pandas tag-python tag-python-3-7 tag-python-download tag-python-tutorial tag-scikit-learn tag-scipy tag-sets tag-split tag-stacked-chart tag-starting-python tag-statistics tag-strings tag-tuple tag-tuples tag-tutorial">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/" rel="bookmark" title="A Complete Python Tutorial to Learn Data Science from Scratch">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2016/01/Learn-Data-Science-with-Python-from-Scratch-100x72.png" alt="A Complete Python Tutorial to Learn Data Science from Scratch" title="A Complete Python Tutorial to Learn Data Science from Scratch" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/" rel="bookmark" title="A Complete Python Tutorial to Learn Data Science from Scratch">
+A Complete Python Tutorial to Learn Data Science from Scratch </a>
+</h3>
+<meta content="A Complete Python Tutorial to Learn Data Science from Scratch" />
+<div class="meta-info">
+<time class="entry-date" datetime="2016-01-14T21:33:17+05:30">
+January 14, 2016 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-18835 post type-post status-publish format-standard has-post-thumbnail category-data-science category-intermediate category-listicle category-machine-learning category-python-2 category-statistics category-structured-data category-technique tag-elasticnet-regression tag-lasso-regression tag-linear-regression tag-live-coding tag-logistic-regression tag-multinomial-logistic-rgression tag-multiple-regression tag-ordinal-logistic-regression tag-polynomial-regression tag-regression tag-regression-analysis tag-regression-models tag-regularization tag-ridge-regression tag-stepwise-regression">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/" rel="bookmark" title="7 Regression Techniques you should know!">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2015/08/7-type-regression-100x72.png" alt="7 Regression Techniques you should know!" title="7 Regression Techniques you should know!" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/" rel="bookmark" title="7 Regression Techniques you should know!">
+7 Regression Techniques you should know! </a>
+</h3>
+<meta content="7 Regression Techniques you should know!" />
+<div class="meta-info">
+<time class="entry-date" datetime="2015-08-14T00:27:03+05:30">
+August 14, 2015 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-28549 post type-post status-publish format-standard has-post-thumbnail category-data-science category-intermediate category-listicle category-machine-learning category-project category-python-2 category-r tag-age-detection-of-indian-actors-data tag-analytics-projects tag-bigmart-sales-data tag-black-friday-data tag-boston-housing-data tag-census-income-data tag-chicago-crime-data tag-classification-data tag-data-exploration tag-data-mining-projects tag-data-science-project tag-feature-engineering tag-heights-and-weights-data tag-human-activity-recognition-data tag-identify-your-digits tag-image-recognition tag-imagenet-data tag-iris-data tag-live-coding tag-loan-prediction-data tag-machine-learning tag-machine-learning-projects tag-million-song-data tag-mnist-data tag-movie-lens-data tag-multi-classification tag-object-recognition tag-recommendation-engine-data tag-regression-data tag-siam-competition-data tag-text-mining-data tag-time-series-analysis-data tag-titanic-data tag-trip-history-data tag-turkiye-student-evaluation-data tag-twitter-classification-data tag-urban-sound-classification-vox-celebrity-data tag-visualqa-data tag-wine-quality-data tag-yelp-data">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/" rel="bookmark" title="24 Ultimate Data Science (Machine Learning) Projects To Boost Your Knowledge and Skills (&#038; can be accessed freely)">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2018/04/17-DATA-SCIENCE-PROJECTS-83x83.png" alt="24 Ultimate Data Science (Machine Learning) Projects To Boost Your Knowledge and Skills (&#038; can be accessed freely)" title="24 Ultimate Data Science (Machine Learning) Projects To Boost Your Knowledge and Skills (&#038; can be accessed freely)" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/" rel="bookmark" title="24 Ultimate Data Science (Machine Learning) Projects To Boost Your Knowledge and Skills (&#038; can be accessed freely)">
+24 Ultimate Data Science (Machine Learning) Projects To Boost Your Knowledge and Skills (&#038; can be accessed freely) </a>
+</h3>
+<meta content="24 Ultimate Data Science (Machine Learning) Projects To Boost Your Knowledge and Skills (&#038; can be accessed freely)" />
+<div class="meta-info">
+<time class="entry-date" datetime="2018-05-30T20:00:56+05:30">
+May 30, 2018 </time>
+</div>
+</div>
+</article> </div>
+</div>
+</div>
+<div class="mh-el">
+
+<div class="row">
+<div class="col-sm-12">
+<div class="block-cap">
+<h3>Machine Learning</h3>
+</div>
+</div>
+</div>
+<div class="row block-streams el-block-7">
+<div class="up-up-child col-sm-6 post-72944 post type-post status-publish format-standard has-post-thumbnail category-classification category-intermediate category-machine-learning category-python-2 category-structured-data category-technique tag-blogathon tag-eli5">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/demystifying-model-interpretation-using-eli5/" rel="bookmark" title="Demystifying Model Interpretation using ELI5">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/69618photo-1588600878108-578307a3cc9d-100x72.jpeg" alt="Demystifying Model Interpretation using ELI5" title="Demystifying Model Interpretation using ELI5" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/demystifying-model-interpretation-using-eli5/" rel="bookmark" title="Demystifying Model Interpretation using ELI5">
+Demystifying Model Interpretation using ELI5 </a>
+</h3>
+<meta content="Demystifying Model Interpretation using ELI5" />
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-10T13:20:22+05:30">
+November 10, 2020 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-72910 post type-post status-publish format-standard has-post-thumbnail category-algorithm category-beginner category-machine-learning category-maths category-python-2 category-structured-data category-supervised tag-blogathon tag-decision-tree tag-entropy tag-information-gain">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/" rel="bookmark" title="Entropy &#8211; A Key Concept for All  Data Science Beginners">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/60066pic1-100x72.png" alt="Entropy &#8211; A Key Concept for All  Data Science Beginners" title="Entropy &#8211; A Key Concept for All  Data Science Beginners" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/" rel="bookmark" title="Entropy &#8211; A Key Concept for All  Data Science Beginners">
+Entropy &#8211; A Key Concept for All Data Science Beginners </a>
+</h3>
+<meta content="Entropy &#8211; A Key Concept for All  Data Science Beginners" />
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-09T12:15:29+05:30">
+November 9, 2020 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-72904 post type-post status-publish format-standard has-post-thumbnail category-advanced category-machine-learning category-python-2 category-recommendation category-structured-data category-technique tag-blogathon tag-collaboration-filtering tag-content-based-filtering tag-movie-recommendation-system">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/create-your-own-movie-movie-recommendation-system/" rel="bookmark" title="Create Your Own Movie Movie Recommendation System">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/75825featured2-100x72.png" alt="Create Your Own Movie Movie Recommendation System" title="Create Your Own Movie Movie Recommendation System" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/create-your-own-movie-movie-recommendation-system/" rel="bookmark" title="Create Your Own Movie Movie Recommendation System">
+Create Your Own Movie Movie Recommendation System </a>
+</h3>
+<meta content="Create Your Own Movie Movie Recommendation System" />
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-09T12:14:32+05:30">
+November 9, 2020 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-72882 post type-post status-publish format-standard has-post-thumbnail category-intermediate category-machine-learning category-programming category-project category-python-2 category-structured-data category-technique tag-blogathon tag-csv tag-scala">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/writing-a-csv-file-with-scala-and-using-it-to-create-a-machine-learning-model/" rel="bookmark" title="Writing a CSV File with Scala and Using it to Create a Machine Learning Model">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/04/ebook_machine_learning_starter_program-100x72.jpg" alt="Writing a CSV File with Scala and Using it to Create a Machine Learning Model" title="Writing a CSV File with Scala and Using it to Create a Machine Learning Model" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/writing-a-csv-file-with-scala-and-using-it-to-create-a-machine-learning-model/" rel="bookmark" title="Writing a CSV File with Scala and Using it to Create a Machine Learning Model">
+Writing a CSV File with Scala and Using it to Create a Machine Learning Model </a>
+</h3>
+<meta content="Writing a CSV File with Scala and Using it to Create a Machine Learning Model" />
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-08T15:33:10+05:30">
+November 8, 2020 </time>
+</div>
+</div>
+</article> </div>
+</div>
+</div>
+<div class="mh-el">
+
+<div class="row">
+<div class="col-sm-12">
+<div class="block-cap">
+<h3>NLP</h3>
+</div>
+</div>
+</div>
+<div class="row block-streams el-block-2">
+<div class="up-up-child col-sm-6 post-73144 post type-post status-publish format-standard has-post-thumbnail category-advanced category-classification category-nlp category-python-2 category-technique category-text category-unstructured-data tag-exploratory-data-analysis tag-fine-grained-sentiment-analysis tag-natural-language-processing tag-sentiment-analysis tag-textblob">
+<article class="item-medium post-box-big">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/fine-grained-sentiment-analysis-of-smartphone-review/" rel="bookmark" title="Fine-Grained Sentiment Analysis of Smartphone Review">
+<img width="360" height="206" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/08/Sentiment-Analysis-360x206.jpg" alt="Fine-Grained Sentiment Analysis of Smartphone Review" title="Fine-Grained Sentiment Analysis of Smartphone Review" />
+</a>
+</div>
+<div class="meta-info">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/guest-blog/">Guest Blog</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-13T11:48:59+05:30">
+November 13, 2020 </time>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/fine-grained-sentiment-analysis-of-smartphone-review/" rel="bookmark" title="Fine-Grained Sentiment Analysis of Smartphone Review">
+Fine-Grained Sentiment Analysis of Smartphone Review </a>
+</h3>
+<meta content="Fine-Grained Sentiment Analysis of Smartphone Review" />
+<div class="i-summary">
+<p>Introduction Source Sentiment Analysis or opinion mining is the analysis of emotions behind the words by using Natural Language Processing and Machine Learning. With &#8230; </p>
+</div>
+<div class="meta-count no-bottom">
+<span class="i-category"><span class="mh-cat-item"><a class="mh-elcat-5384" href="https://www.analyticsvidhya.com/blog/category/advanced/" title="Advanced" rel="category">Advanced</a></span><span class="mh-cat-item"><a class="mh-elcat-5347" href="https://www.analyticsvidhya.com/blog/category/classification/" title="Classification" rel="category">Classification</a></span><span class="mh-cat-item"><a class="mh-elcat-3952" href="https://www.analyticsvidhya.com/blog/category/nlp/" title="NLP" rel="category">NLP</a></span><span class="mh-cat-item"><a class="mh-elcat-396" href="https://www.analyticsvidhya.com/blog/category/python-2/" title="Python" rel="category">Python</a></span><span class="mh-cat-item"><a class="mh-elcat-5307" href="https://www.analyticsvidhya.com/blog/category/technique/" title="Technique" rel="category">Technique</a></span><span class="mh-cat-item"><a class="mh-elcat-5364" href="https://www.analyticsvidhya.com/blog/category/text/" title="Text" rel="category">Text</a></span><span class="mh-cat-item"><a class="mh-elcat-5365" href="https://www.analyticsvidhya.com/blog/category/unstructured-data/" title="Unstructured Data" rel="category">Unstructured Data</a></span></span>
+<div class="count-data">
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-72942 post type-post status-publish format-standard has-post-thumbnail category-advanced category-nlp category-sports category-technique category-text category-unsupervised category-use-cases tag-blogathon tag-ipl tag-text-analysis tag-text-mining tag-tweet tag-twitter tag-twitter-mining">
+<article class="item-medium post-box-big">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/text-mining-simplified-ipl-2020-tweet-analysis-with-r/" rel="bookmark" title="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R">
+<img width="360" height="206" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/79320Cricket-e1426153649896-1-1-360x206.jpg" alt="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R" title="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R" />
+</a>
+</div>
+<div class="meta-info">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/samprita/">samprita</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-10T14:29:21+05:30">
+November 10, 2020 </time>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/text-mining-simplified-ipl-2020-tweet-analysis-with-r/" rel="bookmark" title="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R">
+Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R </a>
+</h3>
+<meta content="Text Mining Simplified &#8211; IPL 2020 Tweet Analysis with R" />
+<div class="i-summary">
+<p>This article was published as a part of the Data Science Blogathon. Introduction Text mining utilizes different AI technologies to automatically process data and &#8230; </p>
+</div>
+<div class="meta-count no-bottom">
+<span class="i-category"><span class="mh-cat-item"><a class="mh-elcat-5384" href="https://www.analyticsvidhya.com/blog/category/advanced/" title="Advanced" rel="category">Advanced</a></span><span class="mh-cat-item"><a class="mh-elcat-3952" href="https://www.analyticsvidhya.com/blog/category/nlp/" title="NLP" rel="category">NLP</a></span><span class="mh-cat-item"><a class="mh-elcat-5328" href="https://www.analyticsvidhya.com/blog/category/sports/" title="Sports" rel="category">Sports</a></span><span class="mh-cat-item"><a class="mh-elcat-5307" href="https://www.analyticsvidhya.com/blog/category/technique/" title="Technique" rel="category">Technique</a></span><span class="mh-cat-item"><a class="mh-elcat-5364" href="https://www.analyticsvidhya.com/blog/category/text/" title="Text" rel="category">Text</a></span><span class="mh-cat-item"><a class="mh-elcat-5359" href="https://www.analyticsvidhya.com/blog/category/unsupervised/" title="Unsupervised" rel="category">Unsupervised</a></span><span class="mh-cat-item"><a class="mh-elcat-5308" href="https://www.analyticsvidhya.com/blog/category/use-cases/" title="Use Cases" rel="category">Use Cases</a></span></span>
+<div class="count-data">
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-72906 post type-post status-publish format-standard has-post-thumbnail category-advanced category-maths category-nlp tag-blogathon tag-sentiment-analysis">
+<article class="item-medium post-box-big">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/create-a-pipeline-to-perform-sentiment-analysis-using-nlp/" rel="bookmark" title="Create a Pipeline to Perform Sentiment Analysis using NLP">
+<img width="360" height="206" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/42876Webp.net-resizeimage-360x206.jpg" alt="Create a Pipeline to Perform Sentiment Analysis using NLP" title="Create a Pipeline to Perform Sentiment Analysis using NLP" />
+</a>
+</div>
+<div class="meta-info">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/vaibhavhaswani/">vaibhavhaswani</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-09T13:45:24+05:30">
+November 9, 2020 </time>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/create-a-pipeline-to-perform-sentiment-analysis-using-nlp/" rel="bookmark" title="Create a Pipeline to Perform Sentiment Analysis using NLP">
+Create a Pipeline to Perform Sentiment Analysis using NLP </a>
+</h3>
+<meta content="Create a Pipeline to Perform Sentiment Analysis using NLP" />
+<div class="i-summary">
+<p>This article was published as a part of the Data Science Blogathon. Overview Every basic fundamental and building block which is required for Sentiment &#8230; </p>
+</div>
+<div class="meta-count no-bottom">
+<span class="i-category"><span class="mh-cat-item"><a class="mh-elcat-5384" href="https://www.analyticsvidhya.com/blog/category/advanced/" title="Advanced" rel="category">Advanced</a></span><span class="mh-cat-item"><a class="mh-elcat-5341" href="https://www.analyticsvidhya.com/blog/category/maths/" title="Maths" rel="category">Maths</a></span><span class="mh-cat-item"><a class="mh-elcat-3952" href="https://www.analyticsvidhya.com/blog/category/nlp/" title="NLP" rel="category">NLP</a></span></span>
+<div class="count-data">
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-72866 post type-post status-publish format-standard has-post-thumbnail category-computer-vision category-intermediate category-machine-learning category-nlp category-python-2 tag-blogathon tag-class-imbalance tag-smote">
+<article class="item-medium post-box-big">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/handling-imbalanced-data-machine-learning-computer-vision-and-nlp/" rel="bookmark" title="Handling Imbalanced Data &#8211; Machine Learning, Computer Vision and NLP">
+<img width="360" height="206" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/How-to-treat-Class-Imbalance-in-Machine-Learning-360x206.jpg" alt="Handling Imbalanced Data &#8211; Machine Learning, Computer Vision and NLP" title="Handling Imbalanced Data &#8211; Machine Learning, Computer Vision and NLP" />
+</a>
+</div>
+<div class="meta-info">
+<span class="entry-author"><a href="https://www.analyticsvidhya.com/blog/author/nandhini97/">nandhini97</a></span><span class="coma">,</span>
+<time class="entry-date" datetime="2020-11-07T16:02:50+05:30">
+November 7, 2020 </time>
+</div>
+<h3 class="entry-title">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/handling-imbalanced-data-machine-learning-computer-vision-and-nlp/" rel="bookmark" title="Handling Imbalanced Data &#8211; Machine Learning, Computer Vision and NLP">
+Handling Imbalanced Data &#8211; Machine Learning, Computer Vision and NLP </a>
+</h3>
+<meta content="Handling Imbalanced Data &#8211; Machine Learning, Computer Vision and NLP" />
+<div class="i-summary">
+<p>This article was published as a part of the Data Science Blogathon. Introduction: In the real world, the data we gather will be heavily &#8230; </p>
+</div>
+<div class="meta-count no-bottom">
+<span class="i-category"><span class="mh-cat-item"><a class="mh-elcat-4895" href="https://www.analyticsvidhya.com/blog/category/computer-vision/" title="Computer Vision" rel="category">Computer Vision</a></span><span class="mh-cat-item"><a class="mh-elcat-5386" href="https://www.analyticsvidhya.com/blog/category/intermediate/" title="Intermediate" rel="category">Intermediate</a></span><span class="mh-cat-item"><a class="mh-elcat-2498" href="https://www.analyticsvidhya.com/blog/category/machine-learning/" title="Machine Learning" rel="category">Machine Learning</a></span><span class="mh-cat-item"><a class="mh-elcat-3952" href="https://www.analyticsvidhya.com/blog/category/nlp/" title="NLP" rel="category">NLP</a></span><span class="mh-cat-item"><a class="mh-elcat-396" href="https://www.analyticsvidhya.com/blog/category/python-2/" title="Python" rel="category">Python</a></span></span>
+<div class="count-data">
+</div>
+</div>
+</article> </div>
+</div>
+</div>
+<div class="mh-el">
+
+<div class="row">
+<div class="col-sm-12">
+<div class="block-cap">
+<h3>Deep Learning</h3>
+</div>
+</div>
+</div>
+<div class="row block-streams el-block-7">
+<div class="up-up-child col-sm-6 post-73077 post type-post status-publish format-standard has-post-thumbnail category-advanced category-autoencoder category-deep-learning category-python-2 category-unsupervised tag-energy tag-lstm">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/deep-unsupervised-learning-in-energy-sector-autoencoders-in-action/" rel="bookmark" title="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/featured_image-1-100x72.jpg" alt="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action" title="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/deep-unsupervised-learning-in-energy-sector-autoencoders-in-action/" rel="bookmark" title="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action">
+Deep Unsupervised Learning in Energy Sector – Autoencoders in Action </a>
+</h3>
+<meta content="Deep Unsupervised Learning in Energy Sector – Autoencoders in Action" />
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-12T14:49:13+05:30">
+November 12, 2020 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-72390 post type-post status-publish format-standard has-post-thumbnail category-advanced category-deep-learning category-maths category-reinforcement-learning-2 tag-baseline tag-policy-gradients">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/baseline-for-policy-gradients/" rel="bookmark" title="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/1kSw-njRsFwVlqbTElIX8oQ-100x72.jpeg" alt="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know" title="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/baseline-for-policy-gradients/" rel="bookmark" title="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know">
+Baseline for Policy Gradients that All Deep Learning Enthusists Must Know </a>
+</h3>
+<meta content="Baseline for Policy Gradients that All Deep Learning Enthusists Must Know" />
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-11T15:19:15+05:30">
+November 11, 2020 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-72946 post type-post status-publish format-standard has-post-thumbnail category-advanced category-deep-learning category-project category-python-2 category-sequence-modeling category-technique tag-blogathon tag-carnatic-music tag-rnn">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/generate-carnatic-music-with-google-magenta/" rel="bookmark" title="Generate Carnatic Music with Google Magenta">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/12/nepalbuzz-100x72.jpg" alt="Generate Carnatic Music with Google Magenta" title="Generate Carnatic Music with Google Magenta" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/generate-carnatic-music-with-google-magenta/" rel="bookmark" title="Generate Carnatic Music with Google Magenta">
+Generate Carnatic Music with Google Magenta </a>
+</h3>
+<meta content="Generate Carnatic Music with Google Magenta" />
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-10T12:18:48+05:30">
+November 10, 2020 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-72817 post type-post status-publish format-standard has-post-thumbnail category-advanced category-computer-vision category-deep-learning category-image category-image-analysis category-structured-data tag-blogathon">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/computer-vision-a-key-concept-to-solve-many-problems-related-to-image-data/" rel="bookmark" title="Computer Vision: A Key Concept to Solve Many Problems Related to Image Data">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/22781Untitled-design-3-100x72.png" alt="Computer Vision: A Key Concept to Solve Many Problems Related to Image Data" title="Computer Vision: A Key Concept to Solve Many Problems Related to Image Data" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/computer-vision-a-key-concept-to-solve-many-problems-related-to-image-data/" rel="bookmark" title="Computer Vision: A Key Concept to Solve Many Problems Related to Image Data">
+Computer Vision: A Key Concept to Solve Many Problems Related to Image Data </a>
+</h3>
+<meta content="Computer Vision: A Key Concept to Solve Many Problems Related to Image Data" />
+<div class="meta-info">
+<time class="entry-date" datetime="2020-11-08T17:30:59+05:30">
+November 8, 2020 </time>
+</div>
+</div>
+</article> </div>
+</div>
+</div>
+<div class="mh-el">
+
+<div class="row">
+<div class="col-sm-12">
+<div class="block-cap">
+<h3>Podcast</h3>
+</div>
+</div>
+</div>
+<div class="row block-streams el-block-7">
+<div class="up-up-child col-sm-6 post-57677 post type-post status-publish format-standard has-post-thumbnail category-intermediate category-podcast tag-data-science-podcast tag-datahack-radio tag-google-tensorflow tag-paige-bailey tag-tensorflow tag-tensorflow-podcast">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2019/09/all-you-need-to-know-about-tensorflow-google-paige-bailey/" rel="bookmark" title="DataHack Radio: All you Need to Know about TensorFlow with Google&#8217;s Paige Bailey">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/09/tensorflow_paige_bailey-100x72.png" alt="DataHack Radio: All you Need to Know about TensorFlow with Google&#8217;s Paige Bailey" title="DataHack Radio: All you Need to Know about TensorFlow with Google&#8217;s Paige Bailey" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2019/09/all-you-need-to-know-about-tensorflow-google-paige-bailey/" rel="bookmark" title="DataHack Radio: All you Need to Know about TensorFlow with Google&#8217;s Paige Bailey">
+DataHack Radio: All you Need to Know about TensorFlow with Google&#8217;s Paige Bailey </a>
+</h3>
+<meta content="DataHack Radio: All you Need to Know about TensorFlow with Google&#8217;s Paige Bailey" />
+<div class="meta-info">
+<time class="entry-date" datetime="2019-09-24T08:49:27+05:30">
+September 24, 2019 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-55295 post type-post status-publish format-standard has-post-thumbnail category-intermediate category-nlp category-podcast tag-build-your-own-chatbot tag-chatbots tag-conversational-agents tag-datahack-radio tag-datahack-radio-podcast tag-nlp tag-rasa">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2019/07/exploring-designing-chatbots-rasa-justina-petraityte/" rel="bookmark" title="DataHack Radio #24: Exploring and Designing Chatbots with RASA&#8217;s Justina Petraitytė">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/07/DataHack-Radio-Podcast-Justina-Petraityt%C4%97-100x72.jpg" alt="DataHack Radio #24: Exploring and Designing Chatbots with RASA&#8217;s Justina Petraitytė" title="DataHack Radio #24: Exploring and Designing Chatbots with RASA&#8217;s Justina Petraitytė" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2019/07/exploring-designing-chatbots-rasa-justina-petraityte/" rel="bookmark" title="DataHack Radio #24: Exploring and Designing Chatbots with RASA&#8217;s Justina Petraitytė">
+DataHack Radio #24: Exploring and Designing Chatbots with RASA&#8217;s Justina Petraitytė </a>
+</h3>
+<meta content="DataHack Radio #24: Exploring and Designing Chatbots with RASA&#8217;s Justina Petraitytė" />
+ <div class="meta-info">
+<time class="entry-date" datetime="2019-07-24T11:11:58+05:30">
+July 24, 2019 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-53334 post type-post status-publish format-standard has-post-thumbnail category-intermediate category-nlp category-podcast tag-datahack-radio tag-machine-learning tag-natural-language-processing tag-nlp tag-nlp-library tag-nlp-podcast tag-podcast tag-spacy">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2019/06/datahack-radio-ines-montani-matthew-honnibal-brains-behind-spacy/" rel="bookmark" title="DataHack Radio #23: Ines Montani and Matthew Honnibal &#8211; The Brains behind spaCy">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/Ines-Montani-and-Matt-Honnibal_cover-100x72.jpg" alt="DataHack Radio #23: Ines Montani and Matthew Honnibal &#8211; The Brains behind spaCy" title="DataHack Radio #23: Ines Montani and Matthew Honnibal &#8211; The Brains behind spaCy" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2019/06/datahack-radio-ines-montani-matthew-honnibal-brains-behind-spacy/" rel="bookmark" title="DataHack Radio #23: Ines Montani and Matthew Honnibal &#8211; The Brains behind spaCy">
+DataHack Radio #23: Ines Montani and Matthew Honnibal &#8211; The Brains behind spaCy </a>
+</h3>
+<meta content="DataHack Radio #23: Ines Montani and Matthew Honnibal &#8211; The Brains behind spaCy" />
+<div class="meta-info">
+<time class="entry-date" datetime="2019-06-03T10:13:54+05:30">
+June 3, 2019 </time>
+</div>
+</div>
+</article> </div>
+<div class="up-up-child col-sm-6 post-51492 post type-post status-publish format-standard has-post-thumbnail category-computer-vision category-intermediate category-podcast tag-data-engineering tag-data-engineering-podcast tag-data-science tag-data-science-podcast tag-datahack-radio tag-datahack-radio-podcast">
+<article class="item-small post-box-small clearfix">
+<div class="thumb-wrap zoom-zoom">
+<a href="https://www.analyticsvidhya.com/blog/2019/04/datahack-radio-exploring-computer-vision-data-engineering-podcast-dat-tran/" rel="bookmark" title="DataHack Radio #22: Exploring Computer Vision and Data Engineering with Dat Tran">
+<img width="100" height="72" class="entry-thumb zoom-it three" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/04/dat-cover--100x72.png" alt="DataHack Radio #22: Exploring Computer Vision and Data Engineering with Dat Tran" title="DataHack Radio #22: Exploring Computer Vision and Data Engineering with Dat Tran" />
+</a>
+</div>
+<div class="box-small-wrap">
+<h3 class="entry-title short-bottom">
+<a href="https://www.analyticsvidhya.com/blog/2019/04/datahack-radio-exploring-computer-vision-data-engineering-podcast-dat-tran/" rel="bookmark" title="DataHack Radio #22: Exploring Computer Vision and Data Engineering with Dat Tran">
+DataHack Radio #22: Exploring Computer Vision and Data Engineering with Dat Tran </a>
+</h3>
+<meta content="DataHack Radio #22: Exploring Computer Vision and Data Engineering with Dat Tran" />
+<div class="meta-info">
+<time class="entry-date" datetime="2019-04-25T08:53:03+05:30">
+April 25, 2019 </time>
+</div>
+</div>
+</article> </div>
+</div>
+</div></div><div class="col-sm-4 "><div class="sidebar"><div id="topuserswidget-2" class="widget clearfix TopUsersWidget"><div id="top-av-users-show" style="display:none"><div class="widget-title"><div class="block-cap"><h3>Top Analytics Vidhya Users</h3></div></div><table class="top_users"><tr><th>Rank</th><th colspan="2">Name</th><th>Points</th></tr><tr><td>1</td><td class='top_users_td_image'><img class='top_users_img' src='//www.analyticsvidhya.com/wp-content/plugins/top-av-users-widget/images/1.jpg?date=2020-11-14'></td><td class='top_users_name_td'><a target='_blank' class='top_users_name' href='https://datahack.analyticsvidhya.com/user/profile/Tezdhar'>Tezdhar</a></td><td class='top_users_points'>2756</td></tr><tr><td>2</td><td class='top_users_td_image'><img class='top_users_img' src='//www.analyticsvidhya.com/wp-content/plugins/top-av-users-widget/images/2.jpg?date=2020-11-14'></td><td class='top_users_name_td'><a target='_blank' class='top_users_name' href='https://datahack.analyticsvidhya.com/user/profile/sahilv711@gmail.com'>Sahil Verma</a></td><td class='top_users_points'>2604</td></tr><tr><td>3</td><td class='top_users_td_image'><img class='top_users_img' src='//www.analyticsvidhya.com/wp-content/plugins/top-av-users-widget/images/3.jpg?date=2020-11-14'></td><td class='top_users_name_td'><a target='_blank' class='top_users_name' href='https://datahack.analyticsvidhya.com/user/profile/mileta'>mileta</a></td><td class='top_users_points'>1694</td></tr><tr><td>4</td><td class='top_users_td_image'><img class='top_users_img' src='//www.analyticsvidhya.com/wp-content/plugins/top-av-users-widget/images/4.jpg?date=2020-11-14'></td><td class='top_users_name_td'><a target='_blank' class='top_users_name' href='https://datahack.analyticsvidhya.com/user/profile/vivekkumar_rit'>vivekkumar_rit</a></td><td class='top_users_points'>1666</td></tr><tr><td>5</td><td class='top_users_td_image'><img class='top_users_img' src='//www.analyticsvidhya.com/wp-content/plugins/top-av-users-widget/images/5.jpg?date=2020-11-14'></td><td class='top_users_name_td'><a target='_blank' class='top_users_name' href='https://datahack.analyticsvidhya.com/user/profile/sourabhjha'>SOURABH JHA</a></td><td class='top_users_points'>1655</td></tr></table><div><a class="top_users_more" target="_blank" href="https://datahack.analyticsvidhya.com/top-competitor/?utm_source=blog-navbar&utm_medium=web">More User Rankings</a></div></div><div id="top-av-users-signup"><div class="widget-title"><div class="block-cap"><h3>Join the nextgen data science ecosystem</h3></div></div><ul>
+<li>Get access to free courses on Analytics Vidhya</li>
+<li>Get free downloadable resource from Analytics Vidhya</li>
+<li>Save your articles</li>
+<li>Participate in hackathons and win prizes</li>
+</ul>
+<p><a href="https://id.analyticsvidhya.com/auth/login/?next=https://www.analyticsvidhya.com/blog/?utm_source=blog-subscribe&amp;utm_medium=web" target="_blank"><button class="popup-subscribe" style="background-color: #be1616;
+    background-image: none;
+    width: 35%!important;
+    height: 41px!important;
+    cursor: pointer;
+    float: right!important;
+    color: #fff!important;
+    font-size: 18px;
+    margin-right: 133px;
+    margin-top: 10px;">Join Now</button></a></p>
+</div></div><div id="text-6" class="widget clearfix widget_text"> <div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5229672700622157" data-ad-slot="1221924026"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div><div id="wmp_widget-3" class="widget clearfix widget_wmp_widget"><div class="widget-title"><div class="block-cap"><h3>Popular posts</h3></div></div><ul class="wp-most-popular">
+<li class="post-71423posttype-poststatus-publishformat-standardhas-post-thumbnailcategory-advancedcategory-algorithmcategory-deep-learningcategory-machine-learningcategory-python-2category-unstructured-datacategory-unsupervisedtag-blogathon">
+<a href="https://www.analyticsvidhya.com/blog/2020/10/lets-improve-the-model-accuracy-of-imbalanced-covid-19-mortality-prediction-using-generative-adversarial-networks-gan-based-oversampling-technique/" title="Boost Model Accuracy of Imbalanced COVID-19 Mortality Prediction Using GAN-based Oversampling Technique">
+Boost Model Accuracy of Imbalanced COVID-19 Mortality Prediction Using GAN-based Oversampling Technique
+</a>
+</li>
+<li class="post-72816posttype-poststatus-publishformat-standardhas-post-thumbnailcategory-advancedcategory-nlpcategory-python-2category-social-mediacategory-techniquecategory-textcategory-unstructured-datacategory-unsupervisedtag-barttag-berttag-blogathontag-gpt-2tag-pre-trained-modelstag-t-5tag-twitter-data-analysistag-xlnet">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/summarize-twitter-live-data-using-pretrained-nlp-models/" title="Summarize Twitter Live data using Pretrained NLP models">
+Summarize Twitter Live data using Pretrained NLP models
+</a>
+</li>
+<li class="post-32906posttype-poststatus-publishformat-standardhas-post-thumbnailcategory-business-analyticscategory-careercategory-intermediatecategory-machine-learningcategory-rcategory-skilltesttag-clusteringtag-clustering-analysistag-clustering-skilltest-solutiontag-clustering-techniquestag-hierarchical-clusteringtag-k-means-clusteringtag-non-hierarchical-clusteringtag-portfolio-clusteringtag-two-step-clustering">
+<a href="https://www.analyticsvidhya.com/blog/2017/02/test-data-scientist-clustering/" title="40 Questions to test a Data Scientist on Clustering Techniques (Skill test Solution)">
+40 Questions to test a Data Scientist on Clustering Techniques (Skill test Solution)
+</a>
+</li>
+<li class="post-32410posttype-poststatus-publishformat-standardcategory-careercategory-deep-learningcategory-intermediatecategory-machine-learningcategory-skilltesttag-deep-learningtag-deep-learning-applicationtag-deep-learning-coursestag-deep-learning-guidetag-deep-learning-tutorialstag-gpu-for-deep-learningtag-guide-on-deep-learningtag-implementation-of-neural-networkstag-neural-networktag-neural-network-coursestag-neural-network-tutorials">
+<a href="https://www.analyticsvidhya.com/blog/2017/01/must-know-questions-deep-learning/" title="45 Questions to test a data scientist on basics of Deep Learning (along with solution)">
+45 Questions to test a data scientist on basics of Deep Learning (along with solution)
+</a>
+</li>
+<li class="post-35058posttype-poststatus-publishformat-standardhas-post-thumbnailcategory-careercategory-intermediatecategory-interviewscategory-machine-learningcategory-skilltesttag-data-science-interviewstag-essential-machine-learning-skillstag-machine-learningtag-machine-learning-algorithmtag-machine-learning-application">
+<a href="https://www.analyticsvidhya.com/blog/2017/04/40-questions-test-data-scientist-machine-learning-solution-skillpower-machine-learning-datafest-2017/" title="40 Questions to test a data scientist on Machine Learning [Solution: SkillPower – Machine Learning, DataFest 2017]">
+40 Questions to test a data scientist on Machine Learning [Solution: SkillPower – Machine Learning, DataFest 2017]
+</a>
+</li>
+<li class="post-71174posttype-poststatus-publishformat-standardhas-post-thumbnailcategory-beginnercategory-programmingcategory-python-2category-techniquetag-class-methodstag-instance-methodstag-methodstag-programmingtag-pythontag-python-methodstag-static-methods">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/basic-concepts-object-oriented-programming-types-methods-python/" title="Methods in Python &#8211; A Key Concept of Object Oriented Programming">
+Methods in Python &#8211; A Key Concept of Object Oriented Programming
+</a>
+</li>
+<li class="post-72525posttype-poststatus-publishformat-standardhas-post-thumbnailcategory-intermediatecategory-python-2category-reinforcement-learning-2category-stock-tradingcategory-time-seriescategory-unstructured-datacategory-use-casestag-blogathontag-pythontag-reinforcement-learningtag-stock-pricetag-stock-price-prediction">
+<a href="https://www.analyticsvidhya.com/blog/2020/10/reinforcement-learning-stock-price-prediction/" title="Predicting Stock Prices using Reinforcement Learning (with Python Code!)">
+Predicting Stock Prices using Reinforcement Learning (with Python Code!)
+</a>
+</li>
+<li class="post-72910posttype-poststatus-publishformat-standardhas-post-thumbnailcategory-algorithmcategory-beginnercategory-machine-learningcategory-mathscategory-python-2category-structured-datacategory-supervisedtag-blogathontag-decision-treetag-entropytag-information-gain">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/" title="Entropy &#8211; A Key Concept for All  Data Science Beginners">
+Entropy &#8211; A Key Concept for All Data Science Beginners
+</a>
+</li>
+<li class="post-72640posttype-poststatus-publishformat-standardhas-post-thumbnailcategory-beginnercategory-careercategory-educationcategory-job-rolestag-aitag-blogathontag-deep-leanringtag-machine-learning">
+<a href="https://www.analyticsvidhya.com/blog/2020/11/how-can-you-build-a-career-in-data-science-machine-learning/" title="How Can You Build a Career in Data Science and Machine Learning?">
+How Can You Build a Career in Data Science and Machine Learning?
+</a>
+</li>
+<li class="post-18770posttype-poststatus-publishformat-standardhas-post-thumbnailcategory-algorithmcategory-business-analyticscategory-classificationcategory-clusteringcategory-intermediatecategory-listiclecategory-machine-learningcategory-python-2category-rcategory-regressioncategory-structured-datacategory-supervisedcategory-unsupervisedtag-c4-5tag-carttag-catboosttag-data-sciencetag-decision-treetag-gbmtag-k-meanstag-knntag-lightgbmtag-linear-regressiontag-live-codingtag-logistic-regressiontag-machine-learningtag-naive-bayestag-neural-networktag-random-foresttag-reinforcementtag-supervised-learningtag-svmtag-unsupervisedtag-xgboost">
+<a href="https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/" title="Commonly used Machine Learning Algorithms (with Python and R Codes)">
+Commonly used Machine Learning Algorithms (with Python and R Codes)
+</a>
+</li>
+</ul></div></div></div></div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer class="footer-bg">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+<a href="https://www.analyticsvidhya.com/">
+<img src="https://www.analyticsvidhya.com/wp-content/themes/Curated/custom/images/av-white2.png" alt="Analytics Vidhya" width="85%">
+</a>
+<div class="download-av-app">
+<h6 class="d-flex align-items-center download-text-center">Download App</h6>
+<a href="https://play.google.com/store/apps/details?id=com.analyticsvidhya.android" target="_blank">
+<img src="https://www.analyticsvidhya.com/wp-content/themes/Curated/custom/images/play_store_icon.svg" alt="play store">
+</a>
+<a href="https://apps.apple.com/us/app/analytics-vidhya/id1470025572" target="_blank">
+<img src="https://www.analyticsvidhya.com/wp-content/themes/Curated/custom/images/app_Store_icon.svg" alt="App Store">
+</a>
+</div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-12">
+<div class="av-links">
+<ul>
+<li>
+<h6>Analytics Vidhya</h6>
+<a href="https://www.analyticsvidhya.com/about-me/">About Us</a>
+<a href="https://www.analyticsvidhya.com/about-me/team/">Our Team</a>
+<a href="https://www.analyticsvidhya.com/about-me/career-analytics-vidhya/">Careers</a>
+<a href="https://www.analyticsvidhya.com/contact/">Contact us</a>
+</li>
+<li>
+<h6>Data Science</h6>
+<a href="https://www.analyticsvidhya.com/blog/">Blog</a>
+<a href="https://datahack.analyticsvidhya.com/">Hackathon</a>
+<a href="https://discuss.analyticsvidhya.com/">Discussions</a>
+<a href="https://www.analyticsvidhya.com/jobs/">Apply Jobs</a>
+</li>
+<li>
+<h6>Companies</h6>
+<a href="https://www.analyticsvidhya.com/corporate/">Post Jobs</a>
+<a href="https://courses.analyticsvidhya.com/">Trainings</a>
+<a href="https://datahack.analyticsvidhya.com/">Hiring Hackathons</a>
+<a href="https://www.analyticsvidhya.com/contact/">Advertising</a>
+</li>
+<li>
+<h6>Visit us</h6>
+<div class="av-get-social">
+<a href="https://www.facebook.com/AnalyticsVidhya/" target="_blank" class="social-visit fb mr-2">
+<i class="fa fa-facebook"></i>
+</a>
+<a href="https://www.linkedin.com/company/analytics-vidhya/" target="_blank" class="social-visit in mr-2">
+<i class="fa fa-linkedin"></i>
+</a>
+<a href="https://www.youtube.com/channel/UCH6gDteHtH4hg3o2343iObA" target="_blank" class="social-visit utub mr-2">
+<i class="fa fa-youtube"></i>
+</a>
+<a href="https://twitter.com/analyticsvidhya" target="_blank" class="social-visit tw mr-2">
+<i class="fa fa-twitter"></i>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-link-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12 col-sm-6 col-md-6">
+<div class="mr-auto">
+<p>© Copyright 2013-2020 Analytics Vidhya</p>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-md-6">
+<div class="footer-float-right">
+<a href="https://www.analyticsvidhya.com/privacy-policy/" target="_blank">Privacy Policy</a>
+<a href="https://www.analyticsvidhya.com/terms/" target="_blank">Terms of Use</a>
+<a href="https://www.analyticsvidhya.com/refund-policy/" target="_blank">Refund Policy</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+</div>
+
+</div>
+
+<div id="scrolltop">
+<a><i class="tm-go-top"></i></a>
+</div>
+</div>
+<script>
+ $(document).ready(function(){
+	     $.ajax({
+        url: "https://www.analyticsvidhya.com/back-channel/display-image.php",
+        data: {
+            image: '3'
+        },
+        type: "GET",
+				cache: false,
+        dataType: "html",
+        success: function (data) {
+            $('#ban3_av').html(data);
+        },
+        error: function (xhr, status) {
+					console.log("Image Failed!");
+        },
+    });
+});
+</script>
+<script type="text/javascript" src="https://www.analyticsvidhya.com/wp-content/themes/Curated/custom/oidc-client.js" defer></script>
+<script>
+var redirect_uri = 'https://www.analyticsvidhya.com/';
+var authority_id = 'https://id.analyticsvidhya.com/openid';
+var client_o_id = '516577';
+</script>
+<script type="text/javascript" src="https://www.analyticsvidhya.com/back-channel/id-connect-v2.js" defer></script>
+<script>
+var img_path = "https://www.analyticsvidhya.com/wp-content/themes/Curated/";
+var bookmark_post_id = "12645"
+var is_bookmarked = false;
+var uid = "";
+
+function user_logged_in(user)
+{
+    $.ajaxSetup({
+            beforeSend: function (xhr){
+                xhr.setRequestHeader("Authorization","Bearer "+user.access_token);
+             }
+    });//ajaxsetup
+    // Check if the article is already bookmarked
+    $.ajax({
+     type:"GET",
+     url:"https://id.analyticsvidhya.com/api/v1/resources/external_save_check?resource_ids=12645",
+     contentType: 'application/json',
+     success: function(data) {
+         if(data.results[0].is_bookmarked==true)
+            {
+              $(".save-for-later").html('<a id="bookmark-article" href="#"><img src="'+img_path+'/custom-design/images/bookmarked.svg" width="18px" alt="Remove Bookmark" title="Remove Bookmark" data-toggle="tooltip"></a>');
+							$(".fb-blue").addClass("fb-active-blue");
+							$("#fb-blue-href").attr("title","Remove Bookmark");
+							is_bookmarked = true;
+						}
+     },
+        error: function(data) {
+        data =  JSON.stringify(data);
+//        $(".save-for-later").html(data);
+       }
+    });
+   // End Check if article already Bookmarked
+
+	// If user is logged in give option to bookmark article
+        $("#login1").html("<a href='https://id.analyticsvidhya.com/accounts/profile/' target='_blank'>" + user.profile.preferred_username + "</a>");
+        $(".save-for-later").html('<a id="bookmark-article" href="#"><img src="'+img_path+'/custom-design/images/do-bookmark.svg" width="18px" alt="Bookmark this story to read later" title="Bookmark this story to read later" data-toggle="tooltip"></a>');
+				$("#fb-blue-href").attr("title","Bookmark this story to read later");
+				$(".download-pdf").html("<a href='https://www.analyticsvidhya.com/back-channel/download-pdf.php?pid=12645&next="+$(location).attr('href')+ "' ><img src='https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/download-post-pdf.png' alt='Click to Download PDF' title='Click to Download PDF of this Article'></a>");
+				$("#top-av-users-signup").hide();
+				$("#top-av-users-show").show();
+				$("#is_logged_in_brchr").val("1");
+				$(".coding-window-no-show").hide();
+				initCodingWindow();
+				$(".coding-window").show();
+				$(".qa-login-req-no-show").hide();
+				$(".qa-login-req").show();
+				$('.qa-login-req').css('visibility','visible');
+				$(".fluffycourse-hide").hide();
+				$(".fluffycourse").show();
+				uid = user.profile.sub;
+				quizInit(uid);
+				// Popup Logged in
+				$("#popup_logged_in").val("1");
+				//console.log ("H:"+uid);
+				$.getScript( "https://brahma.analyticsvidhya.com/static/js/events.js" )
+				  .done(function( script, textStatus ) {
+				    console.log( "Brahma Loaded" );
+				  })
+				  .fail(function( jqxhr, settings, exception ) {
+						console.log( "Brahma Failed" );
+				});
+								//$("#signup").hide();
+				//$("#dwn-brchr").show();
+	// End If user is logged in give option to bookmark article
+
+}
+
+function user_logged_out()
+{
+    //console.log("logged out");
+		var page_url = $(location). attr("href");
+    $("#login1").html("<a href='https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href')+ "' target='_blank'> Login / Register</a>");
+    $(".save-for-later").html("<a href='https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href')+ "' target='_blank'>Login to Bookmark this article</a>");
+		$("#fb-blue-href").attr("href","https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href'));
+		$("#fb-blue-href").attr("title","Login to Bookmark this article");
+		$(".download-pdf").html("<a href='https://www.analyticsvidhya.com/back-channel/download-pdf.php?pid=12645' target='_blank'><img src='https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/download-post-pdf.png' alt='Click to Download PDF' title='Click to Download PDF of this Article'></a>");
+		$("#top-av-users-show").hide();
+		$("#top-av-users-signup").show();
+		$("#is_logged_in_brchr").val("0");
+		if ($(".coding-window-no-show").length == 0)
+		{
+			$(".coding-window").before("<a href='https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href')+ "?&utm_source=coding-window-blog&source=coding-window-blog'><img src='https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/08/coding-window-noshow.jpg' class='coding-window-no-show'></a>");
+		}
+		$(".coding-window").hide();
+
+		if ($(".qa-login-req-no-show").length == 0)
+		{
+			$(".qa-login-req").before("<a href='https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href')+ "?&utm_source=question-answer-blog&source=qa-blog'><img src='https://cdn.analyticsvidhya.com/wp-content/uploads/2020/10/answer-signin.png' class='qa-login-req-no-show'></a>");
+		}
+		$(".qa-login-req").hide();
+		$(".fluffycourse").hide();
+		$(".fluffycourse").after("<div 'fluffycourse-hide'><a href='https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href')+ "?&utm_source=coding-window-blog&source=coding-window-blog'><img src='https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/08/test-learning.jpg' class='coding-window-no-show'></a></div>");
+		// Popup Logged out
+		$("#popup_logged_in").val("0");
+		uid = "";
+		//$("#signup").show();
+		//$("#dwn-brchr").hide();
+		$.getScript( "https://brahma.analyticsvidhya.com/static/js/events.js" )
+			.done(function( script, textStatus ) {
+				console.log( "Brahma Script Loaded" );
+			})
+			.fail(function( jqxhr, settings, exception ) {
+				console.log( "Brahma Script Failed" );
+		});
+		}
+
+// Assess yourself
+$(document).ready(function(){
+
+$("#assess-button-1").hide();
+$("#assess-button-2").show();
+
+
+$('#assess-button-2').click(function(){
+//	$('#assess-button-2').addClass("assess-tab-button-active");
+//	$('#assess-button-1').removeClass("assess-tab-button-active");
+	$('#assess-button-1').addClass("assess-tab-button-active");
+	$('#assess-button-2').removeClass("assess-tab-button-active");
+	$("#article-data").hide();
+	$("#assess-data").show();
+	$("#assess-button-2").hide();
+	$("#assess-button-1").show();
+	
+
+// Check if user is logged in
+if (av_is_signed_in == true)
+	{
+			$("#assess-data").html('<iframe src="https://dsat.analyticsvidhya.com/blog/create/assessment/12645" height="500" width="100%">');
+	}
+else {
+		$("#assess-data").html("<a id='auth_url' href='https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href')+ "?&utm_source=assess-yourself&source=assess-yourself-blog'><img id='auth_url_image' src='https://cdn.analyticsvidhya.com/wp-content/uploads/2020/11/click-to-login.png'></a>");
+	}
+
+});
+
+$('#assess-button-1').click(function(){
+//	$('#assess-button-1').addClass("assess-tab-button-active");
+//	$('#assess-button-2').removeClass("assess-tab-button-active");
+	$('#assess-button-2').addClass("assess-tab-button-active");
+	$('#assess-button-1').removeClass("assess-tab-button-active");
+
+	$("#assess-data").hide();
+	$("#article-data").show();
+	$("#assess-button-1").hide();
+	$("#assess-button-2").show();
+
+});
+});
+// End Assess yourself
+
+function quizInit(uid)
+{
+			return;
+	}
+
+function initCodingWindow() {
+	$('.coding-window iframe').each(function() {
+		var src = $(this).data('src');
+		if (!src) {
+			return;
+		}
+		this.src = src;
+	})
+}
+
+$(document).ready(function(){
+
+        var img_path = "https://www.analyticsvidhya.com/wp-content/themes/Curated/";
+
+
+mgr.getUser().then(function(user) {
+    // If user was already logged in
+    if (user!==null){
+        mgr.querySessionStatus().then(function(res) {
+        //console.log('Ohhh, its you again');
+        av_is_signed_in = true;
+        // Log the user in
+        user_logged_in(user);
+
+        }).catch(function(err){
+            // If user logged out from OP
+            av_is_signed_in = false;
+            user_logged_out();
+            mgr.removeUser();
+        });
+
+    } // End check if the user is not null
+    else{
+        mgr.signinRedirectCallback().then(function(user) {
+            // If user just logged in and redirected to this page
+            //console.log(user.profile.given_name, ' bro, how was login experience?');
+            av_is_signed_in = true;
+            // Call user_logged_in_functions
+            user_logged_in(user);
+        }).catch(function(err) {
+            // If user is NOT logged in
+            //console.log('Logged out');
+            user_logged_out();
+            mgr.signinSilent().then(function(user) {
+                av_is_signed_in = true;
+                //console.log("silent signed in", user);
+                user_logged_in(user);
+            }).catch(function(err) {
+                av_is_signed_in = false;
+                user_logged_out();
+                //console.log("Silentsignin Err");
+               // console.log(err);
+            });
+
+        });
+    }
+}).catch(function(err){
+    //console.log('Couldnt get user');
+    user_logged_out();
+});
+
+
+}); // document.ready
+
+
+// Bookmark Article
+$('.fb-blue').click(function(){
+	if (av_is_signed_in)
+		bookmark_post();
+});
+
+$('.save-for-later').on("click", "#bookmark-article",function(event){
+	bookmark_post();
+});
+
+function bookmark_post()
+{
+	event.preventDefault();
+	var bookmark_data = {resource_id:"12645", resource_type:"article",resource_permalink:"https://www.analyticsvidhya.com/blog/",resource_title:"Blog",resource_medium: "blog"};
+ if (is_bookmarked==false) {
+ $.ajax({
+	type:"POST",
+	dataType:"json",
+	url:"https://id.analyticsvidhya.com/api/v1/resources/external_save",
+	data:JSON.stringify(bookmark_data),
+ contentType: 'application/json',
+	success: function(data) {
+			data =JSON.stringify(data);
+			 $(".save-for-later").html('<a id="bookmark-article" href="#"><img src="'+img_path+'/custom-design/images/bookmarked.svg" width="18px" alt="Article Bookmarked" title="Article Bookmarked" data-toggle="tooltip"></a>');
+			 $(".fb-blue").addClass("fb-active-blue");
+			 $("#fb-blue-href").attr("title","Article Bookmarked");
+			 is_bookmarked=true;
+	},
+		 error: function(data) {
+		 data =  JSON.stringify(data);
+		 //$(".save-for-later").html(data);
+		 $(".save-for-later").html('Failed to Bookmark Article');
+		 $(".fb-blue").removeClass("fb-active-blue");
+		 $("#fb-blue-href").attr("title","Failed to Bookmark Article");
+		}
+ });
+} // end if
+else if (is_bookmarked==true){
+ //console.log("Remove");
+ $.ajax({
+	type:"DELETE",
+	dataType:"json",
+	url:"https://id.analyticsvidhya.com/api/v1/resources/external_save",
+	data:JSON.stringify(bookmark_data),
+ contentType: 'application/json',
+	success: function(data) {
+			data =JSON.stringify(data);
+			$(".save-for-later").html('<a id="bookmark-article" href="#"><img src="'+img_path+'/custom-design/images/do-bookmark.svg" width="18px" alt="Bookmark this story to read later" title="Bookmark this story to read later" data-toggle="tooltip"></a>');
+			$(".fb-blue").removeClass("fb-active-blue");
+			$("#fb-blue-href").attr("title","Bookmark this story to read later");
+			 is_bookmarked=false;
+	},
+		 error: function(data) {
+		 data =  JSON.stringify(data);
+		 //$(".save-for-later").html(data);
+		 $(".save-for-later").html('Failed to Remove Bookmark');
+		 $("#fb-blue-href").attr("title","Failed to Remove Bookmark");
+
+		}
+ });
+} //end elseif
+
+}
+
+
+</script>
+<script>
+jQuery(document).ready(function(){
+	var articles1 = [21948,23238,34673,40972,48985,25318,57430,59396];
+	var articles2 = [18835,18770,36077,22831,31141,36659,46495];
+	var articles3 = [22185,15335,22387,62604,6377,21124,27576,20925]
+	var articles4 = [21124,62205,43910,39175];
+	var cur_article = 12645;
+
+	//time series banner
+	if (jQuery.inArray(cur_article, articles1) !='-1'){
+		jQuery("#time-series-disp").html('<a href="https://courses.analyticsvidhya.com/courses/creating-time-series-forecast-using-python?utm_source=timesereisbanner&utm_medium=blog" target="_blank"><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/7-2.png"></a>');
+
+		//Pandas for data analysis course
+	}else if (jQuery.inArray(cur_article, articles3) !='-1'){
+			jQuery("#time-series-disp").html('<a href="https://courses.analyticsvidhya.com/courses/pandas-for-data-analysis-in-python?utm_source=pandascoursebanner&utm_medium=blog" target="_blank"><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/3-1.png"></a>');
+			//Regression analysis data
+	}else if (jQuery.inArray(cur_article, articles2) !='-1'){
+			jQuery("#time-series-disp").html('<a href="https://courses.analyticsvidhya.com/courses/Fundamentals-of-Regression-Analysis?utm_source=regressionbanner&utm_medium=blog" target="_blank"><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/2.jpg"></a>');
+	}else if (jQuery.inArray(cur_article, articles4) !='-1'){
+				jQuery("#time-series-disp").html('<a href="https://courses.analyticsvidhya.com/courses/introduction-to-analytics?utm_source=BusinessAnalyticsBanner&utm_medium=blog" target="_blank"><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/05/intro-to-bs.png"></a>');
+			//default course banner
+	}else{
+		jQuery("#time-series-disp").html('<a href="https://courses.analyticsvidhya.com/courses/data-science-hacks-tips-and-tricks?utm_source=hacksandtipsbanner&utm_medium=blog" target="_blank"><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/free-ds.png"></a>');
+	}
+});
+
+</script>
+<script>
+$(document).ready(function(){
+$("#jobs-show").load("https://jobsnew.analyticsvidhya.com/blog/jobs");
+});
+</script>
+
+<script>
+$(document).ready(function(){
+	$('#download_brochure_btn').on('click',function(){
+		event.preventDefault();
+		var article_url = $('#dwn-post-id').val();
+		var name = $('#dwn-name').val();
+		var phone = $('#dwn-phone').val();
+		var email = $('#dwn-email').val();
+		var bid = $('#for-download-pdf').val();
+		if(name!=""){
+			if(phone!=""){
+				$.ajax({
+					method: 'post',
+					data:{'name':name,'phone':phone,'email':email,'article_url':article_url,'bid':bid},
+					url:'https://www.analyticsvidhya.com/back-channel/download-brochure.php',
+					success:function(response){
+						if (response == 1)
+							{
+							$('#dwn-brochure-message').html('Thank you for your Interest');
+							$('#dwn-brochure-frm').hide();
+							// $('#dwn-error').hide();
+							window.location = 'https://www.analyticsvidhya.com/back-channel/download-brochure-file.php?brochure_id='+bid+'&email='+email;
+							}
+						else 	$('#dwn-error').html(response);
+						//$('#hide-download-brochure').html(response);
+					},
+					error:function(){
+						$('#dwn-error').html('Some error occured');
+						return false;
+						// alert('Failed');
+					}
+				});
+			}else{
+				$('#dwn-error').html('Please enter phone');
+				return false;
+			}
+		}else{
+			$('#dwn-error').html('Please enter name');
+			return false;
+		}
+	});
+});
+</script>
+
+<script>
+/* Use
+			$(document).ready(function() {
+
+		     $('#brochure-btn2').click(function(e) {
+		        e.preventDefault();
+		       	window.location.replace("https://id.analyticsvidhya.com/auth/login/?next="+window.location.href);
+		     });
+
+        $('#brochure-btn').click(function(e) {
+*/
+				/* Do not use
+								if ($('#dwn_bcr_name').val() == ""){
+									$("#error").empty();
+									$('#error').addClass('error-show');
+									$("#dwn_bcr_email").css("margin-top", "6%");
+									$('#error').append('Please Enter Name');
+									$('#dwn_bcr_name').focus();
+									return false;
+							}
+							else*/
+							/* Use
+							 if ($('#dwn_bcr_email').val() == ""){
+									$("#error1").empty();
+									$("#dwn_bcr_email").css({ 'margin-top' : '', '6%' : '' });
+									$('#error1').addClass('error-show');
+									$('#error1').append('Please Enter Email Id');
+									$("#dwn_bcr_phone").css("margin-top", "6%");
+									$('#dwn_bcr_email').focus();
+									return false;
+							}
+							/* Do not Use
+							else if ($('#dwn_bcr_phone').val() == ""){
+									$("#error2").empty();
+									$("#dwn_bcr_phone").css({ 'margin-top' : '', '6%' : '' });
+									$('#error2').addClass('error-show');
+									$('#error2').append('Please Enter Phone Number');
+									$('#dwn_bcr_phone').focus();
+									return false;
+							}*/
+							/* Use
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: 'https://www.analyticsvidhya.com/back-channel/download-brochure.php',
+                data: $('#download-brochure').serialize(),
+                beforeSend: function() {
+                    $("#loading-image").show();
+
+                },
+                success: function(data){
+                    $('#grdnt-clr').replaceWith('<div class="thnk-top">Thanks for showing your interest.</div>');
+                    $('#frm-cntnt').replaceWith('<div class="thnk-cntn">' + data + '</div>');
+                    // $('#frm-cntnt').html(data);
+                    $("#loading-image").hide();
+										if (av_is_signed_in == false)
+										{
+											try {
+											window.location.replace("https://id.analyticsvidhya.com/auth/login/?next="+window.location.href);
+											}
+											catch(e) {
+												window.location = "https://id.analyticsvidhya.com/auth/login/?next="+window.location.href;
+											}
+									  }
+								}
+            });
+        });
+    });*/
+</script>
+<script>
+    function myFunction1() {
+        document.getElementById("error").innerHTML = "";
+    }
+    function myFunction2() {
+        var email = document.getElementById("dwn_bcr_email").value;
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(email.match(re)){
+            document.getElementById("error1").innerHTML = "";
+            return true;
+        }else{
+            document.getElementById("error1").classList.add("error-show");
+            document.getElementById("error1").innerHTML = "Please enter valid email id";
+            return false;
+        }
+    }
+    function myFunction3() {
+        document.getElementById("error2").innerHTML = "";
+    }
+</script>
+
+
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.analyticsvidhya.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.2.2' defer='defer' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/themes/Curated/static/js/main.js?ver=1.0.0' id='maha-main-js'></script>
+<script type='text/javascript' id='maha-basix-js-extra'>
+/* <![CDATA[ */
+var MahaAjax = {"ajaxurl":"https:\/\/www.analyticsvidhya.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/themes/Curated/static/js/basix.js?ver=1.0.0' defer='defer' id='maha-basix-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/themes/Curated/static/js/add_to_cart.js?ver=1.0.0' defer='defer' id='add_to_cart-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' defer='defer' id='comment-reply-js'></script>
+<!--[if IE 9]>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js?ver=1' defer='defer' id='maha-html5-ie9-js'></script>
+<![endif]-->
+<!--[if IE 9]>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js?ver=1' defer='defer' id='maha-respond-ie9-js'></script>
+<![endif]-->
+<script type='text/javascript' id='q2w3_fixed_widget-js-extra'>
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"blog-sidebar","margin_top":55,"margin_bottom":800,"stop_id":"","screen_max_width":0,"screen_max_height":0,"width_inherit":false,"refresh_interval":1500,"window_load_hook":false,"disable_mo_api":false,"widgets":["text-42","text-45"]}];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/q2w3-fixed-widget/js/q2w3-fixed-widget.min.js?ver=5.1.9' defer='defer' id='q2w3_fixed_widget-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4' defer='defer' id='jquery-effects-core-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-includes/js/jquery/ui/effect-blind.min.js?ver=1.11.4' defer='defer' id='jquery-effects-blind-js'></script>
+<script type='text/javascript' id='wstbLayout-js-extra'>
+/* <![CDATA[ */
+var stbUserOptions = {"mode":"css","cssOptions":{"roundedCorners":true,"mbottom":10,"imgHide":"https:\/\/www.analyticsvidhya.com\/blog\/wp-content\/plugins\/wp-special-textboxes\/images\/minus.png","imgShow":"https:\/\/www.analyticsvidhya.com\/blog\/wp-content\/plugins\/wp-special-textboxes\/images\/plus.png","strHide":"Hide","strShow":"Show"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/wp-special-textboxes/js/wstb.min.js?ver=5.9.109' defer='defer' id='wstbLayout-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' defer='defer' id='wp-embed-js'></script>
+
+<div class="dgd_overlay"></div>
+<div class="dgd_stb_box none" id="dgd_scrollbox-67322"><a class="dgd_stb_box_close dgd_stb_box_x" href="javascript:void(0);"> </a><p><a href="https://courses.analyticsvidhya.com/bundles/certified-ai-ml-blackbelt-plus?utm_source=Blog&utm" target="_blank" rel="noopener noreferrer"><img src="https://www.analyticsvidhya.com/wp-content/uploads/2020/11/ai-ml-bb.png" /></a></p>
+</div>
+
+<script type='text/javascript' src='https://stats.wp.com/e-202046.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.0.2',blog:'180026056',post:'12645',tz:'5.5',srv:'www.analyticsvidhya.com'} ]);
+	_stq.push([ 'clickTrackerInit', '180026056', '12645' ]);
+</script>
+<link rel="stylesheet" href="https://automation.analyticsvidhya.com/static/css/strip.css">
+
+<script type="text/javascript" src="https://automation.analyticsvidhya.com/static/js/getFlashDetails.js" defer></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment-with-locales.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<link rel="stylesheet" href="https://www.analyticsvidhya.com/wp-content/themes/Curated/css/popup-style.css?ver=1.0.8">
+
+<div id="download-brochure-pdf-modal" class="modal">
+<center>
+<div class="modal-head">
+<h3 class="pdf-modal-heading" id="download-pdf-modal-heading">
+Download PDF
+</h3>
+</div>
+<div id="dwn-error1"></div>
+<div id="dwn-brochure-message1"></div>
+<form method="post" id="dwn-brochure-frm">
+<div class="form-container text-left">
+<input type="text" class="form-input name" placeholder="* Name" id="dwn-bro-name">
+<input type="email" class="form-input email" placeholder="* Email" id="dwn-bro-email">
+<input type="mobile" class="form-input" placeholder="Mobile" id="dwn-bro-mobile" style="border: 1px solid #dbdbdb;">
+<input type="hidden" name="dwnfile" value="" id="download-pdf-modal-dwnfile">
+
+<div class="btn-container text-center">
+<input type="submit" class="av-pdf-btn" value="download" id="dwnld_brochure_btn">
+</div>
+</div>
+</form>
+</center>
+</div>
+<script>
+$(document).ready(function(){
+ $('.download-pdf-popup').click(function(event) {
+  $('#download-pdf-modal-heading').text($(this).data('title'));
+  $('#download-pdf-modal-dwnfile').val($(this).data('downlaod'));
+  $('#download-brochure-pdf-modal').modal();
+  return false;
+ });
+});
+</script>
+<script>
+$(document).ready(function(){
+$('#dwnld_brochure_btn').on('click',function(){
+event.preventDefault();
+var article_url = 'https://www.analyticsvidhya.com/blog/';
+var name = $('#dwn-bro-name').val();
+var email = $('#dwn-bro-email').val();
+var mobile = $('#dwn-bro-mobile').val();
+var dwnpath = $('#download-pdf-modal-dwnfile').val();
+if(name!=""){
+   if(email!=""){
+    $.ajax({
+      method: 'post',
+      data:{'name':name,'email':email,'mobile':mobile,'file_path':dwnpath,'article_url':article_url},
+      url:'https://www.analyticsvidhya.com/back-channel/download-popup-brochure.php',
+      success:function(response){
+        if (response == 1)
+          {
+          $('#dwn-brochure-message1').html('Thank you for your Interest');
+          $('#dwn-brochure-frm1').hide();
+          // $('#dwn-error').hide();
+          // window.location.assign(dwnpath);
+          window.open(dwnpath, 'Download'); 
+         // window.location = 'https://www.analyticsvidhya.com/back-channel/download-popup-brochure-file.php?email='+email;
+          $('.jquery-modal').css("background", "none"); 
+          //$('#ex1').hide();
+          }
+        else 	$('#dwn-error1').html(response);
+        //$('#hide-download-brochure').html(response);
+        
+      },
+      error:function(){
+          alert('Failed');
+        $('#dwn-error1').html('Some error occured');
+        return false;
+        // alert('Failed');
+      }
+    });
+   }else{
+   	$('#dwn-error1').html('Please enter email address');
+   	return false;
+   }
+}else{
+  $('#dwn-error1').html('Please enter name');
+  return false;
+}
+});
+});
+</script>
+
+</body>
+</html>
+
+<div class="dgd_overlay"></div>
+<div class="dgd_stb_box none" id="dgd_scrollbox-67322"><a class="dgd_stb_box_close dgd_stb_box_x" href="javascript:void(0);"> </a><p><a href="https://courses.analyticsvidhya.com/bundles/certified-ai-ml-blackbelt-plus?utm_source=Blog&utm" target="_blank" rel="noopener noreferrer"><img src="https://www.analyticsvidhya.com/wp-content/uploads/2020/11/ai-ml-bb.png" /></a></p>
+</div>
+
+<script type='text/javascript' src='https://stats.wp.com/e-202046.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.0.2',blog:'180026056',post:'12645',tz:'5.5',srv:'www.analyticsvidhya.com'} ]);
+	_stq.push([ 'clickTrackerInit', '180026056', '12645' ]);
+</script>
+</body>
+</html>

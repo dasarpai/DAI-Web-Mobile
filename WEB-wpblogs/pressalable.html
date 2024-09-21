@@ -1,0 +1,987 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-T7VZJMT');</script>
+<!-- End Google Tag Manager -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/favicon-16x16.png">
+	<link rel="manifest" href="https://pressable.com/wp-content/themes/pressable-com/site.webmanifest">
+	<link rel="mask-icon" href="https://pressable.com/wp-content/themes/pressable-com/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+	
+	<!-- This site is optimized with the Yoast SEO plugin v15.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>What Is WordPress Multisite &amp; When to Use It? - Pressable</title>
+	<meta name="description" content="WordPress Multisite is one of the most misunderstood features of WordPress, but does it make managing multiple sites easy?" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="What Is WordPress Multisite &amp; When to Use It? - Pressable" />
+	<meta property="og:description" content="WordPress Multisite is one of the most misunderstood features of WordPress, but does it make managing multiple sites easy?" />
+	<meta property="og:url" content="https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/" />
+	<meta property="og:site_name" content="Pressable" />
+	<meta property="article:publisher" content="https://www.facebook.com/pressable" />
+	<meta property="article:published_time" content="2020-01-21T13:00:41+00:00" />
+	<meta property="article:modified_time" content="2020-10-16T18:31:55+00:00" />
+	<meta property="og:image" content="https://i0.wp.com/pressable.com/wp-content/uploads/2016/02/WordPress-Multisite-Logo-c-1.jpg?fit=800%2C387&#038;ssl=1" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="387" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@Pressable" />
+	<meta name="twitter:site" content="@Pressable" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://pressable.com/#organization","name":"Pressable","url":"https://pressable.com/","sameAs":["https://www.facebook.com/pressable","https://www.linkedin.com/company/zippykid/","https://twitter.com/Pressable"],"logo":{"@type":"ImageObject","@id":"https://pressable.com/#logo","inLanguage":"en-US","url":"https://i0.wp.com/pressable.com/wp-content/uploads/2020/04/pressable-logo-anchorage.png?fit=1233%2C242&ssl=1","width":1233,"height":242,"caption":"Pressable"},"image":{"@id":"https://pressable.com/#logo"}},{"@type":"WebSite","@id":"https://pressable.com/#website","url":"https://pressable.com/","name":"Pressable","description":"Managed WordPress Hosting","publisher":{"@id":"https://pressable.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://pressable.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#primaryimage","inLanguage":"en-US","url":"https://i0.wp.com/pressable.com/wp-content/uploads/2016/02/WordPress-Multisite-Logo-c-1.jpg?fit=800%2C387&ssl=1","width":800,"height":387,"caption":"WordPress Multisite"},{"@type":"WebPage","@id":"https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#webpage","url":"https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/","name":"What Is WordPress Multisite & When to Use It? - Pressable","isPartOf":{"@id":"https://pressable.com/#website"},"primaryImageOfPage":{"@id":"https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#primaryimage"},"datePublished":"2020-01-21T13:00:41+00:00","dateModified":"2020-10-16T18:31:55+00:00","description":"WordPress Multisite is one of the most misunderstood features of WordPress, but does it make managing multiple sites easy?","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/"]}]},{"@type":"Article","@id":"https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#article","isPartOf":{"@id":"https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#webpage"},"author":{"@id":"https://pressable.com/#/schema/person/8431765cc320db2f0e6d7e06547041c1"},"headline":"What Is WordPress Multisite, and When Should You Use it?","datePublished":"2020-01-21T13:00:41+00:00","dateModified":"2020-10-16T18:31:55+00:00","mainEntityOfPage":{"@id":"https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#webpage"},"commentCount":0,"publisher":{"@id":"https://pressable.com/#organization"},"image":{"@id":"https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#primaryimage"},"keywords":"How To,Pro Tips,Tech Support,WordPress Development","articleSection":"Agency,eCommerce,Enterprise,Freelancer","inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#respond"]}]},{"@type":"Person","@id":"https://pressable.com/#/schema/person/8431765cc320db2f0e6d7e06547041c1","name":"Pressable","image":{"@type":"ImageObject","@id":"https://pressable.com/#personlogo","inLanguage":"en-US","url":"https://149357986.v2.pressablecdn.com/wp-content/uploads/2020/05/pressable-box-01.jpg","caption":"Pressable"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//kit.fontawesome.com' />
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<link rel='dns-prefetch' href='//c0.wp.com' />
+<link rel='dns-prefetch' href='//i0.wp.com' />
+<link rel='dns-prefetch' href='//i1.wp.com' />
+<link rel='dns-prefetch' href='//i2.wp.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Pressable &raquo; Feed" href="https://pressable.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Pressable &raquo; Comments Feed" href="https://pressable.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Pressable &raquo; What Is WordPress Multisite, and When Should You Use it? Comments Feed" href="https://pressable.com/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/feed/" />
+<style type="text/css">
+.hasCountdown{text-shadow:transparent 0 1px 1px;overflow:hidden;padding:5px}
+.countdown_rtl{direction:rtl}
+.countdown_holding span{background-color:#ccc}
+.countdown_row{clear:both;width:100%;text-align:center}
+.countdown_show1 .countdown_section{width:98%}
+.countdown_show2 .countdown_section{width:48%}
+.countdown_show3 .countdown_section{width:32.5%}
+.countdown_show4 .countdown_section{width:24.5%}
+.countdown_show5 .countdown_section{width:19.5%}
+.countdown_show6 .countdown_section{width:16.25%}
+.countdown_show7 .countdown_section{width:14%}
+.countdown_section{display:block;float:left;font-size:75%;text-align:center;margin:3px 0}
+.countdown_amount{font-size:200%}
+.countdown_descr{display:block;width:100%}
+a.countdown_infolink{display:block;border-radius:10px;width:14px;height:13px;float:right;font-size:9px;line-height:13px;font-weight:700;text-align:center;position:relative;top:-15px;border:1px solid}
+#countdown-preview{padding:10px}
+</style>
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://c0.wp.com/c/5.5.1/wp-includes/css/dist/block-library/theme.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='affwp-forms-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/affiliate-wp/assets/css/forms.min.css?ver=2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='rfw-style-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/rss-feed-widget/css/style.css?ver=2020100517' type='text/css' media='all' />
+<link rel='stylesheet' id='pressable-base-style-css'  href='https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/style.css?ver=20201026' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://c0.wp.com/p/jetpack/9.0.2/css/jetpack.css' type='text/css' media='all' />
+<script   type='text/javascript' src='https://c0.wp.com/c/5.5.1/wp-includes/js/jquery/jquery.js' id='jquery-core-js'></script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate-1.4.1-wp.js?ver=1.4.1-wp' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='jquery-cookie-js-extra'>
+/* <![CDATA[ */
+var affwp_scripts = {"ajaxurl":"https:\/\/pressable.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/affiliate-wp/assets/js/jquery.cookie.min.js?ver=1.4.0' id='jquery-cookie-js'></script>
+<script type='text/javascript' id='affwp-tracking-js-extra'>
+/* <![CDATA[ */
+var affwp_debug_vars = {"integrations":[],"version":"2.6","currency":"USD"};
+/* ]]> */
+</script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/affiliate-wp/assets/js/tracking.min.js?ver=2.6' id='affwp-tracking-js'></script>
+<script   type='text/javascript' defer src='https://kit.fontawesome.com/6563b4f3d9.js?ver=20200902' id='pressable-font-awesome-kit-js' defer></script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/js/async/pressmain-async.js?ver=20200918' id='pressable-pressmain-async-js' async></script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/js/defer/pressmain-defer.js?ver=20201007' id='pressable-pressmain-defer-js' defer></script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/pluggable/lazyload/js/lazyload.js?ver=20151215' id='pressable-lazy-load-images-js' defer></script>
+<link rel="https://api.w.org/" href="https://pressable.com/wp-json/" /><link rel="alternate" type="application/json" href="https://pressable.com/wp-json/wp/v2/posts/19202" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://pressable.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://pressable.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://wp.me/p9KPdJ-4ZI' />
+<link rel="alternate" type="application/json+oembed" href="https://pressable.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://pressable.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it%2F&#038;format=xml" />
+		<script type="text/javascript">
+		var AFFWP = AFFWP || {};
+		AFFWP.referral_var = 'ref';
+		AFFWP.expiration = 60;
+		AFFWP.debug = 0;
+
+		AFFWP.cookie_domain = 'pressable.com';
+
+		AFFWP.referral_credit_last = 0;
+		</script>
+<style type='text/css'>img#wpstats{display:none}</style><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>			<link rel="stylesheet" type="text/css" id="wp-custom-css" href="https://pressable.com/?custom-css=b34aa5ce37" />
+			
+	<!-- TrustBox script --> <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script> <!-- End TrustBox script -->
+
+
+</head>
+
+<body class="post-template-default single single-post postid-19202 single-format-standard has-sidebar">
+<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7VZJMT"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- SharpSpring Tag -->
+<script type="text/javascript">
+    var _ss = _ss || [];
+    _ss.push(['_setDomain', 'https://koi-3QNM1KZRNG.marketingautomation.services/net']);
+    _ss.push(['_setAccount', 'KOI-48NPS1KHU0']);
+    _ss.push(['_trackPageView']);
+(function() {
+    var ss = document.createElement('script');
+    ss.type = 'text/javascript'; ss.async = true;
+    ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNM1KZRNG.marketingautomation.services/client/ss.js?ver=2.4.0';
+    var scr = document.getElementsByTagName('script')[0];
+    scr.parentNode.insertBefore(ss, scr);
+})();
+</script>
+
+<!-- New Placement for Pricing Pop-up Banner -->
+
+
+
+
+<header class="cd-main-header">
+	<div class="container">
+	<!-- <a href="" class="cd-logo" title="Link to Pressable's home page"><img src="/images/dist/managed-wordpress-hosting.svg" alt="Managed WordPress Hosting"></a> -->
+<div class="v4-nav-wrapper">
+	<div>
+			<a href="/" class="v4-cd-logo" title="Link to Pressable's home page"><img src="https://pressable.com/wp-content/themes/pressable-com/images/dist/managed-wordpress-hosting-v4.svg" alt="Managed WordPress Hosting"></a>
+		</div>
+	<div>
+	<ul class="cd-header-buttons">
+		<li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+	</ul> <!-- cd-header-buttons -->
+	<nav class="cd-nav">
+	<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+		 
+			<li id="menu-item-19300" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/features" >Features</a></li>
+<li id="menu-item-20756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" >Plans</a>
+<ul/ class="cd-nav-icons is-hidden" />
+	<li id="menu-item-19301" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pressable.com/pricing/"  class="cd-nav-item"><h3><span class="menu-item-icon"><i class="fab fa-wordpress-simple"></i></span>WordPress</h3><p>Host your websites where WordPress works best.</p></a></li>
+	<li id="menu-item-19640" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pressable.com/woocommerce/"  class="cd-nav-item"><h3><span class="menu-item-icon"><i class="fas fa-badge-dollar"></i></span>WooCommerce</h3><p>Host your store on the WordPress.com network.</p></a></li>
+	<li id="menu-item-21307" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#scheduleCall" rel="modal:open" class="cd-nav-item"><h3><span class="menu-item-icon"><i class="fas fa-sliders-h-square"></i></span>Customize A Plan</h3><p>Let’s build a custom plan that meets your unique needs.</p></a></li>
+<li class="go-back"><a href="#">Menu</a></li></ul>
+</li>
+<li id="menu-item-19302" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/customer-reviews" >Reviews</a></li>
+<li id="menu-item-20755" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pressable.com/resources/" >Resources</a></li>
+<li id="menu-item-19390" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" >Contact</a>
+<ul/ class="cd-nav-icons is-hidden" />
+	<li id="menu-item-19391" class="activate-chat menu-item menu-item-type-custom menu-item-object-custom"><a href="mailto:sales@pressable.com"  class="cd-nav-item"><h3><span class="menu-item-icon"><i class="fas fa-comments-alt" aria-hidden="true"></i></span>Chat With Sales</h3><p>Get your questions answered quickly.</p></a></li>
+	<li id="menu-item-19392" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="tel:1-888-602-6756"  class="cd-nav-item"><h3><span class="menu-item-icon"><i class="fas fa-phone" aria-hidden="true"></i></span>1 (888) 602-6756</h3><p>Call one of our sales experts</p></a></li>
+	<li id="menu-item-19393" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pressable.com/request-demo/"  class="cd-nav-item"><h3><span class="menu-item-icon"><i class="fas fa-eye"></i></span>Request A Demo</h3><p>Get a deep dive into our platform.</p></a></li>
+<li class="go-back"><a href="#">Menu</a></li></ul>
+</li>
+<li id="menu-item-19362" class="sign-in menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="https://my.pressable.com/" >Sign In</a></li>
+			<!-- <li id="menu-item-16941" class="cta-nav-item livechat_button menu-item menu-item-type-custom menu-item-object-custom" data-id="PeiAlnQ31tW"> -->
+			<!-- <li id="menu-item-16941" class="cta-nav-item livechat_button menu-item menu-item-type-custom menu-item-object-custom">
+			<a onclick="LC_API.open_chat_window();" href="javascript:void(0);">
+			<div class="chat-indicator-wrap">
+			
+				<span class="chat-indicator-person">
+					<img src="/images/dist/rocky-chat.jpg" alt="Sales team member">
+				</span>
+				<div id="lc_indicator" class="lc_indicator chat-indicator">
+					<i></i>
+				</div>
+			</div>
+			<span id="liveChatHeaderText" class="liveChatHeaderText">Sales Questions?</span>
+			</a>
+			</li> -->
+			<!-- <li id="menu-item-12699" class="cta-nav-item muted menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="https://my.pressable.com/login">Login</a></li> -->
+			<!-- <li id="menu-item-15345" class="menu-search-icon menu-item menu-item-type-custom menu-item-object-custom"><a href="/search">Search</a></li> -->
+			
+
+		</ul>
+	</nav> <!-- cd-nav -->
+		</div>
+	</div>
+</div>
+	
+	<div class="announcement open">
+		<div class="container">
+			<label class="announcement__close">&#x2715;</label>
+						<a href="/halloween-special-sale/">
+							<div class="press-flex press-flex-align-center press-flex-justify-center">
+									<h2 class="announcement__title">No Tricks, Just Treats!</h2>
+													<p>Take 15% OFF all new hosting plans with <span>Promo Code GHOST</span> at checkout.</p>
+								</div>
+									<span class="gab-disclaimer">*Promotion ends on Oct 31, 2020. Valid for new customer purchases only.</span>
+										</a>
+					</div>
+	</div>
+
+	</header>
+<main class="cd-main-content announcement-banner-open">
+	<!-- <div class="cd-overlay"><div class="overlay-inner"></div></div> -->
+		<!-- <div id="fullpage"> -->
+<div class="kb-title-search">
+    <div class="container">
+        <div class="kb-flex">
+            <a href="https://pressable.com/blog" class="kb-title">Blog</a>
+            <div class="kb-search"><form role="search" method="get" class="search-form" action="https://pressable.com/">
+    <label>
+        <span class="screen-reader-text">Search for:</span>
+        <input type="search" class="search-field" placeholder="What do you need help with?" value="" name="s">
+        <input type="hidden" name="post_type" value="post" />
+    </label>
+    <input type="hidden" id="searchsubmit" />
+</form></div>
+        </div>
+    </div>
+</div>
+<div class="kb-breadcrumbs">
+    <div class="container">
+        <div class="kb-flex">
+            <ul>
+                <li><a href="https://pressable.com/"><i class="fas fa-home-alt"></i></a> <i class="fal fa-angle-right"></i></li>
+                <li><a href="https://pressable.com/resources">Resources</a> <i class="fal fa-angle-right"></i></li>
+                <li><a href="https://pressable.com/blog">Blog</a> <i class="fal fa-angle-right"></i></li>
+                                <li><a href="https://pressable.com/category/agency/">Agency</a></li>
+                            </ul>
+        </div>
+    </div>
+</div>
+<div class="v5-blog-single-title">
+	<div class="container">
+		<div class="pretitle-icon">
+			<i class="fad fa-file-alt text-miami"></i>
+		</div>
+		
+		<h1>What Is WordPress Multisite, and When Should You Use it?</h1>
+	</div>
+</div>
+<div class="section blog-single">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main">
+
+				<article id="post-19202" class="post-19202 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-ecommerce category-enterprise category-freelancer tag-how-to tag-pro-tips tag-tech-support tag-wordpress-development">
+	<div class="hentry-inner">
+		<header class="entry-header">	
+					<span>Written by Pressable on
+				<span class="posted-on"><time class="entry-date published" datetime="2020-01-21T08:00:41-05:00">January 21, 2020</time><time class="updated" datetime="2020-10-16T13:31:55-05:00">October 16, 2020</time> </span>		</header><!-- .entry-header -->
+		<div class="row">
+			<div class="col-lg-8">
+				<img width="800" height="387" src="https://pressable.com/wp-content/themes/pressable-com/images/placeholder.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazy" alt="WordPress Multisite" loading="lazy" data-src="https://149357986.v2.pressablecdn.com/wp-content/uploads/2016/02/WordPress-Multisite-Logo-c-1.jpg" data-srcset="https://i0.wp.com/pressable.com/wp-content/uploads/2016/02/WordPress-Multisite-Logo-c-1.jpg?w=800&amp;ssl=1 800w, https://i0.wp.com/pressable.com/wp-content/uploads/2016/02/WordPress-Multisite-Logo-c-1.jpg?resize=300%2C145&amp;ssl=1 300w, https://i0.wp.com/pressable.com/wp-content/uploads/2016/02/WordPress-Multisite-Logo-c-1.jpg?resize=768%2C372&amp;ssl=1 768w, https://i0.wp.com/pressable.com/wp-content/uploads/2016/02/WordPress-Multisite-Logo-c-1.jpg?resize=600%2C290&amp;ssl=1 600w" data-sizes="(min-width: 960px) 75vw, 100vw" />				<div class="entry-content">
+											<p>&nbsp;</p>
+<p><span style="font-weight: 400;">One of the most misunderstood features in WordPress is WordPress Multisite. People are drawn to it because it promises to make managing multiple WordPress sites easy. They often don’t realize that multisite configuration comes at a cost in terms of flexibility&#8230;until it’s too late. Multisite configuration can be extremely helpful in <strong>certain</strong> cases, but in others it can lead to an administrative catastrophe. It’s important to understand what Multisite is and what problems it was designed to address before you make the decision to use it. </span></p>
+<h2><span style="font-weight: 400;">What Is WordPress Multisite?</span></h2>
+<p><img loading="lazy" class="alignnone wp-image-9107 size-full lazy" src="https://pressable.com/wp-content/themes/pressable-com/images/placeholder.svg" alt="what is wordpress multisite" width="800" height="278" data-recalc-dims="1" data-src="https://i2.wp.com/newpressable.mystagingwebsite.com/wp-content/uploads/2016/02/WordPress-Multisite-v2-c.png?resize=800%2C278&#038;ssl=1"><noscript><img loading="lazy" class="alignnone wp-image-9107 size-full" src="https://i2.wp.com/newpressable.mystagingwebsite.com/wp-content/uploads/2016/02/WordPress-Multisite-v2-c.png?resize=800%2C278&#038;ssl=1" alt="what is wordpress multisite" width="800" height="278" data-recalc-dims="1" /></noscript></p>
+<p><span style="font-weight: 400;">WordPress Multisite is a version of WordPress that allows you to run multiple sites off a single installation of WordPress. It makes it possible to run a network of sites under a single WordPress dashboard. You can manage everything including the number of sites, features, themes, and user roles. It is possible to manage hundreds, thousands, and (theoretically) millions of sites. The best example of WordPress Multisite is WordPress.com, one of the largest WordPress networks on the Internet. </span></p>
+<p><span style="font-weight: 400;">WordPress Multisite started out as an offshoot of WordPress designed to enable site owners to easily <a href="https://pressable.com/2018/06/26/how-you-can-easily-manage-multiple-wordpress-sites/">manage multiple blog site</a>s under a single network. The project was eventually added into WordPress Core during the WordPress 3.0 release. This means any current version of WordPress you use today can be converted into a multisite installation. </span>
+										<!-- Check: if there is a local blog ad and it is inline - 
+											True - Check: Is it scheduled 
+												True - is it in the duration period
+													True - show ad
+													False - do global check 
+											False - show ad -->
+											
+									
+
+
+								</p>
+<h2><span style="font-weight: 400;">When Should You Use Multisite?</span></h2>
+<p><img loading="lazy" class="alignnone wp-image-9101 size-full lazy" src="https://pressable.com/wp-content/themes/pressable-com/images/placeholder.svg" alt="when to use wordpress multisite" width="800" height="600" data-recalc-dims="1" data-src="https://i1.wp.com/newpressable.mystagingwebsite.com/wp-content/uploads/2016/02/real-estate-sites-c.png?resize=800%2C600&#038;ssl=1"><noscript><img loading="lazy" class="alignnone wp-image-9101 size-full" src="https://i1.wp.com/newpressable.mystagingwebsite.com/wp-content/uploads/2016/02/real-estate-sites-c.png?resize=800%2C600&#038;ssl=1" alt="when to use wordpress multisite" width="800" height="600" data-recalc-dims="1" /></noscript></p>
+<p><span style="font-weight: 400;">WordPress Multisite is best used when you&#8217;re creating a network of sites sharing similar functionality. Ideally, this similar functionality has been added through plugins, custom applications, or specific server configurations. It truly works best when used on a limited number of themes specifically curated for the purposes of the network, as opposed to allowing members of the network to upload their own custom themes. If your network consists of widely different WordPress sites (different in terms of plugins, themes, and customization), then multisite is not a good fit for you.</span></p>
+<p><span style="font-weight: 400;">WordPress.com is, by far, is the largest example of a multisite network. Other site owners who have had success with multisite typically have a common theme (no pun intended) that ties their network of sites together and lends itself to similar functionality and themes. Universities are a great example. A lot of them use multisite to provide their staff with a way of posting internal blogs. Real estate companies are another example. They use WordPress Multisite as an easy way to provide their real estate agents with a basic website. The designs of these sites are the same, only the content is different from realtor to realtor.</span></p>
+<h2><span style="font-weight: 400;">Don’t Use Multisite to Manage Very Different WordPress Sites</span></h2>
+<p><img loading="lazy" class="alignnone size-full wp-image-8813 lazy" src="https://pressable.com/wp-content/themes/pressable-com/images/placeholder.svg" alt="JetPack" width="1544" height="500" data-recalc-dims="1" data-src="https://i0.wp.com/newpressable.mystagingwebsite.com/wp-content/uploads/2015/11/jetpack.png?resize=1544%2C500&#038;ssl=1" data-srcset="https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?w=1544&amp;ssl=1 1544w, https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?resize=300%2C97&amp;ssl=1 300w, https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?resize=768%2C249&amp;ssl=1 768w, https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?resize=1024%2C332&amp;ssl=1 1024w, https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?resize=600%2C194&amp;ssl=1 600w" data-sizes="(min-width: 960px) 75vw, 100vw"><noscript><img loading="lazy" class="alignnone size-full wp-image-8813" src="https://i0.wp.com/newpressable.mystagingwebsite.com/wp-content/uploads/2015/11/jetpack.png?resize=1544%2C500&#038;ssl=1" alt="JetPack" width="1544" height="500" srcset="https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?w=1544&amp;ssl=1 1544w, https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?resize=300%2C97&amp;ssl=1 300w, https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?resize=768%2C249&amp;ssl=1 768w, https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?resize=1024%2C332&amp;ssl=1 1024w, https://i2.wp.com/pressable.com/wp-content/uploads/2015/11/jetpack.png?resize=600%2C194&amp;ssl=1 600w" sizes="(min-width: 960px) 75vw, 100vw" data-recalc-dims="1" /></noscript></p>
+<p><span style="font-weight: 400;">WordPress multisite emerged at a time when there weren’t a lot of good options for managing multiple and very different WordPress sites. Fortunately, there are a lot of great options available today to help address this need. If you find yourself in the position where you are managing many different WordPress sites, you should look into management plugins like </span><a href="https://wordpress.org/plugins/jetpack/" rel="nofollow"><span style="font-weight: 400;">Jetpack</span></a><span style="font-weight: 400;"> and </span><a href="https://managewp.com/" rel="nofollow"><span style="font-weight: 400;">ManageWP</span></a><span style="font-weight: 400;">. These let you run distinct WordPress instances and centrally managed them all through an intuitive dashboard. You can typically use them to monitor the current status of your sites, globally apply updates across all of your sites, and perform other general maintenance functions like backups.</span></p>
+<h2><span style="font-weight: 400;">WordPress Multisite Best Practices</span></h2>
+<p><img loading="lazy" class="alignnone wp-image-9103 size-full lazy" src="https://pressable.com/wp-content/themes/pressable-com/images/placeholder.svg" alt="WordPress Multisite Best Practices" width="800" height="533" data-recalc-dims="1" data-src="https://i0.wp.com/newpressable.mystagingwebsite.com/wp-content/uploads/2016/02/WordPress-best-practice-c.png?resize=800%2C533&#038;ssl=1"><noscript><img loading="lazy" class="alignnone wp-image-9103 size-full" src="https://i0.wp.com/newpressable.mystagingwebsite.com/wp-content/uploads/2016/02/WordPress-best-practice-c.png?resize=800%2C533&#038;ssl=1" alt="WordPress Multisite Best Practices" width="800" height="533" data-recalc-dims="1" /></noscript></p>
+<p><span style="font-weight: 400;">If you find that you are an excellent candidate for multisite (i.e. you need to offer similar WordPress websites to a large number of users), there are a couple of <a href="https://pressable.com/2020/06/30/a-quick-guide-to-wordpress-multisite-what-you-need-to-know/">multisite best practices</a> that you should follow to ensure success. </span></p>
+<h3><span style="font-weight: 400;">Work with a WordPress Consultant <strong>Experienced</strong> with Multisite</span></h3>
+<p><span style="font-weight: 400;">We recommend that you work with a WordPress consultant who is an expert on scaling WordPress Multisites. If the multisite network grows, you&#8217;ll need to keep an eye out for the amount of server resources your site uses, as well as the upkeep of your database. It’s perfectly manageable as long as you are proactive, and it helps to work with an expert who can guide you through the growth phase of your multisite. </span></p>
+<h3><span style="font-weight: 400;">Pick a Good Hosting Provider Experienced with Multisite</span></h3>
+<p><span style="font-weight: 400;">For WordPress Multisite, it’s also important to use a really good <a href="https://pressable.com/">WordPress hosting provider</a> who already supports the various features of multisite, and your specific type of multisite. At Pressable, for example, we host quite a few large subdirectory URL format multisite networks and have developed technology and procedures to ensure our subdirectory multisite deployments run smoothly and efficiently. A hosting provider with a great track record in hosting multisite deployments will dramatically increase the likelihood of continued success for your projects.</span></p>
+<p><span style="font-weight: 400;">We hope this information makes it easier for you to determine if multisite is right for you. If you have questions about your specific multisite configuration, we&#8217;d be glad to help. <a href="https://pressable.com/contact/">Contact our accounts team</a> with your questions.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="wamshare-social"><h5>SHARE ON</h5> <a class="wamshare-link wamshare-twitter" href="https://twitter.com/intent/tweet?text=What%20Is%20WordPress%20Multisite,%20and%20When%20Should%20You%20Use%20it?&amp;url=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it%2F&amp;via=pressable" target="_blank">Twitter</a><a class="wamshare-link wamshare-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it%2F" target="_blank">Facebook</a><a class="wamshare-link wamshare-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it%2F&amp;title=What%20Is%20WordPress%20Multisite,%20and%20When%20Should%20You%20Use%20it?" target="_blank">LinkedIn</a></div></p><p>Tags: <a href="https://pressable.com/tag/how-to/" rel="tag">How To</a>, <a href="https://pressable.com/tag/pro-tips/" rel="tag">Pro Tips</a>, <a href="https://pressable.com/tag/tech-support/" rel="tag">Tech Support</a>, <a href="https://pressable.com/tag/wordpress-development/" rel="tag">WordPress Development</a></p>					
+										
+
+
+
+
+				</div><!-- .entry-content -->
+			</div>
+			
+<aside id="secondary" class="widget-area col-lg-4">
+	<div class="v4-blog-listing-sidebar">
+		<section id="gform_widget-3" class="widget gform_widget"><h2 class="widget-title">Get Fresh News</h2><link rel='stylesheet' id='gforms_reset_css-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.4.21' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.4.21' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.4.21' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.4.21' type='text/css' media='all' />
+
+                <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_34' ><form method='post' enctype='multipart/form-data'  id='gform_34'  action='/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/'>
+                        <div class='gform_body'><ul id='gform_fields_34' class='gform_fields top_label form_sublabel_below description_below'><li id='field_34_4'  class='gfield gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible' ><label class='gfield_label' for='input_34_4' >Full Name<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_4' id='input_34_4' type='text' value='' class='large'    placeholder='Full Name' aria-required="true" aria-invalid="false" /></div></li><li id='field_34_2'  class='gfield gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible' ><label class='gfield_label' for='input_34_2' >Email<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_34_2' type='text' value='' class='large'   placeholder='Email' aria-required="true" aria-invalid="false" />
+                        </div></li><li id='field_34_5'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_5' id='input_34_5' type='hidden' class='gform_hidden'  aria-invalid="false" value='Form: Newsletter Signup' /></li><li id='field_34_6'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_6' id='input_34_6' type='hidden' class='gform_hidden'  aria-invalid="false" value='10/28/2020' /></li><li id='field_34_7'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_7' id='input_34_7' type='hidden' class='gform_hidden'  aria-invalid="false" value='https://app-3QNM1KZRNG.marketingautomation.services/webforms/receivePostback/MzawMLEwNDQyAQA/' /></li><li id='field_34_8'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_8' id='input_34_8' type='hidden' class='gform_hidden'  aria-invalid="false" value='b21825d0-7947-44dd-a179-06c4e729e82d' /></li><li id='field_34_9'  class='gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_34_9' >Comments</label><div class='ginput_container'><input name='input_9' id='input_34_9' type='text' value='' /></div><div class='gfield_description' id='gfield_description_34_9'>This field is for validation purposes and should be left unchanged.</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_34' class='gform_button button' value='Signup'  onclick='if(window["gf_submitting_34"]){return false;}  window["gf_submitting_34"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_34"]){return false;} window["gf_submitting_34"]=true;  jQuery("#gform_34").trigger("submit",[true]); }' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_34' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='34' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_34' value='WyJbXSIsIjQzOWEzYzkxMTFjODAyMGQwYTU0ZDM2ZmM3NjQyNDQ2Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_34' id='gform_target_page_number_34' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_34' id='gform_source_page_number_34' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 34) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [34, 1]) } ); </script></section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>
+			<ul>
+					<li class="cat-item cat-item-294"><a href="https://pressable.com/category/agency/">Agency</a>
+</li>
+	<li class="cat-item cat-item-428"><a href="https://pressable.com/category/announcements/">Announcements</a>
+</li>
+	<li class="cat-item cat-item-212"><a href="https://pressable.com/category/ecommerce/">eCommerce</a>
+</li>
+	<li class="cat-item cat-item-500"><a href="https://pressable.com/category/enterprise/">Enterprise</a>
+</li>
+	<li class="cat-item cat-item-501"><a href="https://pressable.com/category/freelancer/">Freelancer</a>
+</li>
+	<li class="cat-item cat-item-504"><a href="https://pressable.com/category/legacy/">Legacy</a>
+</li>
+	<li class="cat-item cat-item-502"><a href="https://pressable.com/category/msp-csp/">MSP/CSP</a>
+</li>
+	<li class="cat-item cat-item-503"><a href="https://pressable.com/category/smb/">SMB</a>
+</li>
+			</ul>
+
+			</section><section id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!--<div class="sidebar-ad">
+  <div>
+    <h4>Still searching for impressive WordPress hosting?</h4>
+    <div>
+      <div>
+				<p>
+				Sign up for Pressable's managed WordPress hosting and experience outstanding service. We’re dedicated to you, your company, and your sites.
+				</p>
+			</div>
+      <ul>
+          <li><i class="fas fa-comment-alt-smile"></i>Personalized Onboarding</li>
+          <li><i class="fas fa-trophy-alt"></i>24/7 Support</li>
+				<li><i class="fas fa-space-shuttle"></i>Automated Migrations</li>
+				<li><i class="fas fa-user-astronaut"></i>Free Jetpack Premium</li>
+				<li><i class="fas fa-people-carry"></i>Community Resources</li>
+
+        </ul>
+    </div>
+    <div class="mt--10">
+      <a href="/pricing" class="btn btn-primary blog-sidebar-ad">View Our Plans</a>
+    </div>
+  </div>
+</div> -->
+<div style="background-color: #000032; margin-top: 1em; padding: 25px;" class="tp-sidebar">
+	
+
+<!-- TrustBox widget - Mini Carousel --> <div class="trustpilot-widget" data-locale="en-US" data-template-id="539ad0ffdec7e10e686debd7" data-businessunit-id="5c9bfcc5c7af1700013d552c" data-style-height="350px" data-style-width="100%" data-theme="dark" data-stars="4,5"> <a href="https://www.trustpilot.com/review/pressable.com" target="_blank" rel="noopener noreferrer">Trustpilot</a> </div> <!-- End TrustBox widget -->
+	</div></div></section>
+	</div>
+</aside><!-- #secondary -->		</div>
+	</div>
+</article><!-- #post-19202 -->
+				</main>
+			</div>
+			<!-- Related KB Articles -->
+    <div class="kb-related-posts">
+        <div class="container">
+            <span class="press-pretitle press-text-center text-darkgray">Take a look at a few more</span>
+            <h2 class="press-title press-text-center text-seattle">Related Blog Articles</h2>
+            <div class="content-area content-area-small">
+                <div class="icon-listing blogs">
+    <div>
+        <i class="fad fa-file-alt text-miami"></i>    </div>
+    <div class="v4-article-title">
+        <a href="/blog" class="post-type-name">Blog Article</a>
+        <h2><a href="https://pressable.com/2020/01/16/how-wordpress-helped-us-become-digital-nomads/">How WordPress Helped Us Become Digital Nomads</a></h2>
+        <p>A few months ago, I proposed a crazy idea to my husband, Mark. “What if we became digital nomads and traveled the country?” To my surprise, he didn’t have many objections to leaving our little&#8230;</p>
+    </div> 
+</div><div class="icon-listing blogs">
+    <div>
+        <i class="fad fa-file-alt text-miami"></i>    </div>
+    <div class="v4-article-title">
+        <a href="/blog" class="post-type-name">Blog Article</a>
+        <h2><a href="https://pressable.com/2020/06/01/your-guide-to-local-wordpress-development/">Your Guide to Local WordPress Development</a></h2>
+        <p>There is a reason people choose WordPress on their website platform. It’s easy to build and change aspects of your website without lots of coding and complex programming. It’s so easy that many people choose&#8230;</p>
+    </div> 
+</div><div class="icon-listing blogs">
+    <div>
+        <i class="fad fa-file-alt text-miami"></i>    </div>
+    <div class="v4-article-title">
+        <a href="/blog" class="post-type-name">Blog Article</a>
+        <h2><a href="https://pressable.com/2018/11/20/update-dns-settings-switch-wordpress-hosting-providers-2/">How to Update DNS Settings When You Switch WordPress Hosting Providers</a></h2>
+        <p>In December 2014, we published a three-part series of articles on DNS. We explored the most commonly misunderstood topics related to the domain name system (DNS): registrars and name servers, zones and records, and record&#8230;</p>
+    </div> 
+</div>            </div>
+        </div>
+    </div>
+    			<div class="comments-wrap">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main">
+					
+						
+<div id="comments" class="comments-area">
+
+	<h3 class="comments-pre-title">Be The First To Reply</h3>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://pressable.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='19202' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="41c84b2674" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="56"/></p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+				</main>
+			</div>
+
+		</div>
+						
+</div>
+
+	<div class="v4-footer-cta background-anchorage">
+    <div class="container">
+        <div class="v4-cta-flex">
+            <div class="v4-footer-cta-laptop">
+                                    <img src="https://pressable.com/wp-content/themes/pressable-com/dev/images/dist/footer-cta-2020.svg" alt="A person providing a demo of our hosting platform">
+                            </div>
+            <div class="v4-footer-cta-inner">
+
+                <div>
+                    <h2 class="v4-title-large">
+                        TAKE A TOUR OF PRESSABLE                    </h2>
+                    <p class="v4-cta-subhead">
+                        <strong>Want to learn more?</strong> Sign up for a personalized tour to see how Pressable and our state-of-the-art platform can help your WordPress websites perform their best.                    </p>
+                    
+                    <div class="press-btn-group press-flex-justify-start">
+                            <div><a href="#request-demo" rel="modal:open" class="link press-btn press-btn-miami press-btn-hover-orange-county press-btn-lg" title="Schedule A Demo">Schedule A Demo</a></div>
+                    </div>
+                    <!-- <p class="v4-cta-small-text v4-margin-top-20">Not ready yet? <a href="/features/" title="Explore Features">Explore more features.</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+			<div id="footer" class="container-fluid v4">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 col-md-3">
+						<div class="address-holder">
+						<div class="chat">
+							<a href="mailto:sales@pressable.com" class="activate-chat"><i class="fas fa-comments-alt"></i><span class="livechat_button">Chat With Sales</span></a>
+						</div>
+							<div class="phone"><a href="tel:1-888-602-6756" title="Call sales or account management"><i class="fas fa-phone"></i>1 (888) 602-6756</a></div>
+							<div class="email"><a href="mailto:sales@pressable.com" title="Email sales or account management"><i class="fas fa-envelope"></i> sales@pressable.com</a></div>
+							<!-- <div class="address">
+								<i class="fas fa-map-marker"></i> 
+								<div>City Avenue, Office 64,<br>
+									Floor 6,  Milbourne,<br>
+									Australia.</div>
+							</div> -->
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-2">
+						<div class="footer-menu-holder">
+							<h4>Hosting</h4>
+							<ul id="menu-hosting" class="footer-menu"><li id="menu-item-16744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16744"><a href="https://pressable.com/managed-wordpress-hosting/">Managed WordPress Hosting</a></li>
+<li id="menu-item-21050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21050"><a href="https://pressable.com/managed-wordpress-hosting-for-agencies/">Agencies</a></li>
+<li id="menu-item-21049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21049"><a href="https://pressable.com/managed-wordpress-hosting-for-freelancers/">Freelancers</a></li>
+<li id="menu-item-20944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20944"><a href="https://pressable.com/managed-wordpress-hosting-for-small-medium-sized-businesses/">Small &#038; Medium-Sized Businesses</a></li>
+<li id="menu-item-17266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17266"><a href="https://pressable.com/high-traffic-enterprise/">High Traffic / Enterprise</a></li>
+<li id="menu-item-17263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17263"><a href="https://pressable.com/woocommerce/">WooCommerce</a></li>
+</ul>						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="footer-menu-holder">
+							<h4>Company</h4>
+							<ul id="menu-company" class="footer-menu"><li id="menu-item-16750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16750"><a href="https://pressable.com/company/">About Us</a></li>
+<li id="menu-item-16751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16751"><a href="/customer-reviews">Reviews</a></li>
+<li id="menu-item-16752" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16752"><a href="/customer-stories">Customer Stories</a></li>
+<li id="menu-item-16753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16753"><a href="https://pressable.com/affiliate-program/">Affiliate Program</a></li>
+<li id="menu-item-16755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16755"><a href="/careers">Careers</a></li>
+<li id="menu-item-16754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16754"><a href="https://pressable.com/contact/">Contact</a></li>
+<li id="menu-item-20752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20752"><a href="https://pressable.com/legal/">Legal</a></li>
+</ul>						</div>
+					</div>
+					<div class="col-sm-12 col-md-3">
+						<div class="footer-menu-holder">
+							<h4>Resources</h4>
+							<ul id="menu-resources" class="footer-menu"><li id="menu-item-16742" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-16742"><a href="https://pressable.com/blog/">Blog</a></li>
+<li id="menu-item-20753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20753"><a href="/ebooks">eBooks</a></li>
+<li id="menu-item-20754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20754"><a href="/knowledgebase">Knowledge Base</a></li>
+<li id="menu-item-16741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16741"><a href="/strategic-partners">Strategic Partners</a></li>
+<li id="menu-item-17386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17386"><a href="https://pressable.com/wp101/">WP101<span style="font-size: 1em;"><sup>®</sup></span></a></li>
+<li id="menu-item-18482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18482"><a href="https://pressable.com/speed-test/">Speed Test</a></li>
+<li id="menu-item-17110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17110"><a href="https://pressable.com/press-kit/">Press Kit</a></li>
+</ul>						</div>
+					</div>
+				
+					<div class="col-xs-12 col-sm-12 col-md-1">
+						<div class="social-menu-holder">
+							<ul class="social-menu">
+								<li><a href="https://www.facebook.com/pressable" title="Click here to view us on Facebook" aria-label="Click here to view us on Facebook" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+								<li><a href="https://www.linkedin.com/company/pressable/" title="Click here to view us on LinkedIn" aria-label="Click here to view us on LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="https://twitter.com/Pressable" title="Click here to view us on Twitter" aria-label="Click here to view us on Twitter" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+								<li><a href="https://www.instagram.com/pressablehosting" title="Click here to view us on Instagram" aria-label="Click here to view us on Instagram" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCAtoH0ovtcQTZfRA9jXzHPw" title="Click here to view us on YouTube" aria-label="Click here to view us on YouTube" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+				<div class="v4-automattic-family">
+    <span class="invention">
+        An <a href="https://automattic.com/" target="_blank"><img src="https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/images/dist/automattic.png" alt="Automattic"></a> Invention
+    </span>
+    <span class="family">
+        A family of WordPress solutions.
+    </span>
+    <ul>
+        <li><a href="https://wordpress.com" target="_blank"><img src="https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/images/dist/wp-com.png" alt="WordPress.com"></a></li>
+        <li><a href="https://wpvip.com/" target="_blank"><img src="https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/images/dist/wp-vip.png" alt="WordPress VIP"></a></li>
+        <li><a href="https://woocommerce.com/" target="_blank"><img src="https://149357986.v2.pressablecdn.com/wp-content/themes/pressable-com/images/dist/woo-com.png" alt="WooCommerce"></a></li>
+    </ul>
+</div>		<div class="section fp-auto-height small-footer">
+			<div class="site-footer">
+				<ul class="footer-social">
+					<li>
+						<p>&copy; 2020 Pressable. All rights reserved.</p>
+					</li>
+				</ul>
+			</div><!-- site-footer -->
+		</div><!-- small-footer -->
+
+	<!-- </div> END .fullpage -->
+</main>
+
+<!----------
+All Modal Popups should go here 
+-------->
+<!-- SEND MESSAGE MODAL -->
+<div id="sendMessage" class="modal modal-medium">
+    <div class="v4-request-demo-modal">
+        <h2 class="v4-title-medium v4-text-center">Request A Quote</h2>
+
+        <div class="v4-toggle">
+
+        </div>
+
+        <section class="v4-toggle-content">
+            <div class="targetDiv">
+                <div class="v4-new-forms">
+                    
+                <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_78' ><div id='gf_78' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_78' id='gform_78'  action='/2020/01/21/what-is-wordpress-multisite-and-when-should-you-use-it/#gf_78'>
+                        <div class='gform_body'><ul id='gform_fields_78' class='gform_fields top_label form_sublabel_below description_below'><li id='field_78_8'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label gfield_label_before_complex'  >Name<span class='gfield_required'>*</span></label><div class='ginput_complex ginput_container no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name' id='input_78_8'>
+                            
+                            <span id='input_78_8_3_container' class='name_first' >
+                                                    <input type='text' name='input_8.3' id='input_78_8_3' value='' aria-label='First name'   aria-required="true" aria-invalid="false" />
+                                                    <label for='input_78_8_3' >First</label>
+                                                </span>
+                            
+                            <span id='input_78_8_6_container' class='name_last' >
+                                                    <input type='text' name='input_8.6' id='input_78_8_6' value='' aria-label='Last name'   aria-required="true" aria-invalid="false" />
+                                                    <label for='input_78_8_6' >Last</label>
+                                                </span>
+                            
+                        </div></li><li id='field_78_2'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_78_2' >Email<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_78_2' type='text' value='' class='large'    aria-required="true" aria-invalid="false" />
+                        </div></li><li id='field_78_4'  class='gfield field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_78_4' >Company Name</label><div class='ginput_container ginput_container_text'><input name='input_4' id='input_78_4' type='text' value='' class='large'      aria-invalid="false" /></div></li><li id='field_78_5'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_78_5' >Message / Plan Needs<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_5' id='input_78_5' class='textarea medium'     aria-required="true" aria-invalid="false"   rows='10' cols='50'></textarea></div></li><li id='field_78_9'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_9' id='input_78_9' type='hidden' class='gform_hidden'  aria-invalid="false" value='Form: Customize A Plan' /></li><li id='field_78_10'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_10' id='input_78_10' type='hidden' class='gform_hidden'  aria-invalid="false" value='10/28/2020' /></li><li id='field_78_6'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_6' id='input_78_6' type='hidden' class='gform_hidden'  aria-invalid="false" value='https://app-3QNM1KZRNG.marketingautomation.services/webforms/receivePostback/MzawMLEwNDQyAQA/' /></li><li id='field_78_7'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_7' id='input_78_7' type='hidden' class='gform_hidden'  aria-invalid="false" value='211cec27-c111-471a-a72d-41d9dac96a45' /></li><li id='field_78_12'  class='gfield field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_78_12' >CAPTCHA</label><div id='input_78_12' class='ginput_container ginput_recaptcha' data-sitekey='6Lc7oL0ZAAAAAMBcmEedT5p8acAfZofy5NglaSRF'  data-theme='light' data-tabindex='0'  data-badge=''></div></li><li id='field_78_13'  class='gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_78_13' >Name</label><div class='ginput_container'><input name='input_13' id='input_78_13' type='text' value='' /></div><div class='gfield_description' id='gfield_description_78_13'>This field is for validation purposes and should be left unchanged.</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_78' class='gform_button button' value='Submit'  onclick='if(window["gf_submitting_78"]){return false;}  window["gf_submitting_78"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_78"]){return false;} window["gf_submitting_78"]=true;  jQuery("#gform_78").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=78&amp;title=&amp;description=&amp;tabindex=0' />
+            <input type='hidden' class='gform_hidden' name='is_submit_78' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='78' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_78' value='WyJbXSIsIjQzOWEzYzkxMTFjODAyMGQwYTU0ZDM2ZmM3NjQyNDQ2Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_78' id='gform_target_page_number_78' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_78' id='gform_source_page_number_78' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_78' id='gform_ajax_frame_78' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 78, 'https://149357986.v2.pressablecdn.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_78').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_78');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_78').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_78').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_78').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_78').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_78').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_78').val();gformInitSpinner( 78, 'https://149357986.v2.pressablecdn.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [78, current_page]);window['gf_submitting_78'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_78').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_78').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [78]);window['gf_submitting_78'] = false;}, 50);}else{jQuery('#gform_78').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [78, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 78) {} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [78, 1]) } ); </script>                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+</div>
+
+<!-- SCHEDULE A CALL MODAL -->
+<div id="scheduleCall" class="modal modal-medium">
+    <div class="v4-request-demo-modal">
+        <h2 class="v4-title-medium v4-text-center">Schedule A Call</h2>
+
+        <div class="v4-toggle">
+
+        </div>
+
+        <section class="v4-toggle-content">
+            <div id="toggleContent1" class="targetDiv">
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/pressable-sales/customize-plan" style="min-width:320px;height:630px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+                <!-- Calendly inline widget end -->
+            </div>
+        </section>
+
+
+    </div>
+</div>
+
+<!-- Modal HTML embedded directly into document -->
+<div id="request-demo" class="modal modal-medium">
+    <div class="v4-request-demo-modal">
+        <h2 class="v4-title-medium v4-text-center">Pressable Platform Tour</h2>
+
+        <!-- <div class="v4-toggle">
+            <a class="showSingle v4-schedule current" target="1"><span class="v4-green-circle"></span>Schedule A Tour</a>
+            <a class="showSingle v4-watch" target="2"><span class="v4-green-circle"></span>Watch Recorded Demo</a>
+        </div> -->
+
+        <section class="v4-toggle-content">
+            <div id="toggleContent1" class="targetDiv">
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/pressable-sales/request-demo" style="min-width:320px;height:630px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+                <!-- Calendly inline widget end -->
+            </div>
+            <!-- <div id="toggleContent2" class="targetDiv">
+                <div class="v4-new-forms">
+                                    </div>
+            </div> -->
+        </section>
+
+
+    </div>
+</div>
+<script>
+
+        jQuery('.showSingle').click(function(){
+            jQuery(this).addClass('current').siblings().removeClass('current');
+            jQuery('.targetDiv').hide();
+            jQuery('#toggleContent'+$(this).attr('target')).show();
+        });
+
+</script>
+<div
+				class="hustle-ui hustle-slidein hustle-palette--sunrise hustle_module_id_13 module_id_13   hustle-size--custom"
+				
+			data-id="13"
+			data-render-id="0"
+			data-tracking="disabled"
+			
+				data-position="s"
+				data-close-delay="false"
+				
+				style="opacity: 0;"
+			><div class="hustle-slidein-content"><div class="hustle-info hustle-info--compact"><button class="hustle-button-icon hustle-button-close">
+			<span class="hustle-icon-close" aria-hidden="true"></span>
+			<span class="hustle-screen-reader">Close this module</span>
+		</button><div class="hustle-layout"><div class="hustle-content"><div class="hustle-content-wrap"><div class="hustle-group-title"><span class="hustle-title">Spooky Savings This October!</span><span class="hustle-subtitle">15% OFF</span></div><div class="hustle-group-content"><p style="text-align: center">Get 15% or More Off All New Hosting Plans with Promo Code GHOST</p></div><div class="hustle-cta-container"><a class="hustle-button hustle-button-cta " href="https://pressable.com/halloween-special-sale/" target="_self" data-cta-type="cta">Save Today</a></div></div></div></div></div></div></div>	
+<script>
+	// Click statement for Consent Banner
+	jQuery(document).on("click", ".cc-dismiss", function(){
+		if (setPressableCookieBanner()) {
+			// Trigger general consent and fire cookies.
+			dataLayer.push({'event': 'haveConsent'});
+			console.log("Pressable - Cookies Accepted!");
+		} else {
+			alert('Please enable cookies in your browser.');	
+		}
+	});
+	// Create Pressable GDPR Cookie and keep it in place for 365 days.
+	function setPressableCookieBanner() {
+		var d = new Date();
+		d.setTime(d.getTime() + (180*24*60*60*1000)); // 365 days
+		var expires = 'expires='+ d.toUTCString();
+		document.cookie = 'pressable_cookie_banner=IN;' + expires + ";path=/";
+		cookieEnabled = document.cookie.indexOf("pressable_cookie_banner")!=-1;
+		if (cookieEnabled) {
+			console.log("Pressable - GDPR Cookie Enabled");
+			return true;	
+		}
+	}	
+
+	// Click statement for Rejecting Cookies
+	jQuery(document).on("click", ".cookie-opt-out", function(){
+		if (clearListCookies("all")) {
+			// Log cookie rejection.
+			console.log("Pressable - Cookies Rejected!");
+		}
+	});
+	// Delete Pressable GDPR Cookie and clear.
+	function clearListCookies(type)
+	{   
+		var cookies = document.cookie.split(";");
+		// If the user revokes consent on the cookie policy page, delete all cookies.
+		if (type == "all") {
+			for (var i = 0; i < cookies.length; i++)
+			{   
+				var spcook =  cookies[i].split("=");
+				console.log(spcook[0]);
+				deleteCookie(spcook[0]);
+			}
+			alert('The cookies have been removed!');
+		} else {
+		// If the consent cookie expires, delete the Advertising cookies.
+			deleteCookie("_gat_UA-45728304-1");
+			deleteCookie("_ga");
+			deleteCookie("_gid");
+			deleteCookie("_hjIncludedInSample");
+			//deleteCookie("cookieconsent_status");
+		}
+		function deleteCookie(cookiename)
+		{
+			var d = new Date();
+			d.setDate(d.getDate() - 1);
+			var expires = ";expires="+d;
+			var name=cookiename;
+			//alert(name);
+			var value="";
+			document.cookie = name + "=" + value + expires + "; path=/;domain=pressable.com";   
+			document.cookie = name + "=" + value + expires + "; path=/";                 
+		}
+		//window.location = ""; // TO REFRESH THE PAGE
+	}
+
+	// Geolocation / show consent banner / set cookies/tags using Google Tag Manager
+	jQuery(document).ready(function () {
+		// Geolocation
+		jQuery.getJSON( "https://public-api.wordpress.com/geo/", function( data ) {
+			// Console Log the country
+			console.log(data.country_short);
+			// Country codes in EU - and test country codes
+			var countries = "AT BE BG CY CZ DE DK EE EL GR ES FI FR HR HU IE IT LT LU LV MT NL PL PT RO SE SI SK UK GB CH IS LI NO";
+			// var user_country = "IN";
+			var user_country = data.country_short;
+			if (countries.includes(user_country.toString())) {
+				var cookie = getCookie("pressable_cookie_banner");
+				if (cookie !== "") {
+					console.log("Pressable - GDPR Cookie Set");
+					dataLayer.push({'event': 'haveConsent'});
+					return true; // Cookie banner is set
+					
+				} else {
+					// Trigger the cookie banner with consent request and always show the banner if the user is from the EU and hasn't accepted it.
+					clearListCookies("some"); // just be sure that the advertising cookies are not set.
+					dataLayer.push({'event': 'showCookieBanner'});
+					console.log("Pressable - GDPR Consent Banner Triggered");
+				}
+			} else {
+				// Trigger general consent and fire cookies.
+				//dataLayer.push({'event': 'consentCookies'});
+				dataLayer.push({'event': 'haveConsent'});
+				console.log('Pressable - Not GDPR');
+			}
+		});
+		function getCookie(cname) {
+			var name = cname + "=";
+			var ca = document.cookie.split(';');
+			for(var i = 0; i < ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+	});
+		
+</script>
+<link rel='stylesheet' id='hustle_icons-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/hustle/assets/hustle-ui/css/hustle-icons.min.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='hustle_global-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/hustle/assets/hustle-ui/css/hustle-global.min.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='hustle_info-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/hustle/assets/hustle-ui/css/hustle-info.min.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='hustle_slidein-css'  href='https://149357986.v2.pressablecdn.com/wp-content/plugins/hustle/assets/hustle-ui/css/hustle-slidein.min.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='hustle-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2C400&#038;display=swap&#038;ver=1.0' type='text/css' media='all' />
+<script   type='text/javascript' defer src='https://c0.wp.com/p/jetpack/9.0.2/_inc/build/photon/photon.min.js?ver=5.5.1' id='jetpack-photon-js'></script>
+<script   type='text/javascript' id='flying-pages-js-before'>
+window.FPConfig= {
+	delay: 0,
+	ignoreKeywords: ["\/wp-admin","\/wp-login.php","\/cart","\/checkout","add-to-cart","logout","#","?",".png",".jpeg",".jpg",".gif",".svg",".webp"],
+	maxRPS: 3,
+    hoverDelay: 50
+};
+</script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/flying-pages/flying-pages.min.js?ver=2.4.2' id='flying-pages-js' defer></script>
+<script type='text/javascript' id='rfw-script-js-extra'>
+/* <![CDATA[ */
+var rfw = {"speed":""};
+/* ]]> */
+</script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/rss-feed-widget/js/functions.js?ver=2020100517' id='rfw-script-js'></script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/rss-feed-widget/js/jquery.fitvids.js?ver=2020100517' id='rfw-script-fitvid-js'></script>
+<script   type='text/javascript' defer src='https://c0.wp.com/c/5.5.1/wp-includes/js/jquery/ui/core.min.js?ver=5.5.1' id='jquery-ui-core-js'></script>
+<script   type='text/javascript' defer src='https://c0.wp.com/c/5.5.1/wp-includes/js/jquery/ui/datepicker.min.js?ver=5.5.1' id='jquery-ui-datepicker-js'></script>
+<script   type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/hustle/assets/hustle-ui/js/hustle-ui.min.js?ver=4.3.3' id='hui_scripts-js'></script>
+<script   type='text/javascript' defer src='https://c0.wp.com/c/5.5.1/wp-includes/js/underscore.min.js' id='underscore-js'></script>
+<script type='text/javascript' id='hustle_front-js-extra'>
+/* <![CDATA[ */
+var Modules = [{"settings":{"auto_close_success_message":"0","triggers":{"trigger":"time","on_time_delay":"3","on_time_unit":"seconds","on_scroll":"scrolled","on_scroll_page_percent":"20","on_scroll_css_selector":"","enable_on_click_element":"1","on_click_element":"","enable_on_click_shortcode":"1","on_exit_intent_per_session":"1","on_exit_intent_delayed":"0","on_exit_intent_delayed_time":"5","on_exit_intent_delayed_unit":"seconds","on_adblock":"0","enable_on_adblock_delay":"0","on_adblock_delay":"5","on_adblock_delay_unit":"seconds","on_exit_intent":"1"},"animation_in":"no_animation","animation_out":"no_animation","after_close_trigger":["click_close_icon"],"after_close":"no_show_all","expiration":"1","expiration_unit":"days","on_submit":"nothing","on_submit_delay":"5","on_submit_delay_unit":"seconds","close_cta":"0","close_cta_time":"0","close_cta_unit":"seconds","hide_after_cta":"keep_show","hide_after_subscription":"keep_show","is_schedule":"1","schedule":{"not_schedule_start":"0","start_date":"10\/01\/2020","start_hour":"12","start_minute":"00","start_meridiem_offset":"am","not_schedule_end":"0","end_date":"10\/31\/2020","end_hour":"11","end_minute":"59","end_meridiem_offset":"pm","active_days":"all","week_days":[],"is_active_all_day":"1","day_start_hour":"01","day_start_minute":"00","day_start_meridiem_offset":"am","day_end_hour":"11","day_end_minute":"59","day_end_meridiem_offset":"pm","time_to_use":"custom","custom_timezone":"UTC-7"},"display_position":"s","auto_hide":"0","auto_hide_unit":"seconds","auto_hide_time":"5"},"module_id":"13","blog_id":"0","module_name":"October Promo 2020","module_type":"slidein","active":"1","test_mode":"0","module_mode":"informational"}];
+var incOpt = {"is_admin":"","native_share_enpoints":{"facebook":"https:\/\/www.facebook.com\/sharer\/sharer.php?u=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it","twitter":"https:\/\/twitter.com\/intent\/tweet?url=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it&text=What%20Is%20WordPress%20Multisite%2C%20and%20When%20Should%20You%20Use%20it%3F","pinterest":"https:\/\/www.pinterest.com\/pin\/create\/button\/?url=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it","reddit":"https:\/\/www.reddit.com\/submit?url=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it","linkedin":"https:\/\/www.linkedin.com\/shareArticle?mini=true&url=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it","vkontakte":"https:\/\/vk.com\/share.php?url=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it","whatsapp":"https:\/\/api.whatsapp.com\/send?text=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it","email":"mailto:?subject=What%20Is%20WordPress%20Multisite%2C%20and%20When%20Should%20You%20Use%20it%3F&body=https%3A%2F%2Fpressable.com%2F2020%2F01%2F21%2Fwhat-is-wordpress-multisite-and-when-should-you-use-it"},"ajaxurl":"https:\/\/pressable.com\/wp-admin\/admin-ajax.php","page_id":"19202","page_slug":"2020-01-21-what-is-wordpress-multisite-and-when-should-you-use-it","is_upfront":"","script_delay":"3000"};
+/* ]]> */
+</script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/hustle/assets/js/front.min.js?ver=4.3.3' id='hustle_front-js'></script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/wordpress-countdown-widget/js/jquery.countdown.min.js?ver=1.0' id='countdown-js'></script>
+<script   type='text/javascript' defer src='https://c0.wp.com/c/5.5.1/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.4.21' id='gform_placeholder-js'></script>
+<script   async="async" type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/akismet/_inc/form.js?ver=4.1.7' id='akismet-form-js'></script>
+<script   type='text/javascript' src='https://149357986.v2.pressablecdn.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.21' id='gform_json-js'></script>
+<script type='text/javascript' id='gform_gravityforms-js-extra'>
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/pressable.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/pressable.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};
+/* ]]> */
+</script>
+<script   type='text/javascript' defer src='https://149357986.v2.pressablecdn.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.21' id='gform_gravityforms-js'></script>
+<script   type='text/javascript' defer src='https://www.google.com/recaptcha/api.js?hl=en&#038;render=explicit&#038;ver=5.5.1' id='gform_recaptcha-js'></script>
+		<script type="text/javascript">
+			( function( $ ) {
+				$( document ).bind( 'gform_post_render', function() {
+					var gfRecaptchaPoller = setInterval( function() {
+						if( ! window.grecaptcha || ! window.grecaptcha.render ) {
+							return;
+						}
+						renderRecaptcha();
+						clearInterval( gfRecaptchaPoller );
+					}, 100 );
+				} );
+			} )( jQuery );
+		</script>
+
+		<script type='text/javascript' src='https://stats.wp.com/e-202044.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.0.2',blog:'144147007',post:'19202',tz:'-5',srv:'pressable.com'} ]);
+	_stq.push([ 'clickTrackerInit', '144147007', '19202' ]);
+</script>
+
+<script>(function($) {
+  $.countdown.regional['custom'] = {
+    labels: [
+      'Years', 
+      'Months', 
+      'Weeks', 
+      'Days', 
+      'Hours', 
+      'Minutes', 
+      'Seconds'
+      ], 
+    labels1: [
+      'Year', 
+      'Month', 
+      'Week', 
+      'Day', 
+      'Hour', 
+      'Minute', 
+      'Second'
+    ], 
+    compactLabels: ['y', 'a', 'h', 'g'], 
+    whichLabels: null, 
+    timeSeparator: ':', 
+    isRTL: false
+  }; 
+  $.countdown.setDefaults($.countdown.regional['custom']); 
+})(jQuery);
+</script>
+			<script type='text/javascript'>
+				jQuery(document).ready(function($){
+					var gforms = '.gform_wrapper form';
+					$( document ).on( 'submit', gforms ,function() {
+						$('<input>').attr( 'type', 'hidden' )
+								.attr( 'name', 'gf_zero_spam_key' )
+								.attr( 'value', 'CQKVyYaLTlD7KYKqAuNgY8vdE5dPGIzljmykls6SJmLQfZg5LoHwDx4iSkN83DDU' )
+								.appendTo( gforms );
+						return true;
+					});
+				});
+			</script>
+			<style type="text/css" id="hustle-module-13-0-styles" class="hustle-module-styles hustle-module-styles-13">@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-slidein-content .hustle-info {max-width: 800px;}}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-slidein-content .hustle-layout {min-height: 100%;}}.hustle-ui.module_id_13  .hustle-slidein-content {-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4);}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13  .hustle-slidein-content {-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4);}} .hustle-ui.module_id_13 .hustle-layout {padding: 250px 30px 30px 30px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: #DADADA;border-radius: 0px 0px 0px 0px;background-color: #ff7f66;background-image: url(https://149357986.v2.pressablecdn.com/wp-content/uploads/2020/09/oct-popup-image.jpg);background-repeat: no-repeat;background-size: contain;background-position: center top;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout {padding: 7.5% 42.5% 7.5% 7.5%;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;background-repeat: no-repeat;background-size: contain;background-position: right center;}} .hustle-ui.module_id_13 .hustle-layout .hustle-layout-content {padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);background-color: #0a3b70;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-layout-content {padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;}}  .hustle-ui.module_id_13 .hustle-layout .hustle-content {margin: 0px 0px 0px 0px;padding: 0 30px 0 30px;border-width: 7px 7px 7px 7px;border-style: solid;border-color: #ffffff;background-color: #614794;}.hustle-ui.module_id_13 .hustle-layout .hustle-content .hustle-content-wrap {padding: 23px 0 30px 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-content {margin: 0px 0px 0px 0px;padding: 0 13.2% 0 13.2%;border-width: 7px 7px 7px 7px;border-style: solid;}.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-content .hustle-content-wrap {padding: 19% 0 19% 0;}} .hustle-ui.module_id_13 .hustle-layout .hustle-title {display: block;margin: 0px 0px 30px 0px;padding: 0px 0px 30px 0px;border-width: 0px 0px 2px 0px;border-style: solid;border-color: rgba(255,255,255,0.5);border-radius: 0px 0px 0px 0px;background-color: rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #FFFFFF;font: normal 24px/40px Roboto;font-style: normal;letter-spacing: 6px;text-transform: none;text-decoration: none;text-align: center;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-title {margin: 0px 0px 30px 0px;padding: 0px 0px 30px 0px;border-width: 0px 0px 2px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: normal 24px/40px Roboto;font-style: normal;letter-spacing: 6px;text-transform: none;text-decoration: none;text-align: center;}} .hustle-ui.module_id_13 .hustle-layout .hustle-subtitle {display: block;margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);border-radius: 0px 0px 0px 0px;background-color: rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #FFFFFF;font: 700 80px/96px Roboto;font-style: normal;letter-spacing: 2.22px;text-transform: none;text-decoration: none;text-align: center;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-subtitle {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: 700 80px/96px Roboto;font-style: normal;letter-spacing: 2.22px;text-transform: none;text-decoration: none;text-align: center;}} .hustle-ui.module_id_13 .hustle-layout .hustle-group-content {margin: 5px 0px 10px 0px;padding: 0px 0px 0px 0px;border-color: rgba(0,0,0,0);border-width: 0px 0px 0px 0px;border-style: solid;color: #FFFFFF;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content b,.hustle-ui.module_id_13 .hustle-layout .hustle-group-content strong {font-weight: bold;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content a,.hustle-ui.module_id_13 .hustle-layout .hustle-group-content a:visited {color: #CBB000;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content a:hover {color: #9A8603;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content a:focus,.hustle-ui.module_id_13 .hustle-layout .hustle-group-content a:active {color: #9A8603;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content {margin: 5px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content {color: #FFFFFF;font-size: 16px;line-height: 24px;font-family: Roboto;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content {font-size: 16px;line-height: 24px;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content p:not([class*="forminator-"]) {margin: 0 0 10px;color: #FFFFFF;font: 400 16px/24px Roboto;font-style: normal;letter-spacing: -0.25px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content p:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content p:not([class*="forminator-"]) {margin: 0 0 10px;font: 400 16px/24px Roboto;font-style: normal;letter-spacing: -0.25px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content p:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]) {margin: 0 0 10px;color: #FFFFFF;font: 700 28px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 28px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]) {margin: 0 0 10px;color: #FFFFFF;font: 700 22px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 22px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]) {margin: 0 0 10px;color: #FFFFFF;font: 700 18px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 18px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]) {margin: 0 0 10px;color: #FFFFFF;font: 700 16px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 16px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]) {margin: 0 0 10px;color: #FFFFFF;font: 700 14px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 14px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]) {margin: 0 0 10px;color: #FFFFFF;font: 700 12px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 12px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]),.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]) {margin: 0 0 10px;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]):last-child,.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]):last-child {margin-bottom: 0;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content li:not([class*="forminator-"]) {margin: 0 0 5px;color: #FFFFFF;font: 400 14px/1.45em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content li:not([class*="forminator-"]):last-child {margin-bottom: 0;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]) li:before {color: #FFFFFF}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]) li:before {color: #FFFFFF}@media screen and (min-width: 783px) {.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]),.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]) {margin: 0 0 20px;}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]):last-child,.hustle-ui.module_id_13 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]):last-child {margin: 0;}}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content li:not([class*="forminator-"]) {margin: 0 0 5px;font: 400 14px/1.45em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-group-content li:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_13 .hustle-layout .hustle-group-content blockquote {margin-right: 0;margin-left: 0;} .hustle-ui.module_id_13 .hustle-layout .hustle-cta-container {margin: 20px 0px 0px 0px;padding: 0px 0px 0px 0px;border-color: rgba(0,0,0,0);border-width: 0px 0px 0px 0px;border-style: solid;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-cta-container {margin: 20px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;}} .hustle-ui.module_id_13 .hustle-layout a.hustle-button-cta {margin: 0;padding: 9px 9px 9px 9px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: #ffffff;border-radius: 0px 0px 0px 0px;background-color: #ffffff;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #614794;font: 700 14px/22px Roboto;font-style: normal;letter-spacing: 3px;text-transform: uppercase;text-decoration: none;text-align: center;}.hustle-ui.module_id_13 .hustle-layout a.hustle-button-cta:hover {border-color: #f1f1f1;background-color: #f1f1f1;color: #0a3b70;}.hustle-ui.module_id_13 .hustle-layout a.hustle-button-cta:focus {border-color: #4d99f7;background-color: #ffffff;color: #0a3b70;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout a.hustle-button-cta {padding: 9px 9px 9px 9px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: 700 14px/22px Roboto;font-style: normal;letter-spacing: 3px;text-transform: uppercase;text-decoration: none;text-align: center;}} .hustle-ui.module_id_13 .hustle-layout .hustle-cta-container .hustle-button-cta {width: 100%;display: block;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_13 .hustle-layout .hustle-cta-container .hustle-button-cta {width: 100%;display: block;}}.hustle-ui.module_id_13 button.hustle-button-close {color: #cccccc;}.hustle-ui.module_id_13 button.hustle-button-close:hover {color: #ffffff;}.hustle-ui.module_id_13 button.hustle-button-close:focus,.hustle-ui.module_id_13 button.hustle-button-close:active {color: #FFFFFF;} .hustle-ui.module_id_13 .hustle-layout .hustle-group-content blockquote {border-left-color: #38C5B5;}.hustle-ui[data-id="13"] .hustle-info  .hustle-layout .hustle-subtitle{
+    line-height:  1;}.hustle-ui[data-id="13"] .hustle-info  .hustle-layout .hustle-subtitle{
+    line-height:  1;}.hustle-ui[data-id="13"] .hustle-info  .hustle-ui.hustle-slidein.hustle-show{
+    background-color:  rgba(0,0,0,.7);}.hustle-ui[data-id="13"] .hustle-info  .hustle-layout .hustle-subtitle{
+    line-height:  1;}.hustle-ui[data-id="13"] .hustle-info  .hustle-ui.hustle-slidein.hustle-show{
+    background-color:  rgba(0,0,0,.7);}.hustle-ui[data-id="13"] .hustle-info  .hustle-ui.hustle-slidein.hustle-palette--sunrise.hustle_module_id_13.module_id_13.hustle-size--custom.hustle-slidein-position--south.hustle-show{
+    background-color:  rgba(0,0,0,.7);}</style><!-- LiveChat API Customizations -->
+<script>
+	
+
+	var LC_API = LC_API || {};
+	LC_API.on_after_load = function()
+	{
+		if (LC_API.agents_are_available())
+		{
+			var liveChatHeaderText = 'Sales Questions?';
+			var liveChatText = 'Chat With Us';
+			var liveChatExpertText = 'Chat with me now.';
+			document.getElementById("lc_indicator").style.display = 'block';
+		} else {
+			var liveChatHeaderText = 'Leave A Message';
+			var liveChatText = 'Leave A Message'; 
+			var liveChatExpertText = 'Leave me a message.';
+			document.getElementById("lc_indicator").style.display = 'none';
+		}
+		if (document.getElementById("liveChatHeaderText")) {
+			document.getElementById("liveChatHeaderText").innerHTML = liveChatHeaderText;
+		}
+		if (document.getElementById("liveChatText")) {
+			document.getElementById("liveChatText").innerHTML = liveChatText;
+		}
+		if (document.getElementById("liveChatExpertText")) {
+			document.getElementById("liveChatExpertText").innerHTML = liveChatExpertText;
+		}
+	};
+
+</script>
+<!-- INTERCOM BASIC JS -->
+<script>
+
+  window.intercomSettings = {
+	app_id: "jcixd78r",
+	custom_launcher_selector:'.activate-chat'
+  };
+</script>
+
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/jcixd78r';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+
+	<script>
+		( function( $ ) {
+
+			$('.announcement__close').click(function(){
+				$(".announcement").removeClass("open");
+				$(".cd-main-content").removeClass("announcement-banner-open");
+				//$(".announcement, .content").hide();
+			});
+			
+		})(  jQuery  );
+	</script>
+
+</body>
+</html>
+<!--
+	generated in 0.818 seconds
+	103905 bytes batcached for 3600 seconds
+-->

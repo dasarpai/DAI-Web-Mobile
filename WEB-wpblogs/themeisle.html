@@ -1,0 +1,779 @@
+
+<!doctype html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--
+     __        __                      _     _      _
+     \ \      / /__    __ _ _ __ ___  | |__ (_)_ __(_)_ __   __ _
+      \ \ /\ / / _ \  / _` | '__/ _ \ | '_ \| | '__| | '_ \ / _` |
+       \ V  V /  __/ | (_| | | |  __/ | | | | | |  | | | | | (_| |
+        \_/\_/ \___|  \__,_|_|  \___| |_| |_|_|_|  |_|_| |_|\__, |
+                                                            |___/
+    Ever thought about joining us?
+   https://careers.vertistudio.com/jobs
+     --->
+	
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO plugin v15.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>How to Install WordPress Multisite on a Local Host?</title>
+	<meta name="description" content="This article will explain the benefits of WordPress Multisite and illustrate how you can install WordPress Multisite on a local server. This sort of setup can be great if you&#039;re building a new network of WordPress sites or even a single site. Check out how to get everything done in this tutorial." />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://themeisle.com/blog/install-wordpress-multisite-on-local-host/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="How to Install WordPress Multisite on a Local Host?" />
+	<meta property="og:description" content="This article will explain the benefits of WordPress Multisite and illustrate how you can install WordPress Multisite on a local server. This sort of setup can be great if you&#039;re building a new network of WordPress sites or even a single site. Check out how to get everything done in this tutorial." />
+	<meta property="og:url" content="https://themeisle.com/blog/install-wordpress-multisite-on-local-host/" />
+	<meta property="og:site_name" content="ThemeIsle Blog" />
+	<meta property="article:published_time" content="2017-02-20T16:24:21+00:00" />
+	<meta property="article:modified_time" content="2018-10-03T13:24:16+00:00" />
+	<meta property="og:image" content="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Install-WordPress-Multisite.jpg" />
+	<meta property="og:image:width" content="1090" />
+	<meta property="og:image:height" content="545" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@themeisle" />
+	<meta name="twitter:site" content="@themeisle" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//mllj2j8xvfl0.i.optimole.com' />
+<link rel='preconnect' href='https://mllj2j8xvfl0.i.optimole.com' />
+<link rel="alternate" type="application/rss+xml" title="ThemeIsle Blog &raquo; Feed" href="https://themeisle.com/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ThemeIsle Blog &raquo; Comments Feed" href="https://themeisle.com/blog/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ThemeIsle Blog &raquo; How to Install WordPress Multisite on a Local Host? Comments Feed" href="https://themeisle.com/blog/install-wordpress-multisite-on-local-host/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s15165.pcdn.co\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://s15165.pcdn.co/blog/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-components-css'  href='https://s15165.pcdn.co/blog/wp-includes/css/dist/components/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='wp-editor-font-css'  href='https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i&#038;ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-editor-css'  href='https://s15165.pcdn.co/blog/wp-includes/css/dist/block-editor/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-nux-css'  href='https://s15165.pcdn.co/blog/wp-includes/css/dist/nux/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-css'  href='https://s15165.pcdn.co/blog/wp-includes/css/dist/editor/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_plugin_info_card-cgb-style-css-css'  href='https://s15165.pcdn.co/blog/wp-content/plugins/wp-plugin-info-card/dist/blocks.style.build.css?ver=3.1.21' type='text/css' media='all' />
+<link rel='stylesheet' id='domainwheel-css'  href='https://s15165.pcdn.co/blog/wp-content/plugins/domainwheel-master/css/domainwheel.css?ver=2.0.21' type='text/css' media='all' />
+<link rel='stylesheet' id='psb-style-css'  href='https://s15165.pcdn.co/blog/wp-content/plugins/pirate-search-booster/assets/css/style.css?ver=1.0.0' type='text/css' media='all' />
+<style id='psb-style-inline-css' type='text/css'>
+
+		#psb-close-search,.psb-article-wrapper div h4 {color: #4267cf;}
+		#psb-close-search:hover {color: #ff7f66;}
+		#psb-header-trigger-search svg {fill: #4267cf;}
+		#psb-header-trigger-search:hover svg {fill: #ff7f66;}
+		.psb-container input[type="submit"] {background: #4267cf;}
+		.psb-container input[type="submit"]:hover {background: #ff7f66;}
+		.psb-article-wrapper div:hover h4 {color: #ff7f66;}#psb-header-trigger-search svg {
+width: 20px; height:20px; max-width:20px;fill: #32466b;
+}
+</style>
+<link rel='stylesheet' id='themeisle-mainstyle-css'  href='https://s15165.pcdn.co/blog/wp-content/themes/themeisle/style.css?ver=1.0.38' type='text/css' media='all' />
+<style id='optm_lazyload_noscript_style-inline-css' type='text/css'>
+.optimole-no-script img[data-opt-src] { display: none !important; } 
+ html.optimole_has_js .elementor-section[data-settings*="background_background"]:not(.optml-bg-lazyloaded),
+html.optimole_has_js .elementor-section > .elementor-background-overlay:not(.optml-bg-lazyloaded),
+html.optimole_has_js .wp-block-cover[style*="background-image"]:not(.optml-bg-lazyloaded) { background-image: none !important; } 
+</style>
+<link rel="https://api.w.org/" href="https://themeisle.com/blog/wp-json/" /><link rel="alternate" type="application/json" href="https://themeisle.com/blog/wp-json/wp/v2/posts/4935" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://themeisle.com/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s15165.pcdn.co/blog/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.1" />
+<link rel='shortlink' href='https://themeisle.com/blog/?p=4935' />
+<link rel="alternate" type="application/json+oembed" href="https://themeisle.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemeisle.com%2Fblog%2Finstall-wordpress-multisite-on-local-host%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://themeisle.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemeisle.com%2Fblog%2Finstall-wordpress-multisite-on-local-host%2F&#038;format=xml" />
+
+
+<!-- This site is optimized with the Schema plugin v1.7.8.2 - https://schema.press -->
+<script type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/themeisle.com\/blog\/install-wordpress-multisite-on-local-host\/"},"url":"https:\/\/themeisle.com\/blog\/install-wordpress-multisite-on-local-host\/","headline":"How to Install WordPress Multisite on a Local...","datePublished":"2017-02-20T18:24:21+02:00","dateModified":"2018-10-03T16:24:16+03:00","publisher":{"@type":"Organization","@id":"https:\/\/themeisle.com\/blog\/#organization","name":"ThemeIsle Blog","logo":{"@type":"ImageObject","url":"https:\/\/mllj2j8xvfl0.i.optimole.com\/Lsv2lkg.z_rT~36d2f\/w:auto\/h:auto\/q:98\/https:\/\/s15165.pcdn.co\/wp-content\/uploads\/2019\/06\/logo-schema.png","width":600,"height":60}},"image":{"@type":"ImageObject","url":"https:\/\/mllj2j8xvfl0.i.optimole.com\/Lsv2lkg.z_rT~36d2f\/w:auto\/h:auto\/q:98\/https:\/\/s15165.pcdn.co\/wp-content\/uploads\/2017\/02\/Install-WordPress-Multisite.jpg","width":1090,"height":545},"articleSection":"WordPress","description":"A WordPress multisite can be the answer to managing multiple WordPress websites easily. Once you install WordPress multisite on your server, there'll be no need to replicate administrative tasks on the backend of a number of individual sites. The sites can all be managed from a single dashboard. What is","author":{"@type":"Person","name":"Vishnu","url":"https:\/\/themeisle.com\/blog\/author\/vishnu\/","description":"Vishnu is a freelance writer by night, works as a data analyst by day. You can find him at vishnusupreet.com","image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/d4b4c7456f89b74db98c93129d974978?s=96&d=mm&r=g","height":96,"width":96}}}</script>
+
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["wordpress","wordpress-tutorials"],"pagePostAuthor":"Vishnu"};
+	dataLayer.push( dataLayer_content );//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N8FFGSH');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="amphtml" href="https://themeisle.com/blog/install-wordpress-multisite-on-local-host/?amp"><meta name="generator" content="Optimole 2.5.4">
+		<style type="text/css">
+			img[data-opt-src]:not([data-opt-lazy-loaded]) {
+				transition: .2s filter linear, .2s opacity linear, .2s border-radius linear;
+				-webkit-transition: .2s filter linear, .2s opacity linear, .2s border-radius linear;
+				-moz-transition: .2s filter linear, .2s opacity linear, .2s border-radius linear;
+				-o-transition: .2s filter linear, .2s opacity linear, .2s border-radius linear;
+			}
+			img[data-opt-src]:not([data-opt-lazy-loaded]) {
+				  opacity: .75;	 
+				  -webkit-filter: blur(8px);
+				  -moz-filter: blur(8px);
+				  -o-filter: blur(8px);
+				  -ms-filter: blur(8px);
+				  filter: blur(8px);
+				  transform: scale(1.04);
+				  animation: 0.1s ease-in;
+				  -webkit-transform: translate3d(0, 0, 0);
+			}
+			iframe[data-opt-src]:not([data-opt-lazy-loaded]) {
+				background-color: #ffffff;
+				background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHdpZHRoPSI0MHB4IiBoZWlnaHQ9IjQwcHgiIHZpZXdCb3g9IjAgMCA0MCA0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEuNDE0MjE7IiB4PSIwcHgiIHk9IjBweCI+CiAgICA8ZGVmcz4KICAgICAgICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWwogICAgICAgICAgICBALXdlYmtpdC1rZXlmcmFtZXMgc3BpbiB7CiAgICAgICAgICAgICAgZnJvbSB7CiAgICAgICAgICAgICAgICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDBkZWcpCiAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIHRvIHsKICAgICAgICAgICAgICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoLTM1OWRlZykKICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgQGtleWZyYW1lcyBzcGluIHsKICAgICAgICAgICAgICBmcm9tIHsKICAgICAgICAgICAgICAgIHRyYW5zZm9ybTogcm90YXRlKDBkZWcpCiAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIHRvIHsKICAgICAgICAgICAgICAgIHRyYW5zZm9ybTogcm90YXRlKC0zNTlkZWcpCiAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIHN2ZyB7CiAgICAgICAgICAgICAgICAtd2Via2l0LXRyYW5zZm9ybS1vcmlnaW46IDUwJSA1MCU7CiAgICAgICAgICAgICAgICAtd2Via2l0LWFuaW1hdGlvbjogc3BpbiAxLjVzIGxpbmVhciBpbmZpbml0ZTsKICAgICAgICAgICAgICAgIC13ZWJraXQtYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuOwogICAgICAgICAgICAgICAgYW5pbWF0aW9uOiBzcGluIDEuNXMgbGluZWFyIGluZmluaXRlOwogICAgICAgICAgICB9CiAgICAgICAgXV0+PC9zdHlsZT4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJvdXRlciI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMCwwQzIyLjIwNTgsMCAyMy45OTM5LDEuNzg4MTMgMjMuOTkzOSwzLjk5MzlDMjMuOTkzOSw2LjE5OTY4IDIyLjIwNTgsNy45ODc4MSAyMCw3Ljk4NzgxQzE3Ljc5NDIsNy45ODc4MSAxNi4wMDYxLDYuMTk5NjggMTYuMDA2MSwzLjk5MzlDMTYuMDA2MSwxLjc4ODEzIDE3Ljc5NDIsMCAyMCwwWiIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cGF0aCBkPSJNNS44NTc4Niw1Ljg1Nzg2QzcuNDE3NTgsNC4yOTgxNSA5Ljk0NjM4LDQuMjk4MTUgMTEuNTA2MSw1Ljg1Nzg2QzEzLjA2NTgsNy40MTc1OCAxMy4wNjU4LDkuOTQ2MzggMTEuNTA2MSwxMS41MDYxQzkuOTQ2MzgsMTMuMDY1OCA3LjQxNzU4LDEzLjA2NTggNS44NTc4NiwxMS41MDYxQzQuMjk4MTUsOS45NDYzOCA0LjI5ODE1LDcuNDE3NTggNS44NTc4Niw1Ljg1Nzg2WiIgc3R5bGU9ImZpbGw6cmdiKDIxMCwyMTAsMjEwKTsiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMCwzMi4wMTIyQzIyLjIwNTgsMzIuMDEyMiAyMy45OTM5LDMzLjgwMDMgMjMuOTkzOSwzNi4wMDYxQzIzLjk5MzksMzguMjExOSAyMi4yMDU4LDQwIDIwLDQwQzE3Ljc5NDIsNDAgMTYuMDA2MSwzOC4yMTE5IDE2LjAwNjEsMzYuMDA2MUMxNi4wMDYxLDMzLjgwMDMgMTcuNzk0MiwzMi4wMTIyIDIwLDMyLjAxMjJaIiBzdHlsZT0iZmlsbDpyZ2IoMTMwLDEzMCwxMzApOyIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBhdGggZD0iTTI4LjQ5MzksMjguNDkzOUMzMC4wNTM2LDI2LjkzNDIgMzIuNTgyNCwyNi45MzQyIDM0LjE0MjEsMjguNDkzOUMzNS43MDE5LDMwLjA1MzYgMzUuNzAxOSwzMi41ODI0IDM0LjE0MjEsMzQuMTQyMUMzMi41ODI0LDM1LjcwMTkgMzAuMDUzNiwzNS43MDE5IDI4LjQ5MzksMzQuMTQyMUMyNi45MzQyLDMyLjU4MjQgMjYuOTM0MiwzMC4wNTM2IDI4LjQ5MzksMjguNDkzOVoiIHN0eWxlPSJmaWxsOnJnYigxMDEsMTAxLDEwMSk7Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cGF0aCBkPSJNMy45OTM5LDE2LjAwNjFDNi4xOTk2OCwxNi4wMDYxIDcuOTg3ODEsMTcuNzk0MiA3Ljk4NzgxLDIwQzcuOTg3ODEsMjIuMjA1OCA2LjE5OTY4LDIzLjk5MzkgMy45OTM5LDIzLjk5MzlDMS43ODgxMywyMy45OTM5IDAsMjIuMjA1OCAwLDIwQzAsMTcuNzk0MiAxLjc4ODEzLDE2LjAwNjEgMy45OTM5LDE2LjAwNjFaIiBzdHlsZT0iZmlsbDpyZ2IoMTg3LDE4NywxODcpOyIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBhdGggZD0iTTUuODU3ODYsMjguNDkzOUM3LjQxNzU4LDI2LjkzNDIgOS45NDYzOCwyNi45MzQyIDExLjUwNjEsMjguNDkzOUMxMy4wNjU4LDMwLjA1MzYgMTMuMDY1OCwzMi41ODI0IDExLjUwNjEsMzQuMTQyMUM5Ljk0NjM4LDM1LjcwMTkgNy40MTc1OCwzNS43MDE5IDUuODU3ODYsMzQuMTQyMUM0LjI5ODE1LDMyLjU4MjQgNC4yOTgxNSwzMC4wNTM2IDUuODU3ODYsMjguNDkzOVoiIHN0eWxlPSJmaWxsOnJnYigxNjQsMTY0LDE2NCk7Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cGF0aCBkPSJNMzYuMDA2MSwxNi4wMDYxQzM4LjIxMTksMTYuMDA2MSA0MCwxNy43OTQyIDQwLDIwQzQwLDIyLjIwNTggMzguMjExOSwyMy45OTM5IDM2LjAwNjEsMjMuOTkzOUMzMy44MDAzLDIzLjk5MzkgMzIuMDEyMiwyMi4yMDU4IDMyLjAxMjIsMjBDMzIuMDEyMiwxNy43OTQyIDMzLjgwMDMsMTYuMDA2MSAzNi4wMDYxLDE2LjAwNjFaIiBzdHlsZT0iZmlsbDpyZ2IoNzQsNzQsNzQpOyIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBhdGggZD0iTTI4LjQ5MzksNS44NTc4NkMzMC4wNTM2LDQuMjk4MTUgMzIuNTgyNCw0LjI5ODE1IDM0LjE0MjEsNS44NTc4NkMzNS43MDE5LDcuNDE3NTggMzUuNzAxOSw5Ljk0NjM4IDM0LjE0MjEsMTEuNTA2MUMzMi41ODI0LDEzLjA2NTggMzAuMDUzNiwxMy4wNjU4IDI4LjQ5MzksMTEuNTA2MUMyNi45MzQyLDkuOTQ2MzggMjYuOTM0Miw3LjQxNzU4IDI4LjQ5MzksNS44NTc4NloiIHN0eWxlPSJmaWxsOnJnYig1MCw1MCw1MCk7Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K");
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+			}
+			
+		
+		</style>
+		<script type="application/javascript">
+					document.documentElement.className += " optimole_has_js";
+						(function(w, d){
+							var b = d.getElementsByTagName("head")[0];
+							var s = d.createElement("script");
+							var v = ("IntersectionObserver" in w && "isIntersecting" in w.IntersectionObserverEntry.prototype) ? "_no_poly" : "";
+							s.async = true;
+							s.src = "https://d5jmkjjpb7yfg.cloudfront.net/v2/latest/optimole_lib" + v  + ".min.js";
+							b.appendChild(s);
+							w.optimoleData = {
+								lazyloadOnly: "optimole-lazy-only",
+								backgroundReplaceClasses: [],
+								nativeLazyload : false,
+								scalingDisabled: false,
+								watchClasses: [],
+								backgroundLazySelectors: ".elementor-section[data-settings*=\"background_background\"], .elementor-section > .elementor-background-overlay, .wp-block-cover[style*=\"background-image\"]",
+								network_optimizations: false,
+								ignoreDpr: false,
+								quality: 98
+							}
+						}(window, document));
+					document.addEventListener( "DOMContentLoaded", function() {
+																		document.body.className = document.body.className.replace("optimole-no-script","");
+																		if ( "loading" in HTMLImageElement.prototype && Object.prototype.hasOwnProperty.call( optimoleData, "nativeLazyload" ) && optimoleData.nativeLazyload === true ) {
+																			const images = document.querySelectorAll('img[loading="lazy"]');
+																					images.forEach( function (img) {
+																						if ( !img.dataset.optSrc) {
+																							return;
+																						}
+																						img.src = img.dataset.optSrc;
+																						delete img.dataset.optSrc;
+																					 });
+																		}
+																	} );
+		</script><link rel="icon" href="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/uploads/2019/05/cropped-cropped-favicon-2-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/uploads/2019/05/cropped-cropped-favicon-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/uploads/2019/05/cropped-cropped-favicon-2-180x180.png" />
+<meta name="msapplication-TileImage" content="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/uploads/2019/05/cropped-cropped-favicon-2-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			div.affiliate-button a span:before, div.affiliate-button a:hover span:before {
+	display: none;
+	font-family: inherit;
+}
+.affiliate-button a span {
+	margin-left: 0;
+	padding-left: 0;
+}
+img.blog-img-std, .blog-img-std img 
+{
+	-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5); -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5); box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);
+}
+img.blog-img-avat, .blog-img-avat img 
+{
+	border-radius: 50%;
+}
+.wp-block-columns {
+margin-bottom: 0px !important;
+}
+header nav a {
+	letter-spacing:1px;
+}
+@media (max-width:480px) {
+	#main ul {
+		margin-top: 18px;
+	}
+}		</style>
+		
+	
+	
+</head>
+<body class="post-template-default single single-post postid-4935 single-format-standard optimole-no-script">
+
+	
+<header role="banner"
+	>
+	<div class="container">	<div class="logo">
+		<a href="https://themeisle.com/blog/">
+			<img src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:320/h:104/q:98/https://s15165.pcdn.co/wp-content/themes/themeisle/img/logo.png" class="logo-img" width="320" height="104" alt="Themeisle logo">
+		</a>
+	</div>
+
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class="menu-main-menu-container"><ul id="primary-menu" class="menu"><li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-50"><a href="https://themeisle.com/">Themes/Plugins</a>
+<ul class="sub-menu">
+	<li id="menu-item-3538" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3538"><a href="https://themeisle.com/wordpress-themes/">Themes</a></li>
+	<li id="menu-item-19555" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19555"><a href="https://themeisle.com/wordpress-plugins/">Plugins</a></li>
+</ul>
+</li>
+<li id="menu-item-18081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18081"><a href="https://themeisle.com/blog/category/wordpress-tutorials/">Popular Guides</a>
+<ul class="sub-menu">
+	<li id="menu-item-19551" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-19551"><a href="https://themeisle.com/blog/how-to-make-a-website/">Make a Website Guide</a></li>
+	<li id="menu-item-19055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19055"><a href="https://themeisle.com/blog/best-free-blogging-sites/">Free Blogging Sites</a></li>
+	<li id="menu-item-19056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19056"><a href="https://themeisle.com/blog/cheapest-email-marketing-software/">Cheap Email Marketing</a></li>
+	<li id="menu-item-18195" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-18195"><a href="https://themeisle.com/blog/best-website-builder/">Best Website Builder</a></li>
+	<li id="menu-item-24741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24741"><a href="https://themeisle.com/blog/cheap-web-hosting/">Best Web Hosting</a></li>
+	<li id="menu-item-24823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24823"><a href="https://themeisle.com/blog/wordpress-com-vs-wordpress-org/">WordPress.com vs org</a></li>
+	<li id="menu-item-24897" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24897"><a href="https://themeisle.com/blog/how-much-does-a-website-cost/">How much does a website cost</a></li>
+	<li id="menu-item-25408" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-25408"><a href="https://themeisle.com/blog/best-free-email-marketing-services/">Best Free Email Marketing</a></li>
+	<li id="menu-item-33333" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33333"><a href="https://themeisle.com/blog/best-domain-registrars/">Best Domain Registrars</a></li>
+	<li id="menu-item-33334" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33334"><a href="https://themeisle.com/blog/cheap-wordpress-hosting/">Cheap WordPress Hosting</a></li>
+	<li id="menu-item-33335" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33335"><a href="https://themeisle.com/blog/cheap-web-hosting/">Cheap Web Hosting</a></li>
+	<li id="menu-item-36438" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36438"><a href="https://themeisle.com/blog/best-wordpress-hosting/">Best WordPress Hosting Companies</a></li>
+</ul>
+</li>
+<li id="menu-item-36439" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-36439"><a href="https://themeisle.com/blog/best-wordpress-hosting/">Hosting Reviews</a>
+<ul class="sub-menu">
+	<li id="menu-item-19058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19058"><a href="https://themeisle.com/blog/wp-engine-review-for-wordpress/">WPEngine</a></li>
+	<li id="menu-item-19059" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19059"><a href="https://themeisle.com/blog/siteground-review-for-wordpress/">SiteGround</a></li>
+	<li id="menu-item-19060" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19060"><a href="https://themeisle.com/blog/flywheel-review-for-wordpress/">FlyWheel</a></li>
+	<li id="menu-item-19062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19062"><a href="https://themeisle.com/blog/inmotion-review-wordpress-hosting/">InMotion</a></li>
+	<li id="menu-item-19061" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19061"><a href="https://themeisle.com/blog/bluehost-review-for-wordpress/">BlueHost</a></li>
+	<li id="menu-item-24949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24949"><a href="https://themeisle.com/blog/sendinblue-review/">SendinBlue</a></li>
+</ul>
+</li>
+<li id="menu-item-18079" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18079"><a href="https://themeisle.com/about-us/">About</a></li>
+</ul></div>		</nav>
+	
+	<div class="search">
+		    <div id="psb-header-trigger-search" role="button" >
+			    <svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M497.913,497.913c-18.782,18.782-49.225,18.782-68.008,0l-84.862-84.863c-34.889,22.382-76.13,35.717-120.659,35.717  C100.469,448.767,0,348.312,0,224.383S100.469,0,224.384,0c123.931,0,224.384,100.452,224.384,224.383  c0,44.514-13.352,85.771-35.718,120.676l84.863,84.863C516.695,448.704,516.695,479.131,497.913,497.913z M224.384,64.109  c-88.511,0-160.274,71.747-160.274,160.273c0,88.526,71.764,160.274,160.274,160.274c88.525,0,160.273-71.748,160.273-160.274  C384.657,135.856,312.909,64.109,224.384,64.109z"/>
+			    </svg>
+		    </div></div>
+
+			<div id="toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	
+		</div></header>
+
+	<div class="banner text-left">
+		<div class="container" style="background-image:url( https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/themes/themeisle/img/wp-mod-original.png )">
+			<h1 itemprop="headline">How to Install WordPress Multisite on a Local Host?</h1>
+			<div class="post-details">
+				<span class="posted-on">Last Updated: <time class="updated" itemprop="dateModified" datetime="2018-10-03T16:24:16+03:00">October 3, 2018</time></span>
+				<div class="posted-in">Posted in: <a href="https://themeisle.com/blog/category/wordpress/" rel="category tag">WordPress</a>, <a href="https://themeisle.com/blog/category/wordpress-tutorials/" rel="category tag">WordPress Tutorials</a></div>
+				<span class="comments-link">
+					<a href="#disqus_thread">
+					2 comments					</a>
+					<span itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
+						<meta itemprop="interactionType" content="https://schema.org/CommentAction" />
+						<meta itemprop="userInteractionCount" content="2" />
+					</span>
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="banner-border"><img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/themes/themeisle/img/border.svg"  class="optimole-lazy-only"  src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%%20100%%22%20width%3D%22100%%22%20height%3D%22100%%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" alt="banner border"><noscript><img src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/themes/themeisle/img/border.svg" alt="banner border"></noscript></div>
+	<div id="content">
+		<div class="content-wrapper container">
+			<div id="primary" class="span-8">
+				<main id="main" role="main" class="container">
+					<img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:794/h:397/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Install-WordPress-Multisite.jpg"  width="794" height="397" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:794/h:397/q:eco/https://s15165.pcdn.co/wp-content/uploads/2017/02/Install-WordPress-Multisite-794x397.jpg" class="attachment-single-featured-sidebar size-single-featured-sidebar wp-post-image" alt="install WordPress multisite locally" /><noscript><img width="794" height="397" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:794/h:397/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Install-WordPress-Multisite.jpg" class="attachment-single-featured-sidebar size-single-featured-sidebar wp-post-image" alt="install WordPress multisite locally" /></noscript><div class="ti-disclosure-wrapper">ThemeIsle content is free. When you purchase through referral links on our site, we earn a commission. <a href="https://themeisle.com/blog/affiliate-disclosure/" target="_blank" rel="noopener">Learn More</a></div>
+					<article id="post-4935" class="post-4935 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress category-wordpress-tutorials">
+						<p>A WordPress multisite can be the answer to managing multiple WordPress websites easily. Once you install WordPress multisite on your server, there&#8217;ll be no need to replicate administrative tasks on the backend of a number of individual sites. The sites can all be managed from a single dashboard.</p>
+<p><img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:558/h:269/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Multisite-dashboard-1.png"  src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:558/h:269/q:eco/https://s15165.pcdn.co/wp-content/uploads/2017/02/Multisite-dashboard-1.png" alt="Multisite dashboard" width="558" height="269" class="aligncenter size-full wp-image-5201" style="-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);" /><noscript><img src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:558/h:269/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Multisite-dashboard-1.png" alt="Multisite dashboard" width="558" height="269" class="aligncenter size-full wp-image-5201" style="-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);" /></noscript></p>
+<p>What is WordPress multisite exactly? A multisite is a network of two or more sites that operate off a single WordPress install. All the sites on a multisite setup will use the same WP database, WP directory and WP configuration file. In such a setup, the management of the WordPress install is in the hands of a &#8220;Network Administrator&#8221;. And the administration of the individual sites on the network is left to the care of the respective Site Admins.</p>
+<h2>How to Install WordPress Multisite on a Local Server</h2>
+<p>To begin with, make certain that you have administrator rights to access your computer&#8217;s file system. This is because you&#8217;ll need privileges to create directories and edit files.</p>
+<div class="su-note" id="" style="border-color:#d7d7d7;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;"><div class="su-note-inner su-u-clearfix su-u-trim" style="background-color:#f1f1f1;border-color:#ffffff;color:#333333;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;">We&#8217;ll presume that you&#8217;ve installed WordPress on your computer already. But just in case you need help with this, you can always look into <a href="https://themeisle.com/blog/local-wordpress-testing-site-for-windows/">our earlier guide</a>.</p>
+<p>Note. This is a required step. In order to follow through and install WordPress multisite on your local computer, you first need to have a standard WordPress installation running. Again, please check out <a href="https://themeisle.com/blog/local-wordpress-testing-site-for-windows/">our other guide &#8211; it&#8217;s a step-by-step tutorial, quite easy to follow</a>.</div></div>
+<p>To install WordPress multisite locally and create a network of any number of sites on your own computer, follow these steps:</p>
+<h3>Before you start:</h3>
+<p><strong>Choice of URL:</strong> Now&#8217;s the time to decide whether to install additional sites in a sub-directory or under a sub-domain. It&#8217;s important to realize that you cannot change this later.</p>
+<ul>
+<li>A sub-domain URL for the individual sites will read: <em>site1.YOURSITE.com</em>, <em>site2.YOURSITE.com</em></li>
+<li>A sub-directory URL for the individual sites will read: <em>YOURSITE.com/site1</em>, <em>YOURSITE.com/site2</em></li>
+</ul>
+<p>On a live server, you can install both under a sub-domain or a sub-directory. Installing a sub-domain on a local host is a little more technical. It involves configuring the XAMPP application to create a sub-domain and then registering it in the operating system software files. In this post, we&#8217;ll deal with only a sub-directory installation on the local server.</p>
+<h3>Enabling the Multisite Feature</h3>
+<p>1. <strong>Adding the multisite feature:</strong></p>
+<p>Firstly, open your wp-config.php file and find the line, <em>&#8216;/* That&#8217;s all, stop editing! Happy blogging. */</em>&#8216; towards the end. Just above this phrase, add this piece of code:</p>
+<pre><code>define('WP_ALLOW_MULTISITE', true);</code></pre>
+<p>Then save and close the file.</p>
+<p>2. <strong>Setting up your network:</strong></p>
+<p>At this point, you should see a new item in your WordPress dashboard. Specifically, go to <em><strong>Tools &gt; Network Setup</strong></em>. Once there, choose either sub-domains or sub directories.</p>
+<p>If you&#8217;re going with a sub-domain network on a live server, you&#8217;ll need to obtain something called a wild card DNS from your hosting service provider. Since, we&#8217;re only doing a sub-directory install on a local server, you do not need any permissions. Fill in the details and then click on install.</p>
+<p><img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:1000/h:396/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Creating-a-Network.png"  class="aligncenter wp-image-4948 size-full" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:1000/h:396/q:eco/https://s15165.pcdn.co/wp-content/uploads/2017/02/Creating-a-Network.png" alt="Install WordPress Multisite" width="1000" height="396" style="-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);" /><noscript><img class="aligncenter wp-image-4948 size-full" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:1000/h:396/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Creating-a-Network.png" alt="Install WordPress Multisite" width="1000" height="396" style="-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);" /></noscript></p>
+<p>A few lines of code will be generated, and you need to add them in your <em><strong>wp-config.php</strong></em> file and in your <em><strong>.htaccess</strong></em> file.</p>
+<p><img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:1000/h:568/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Enabling-WordPress-Multisite.png"  class="aligncenter size-full wp-image-4949" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:1000/h:568/q:eco/https://s15165.pcdn.co/wp-content/uploads/2017/02/Enabling-WordPress-Multisite.png" alt="" width="1000" height="568" style="-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);" /><noscript><img class="aligncenter size-full wp-image-4949" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:1000/h:568/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Enabling-WordPress-Multisite.png" alt="" width="1000" height="568" style="-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);" /></noscript></p>
+<p>After inserting the code, save the files. With this, WordPress Multisite is now successfully installed.</p>
+<p>To access your <em><strong>Network Admin Dashboard</strong></em>, you&#8217;ll have to login afresh.</p>
+<p>3. <strong>Adding sites to your network:</strong></p>
+<p>At this point, you can start creating sites and adding them to your network by clicking through <em><strong>My Sites &gt; Network Admin &gt; Sites &gt; Add New</strong></em>:</p>
+<p><img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:1000/h:367/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Add-new-Site.png"  class="aligncenter size-full wp-image-4950" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:1000/h:367/q:eco/https://s15165.pcdn.co/wp-content/uploads/2017/02/Add-new-Site.png" alt="" width="1000" height="367" style="-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);" /><noscript><img class="aligncenter size-full wp-image-4950" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:1000/h:367/q:98/https://s15165.pcdn.co/wp-content/uploads/2017/02/Add-new-Site.png" alt="" width="1000" height="367" style="-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);" /></noscript></p>
+<p>Fill in the details for the individual sites, such as Address, Title and email. Then Click <em><strong>Add Site</strong></em>.</p>
+<p>In the same manner, you can add as many sites as you want. You&#8217;ll see all the sites in your Network under <em><strong>All Sites</strong></em>.</p>
+<p>4. <strong>Add themes and plugins: </strong></p>
+<p>With multisite in place, a Network Admin can install themes and plugins on multisite. These themes and plugins can be activated across the entire network, or selectively on a per-site basis.</p>
+<h2>When To Use / Install WordPress Multisite?</h2>
+<p>In general, multisite works well for a group of sites that fall into a hierarchical framework. Think government and its various departments, a university and its different schools, any national / world organization and its numerous chapters.</p>
+<p>It&#8217;s also a good fit for a group of related sites that share common resources. For instance, a network of parallel or allied blogs.</p>
+<p>To understand this better, check out <a href="http://blogs.harvard.edu/" target="_blank">Harvard Blogs</a>, a free service for the benefit of the Harvard community. Anyone with an email at harvard.edu can create a blog on this WordPress install. Bloggers can simply concentrate on creating and managing content for their blogs, while enjoying the common resources offered by multisite &#8211; themes, widgets, multimedia material, spam protection and more.</p>
+<p>In short, WordPress multisite helps you manage all your blogs from a single dashboard. You&#8217;ll need to install themes, plugins and updates just once and then activate them as required. Not only that, you&#8217;ll also save on time and server space. And, if you&#8217;re up to handling the technicalities, you can even monetize the network by offering to host other sites on your network.</p>
+<h2>When WordPress Multisite is Not The Solution?</h2>
+<p>Does all this mean that WordPress multisite is the best solution for anyone who runs multiple blogs? Of course not. While multisite offers great convenience, it does have some downside to it as well. Individual sites are restricted in their choice of themes, plugins and hosting service. Moreover, not all plugins are multisite compatible, and this can somewhat limit your choice of plugins.</p>
+<p>Again, any downtime at the server end will cause the entire network to go down. And, if it happens that any one site on the network experiences a spurt in traffic, it may affect the speed of the other sites in the network.</p>
+<p>It&#8217;s also important to note that detaching a site from the network or migrating the whole multisite setup sometime in the future may require professional help. And therefore, switching to a multisite arrangement should be done after much careful thought.</p>
+<h2>Install WordPress multisite: To Conclude</h2>
+<p>You can use a local multisite as a testing site for any changes to your WordPress install or to test compatibility of any new themes or plugins. You can also work on any project locally, before you push it up to a live server.</p>
+<p>However, if it&#8217;s only ease of managing multiple WordPress sites that you need, you may also consider <a href="https://themeisle.com/blog/what-is-wordpress-hosting/">managed hosting</a> services. These service providers take over the complete management of WordPress, including services like updating, backup, security and more. One of the better options in this realm is a company called <a href="https://themeisle.com/blog/flywheel-review-for-wordpress/">Flywheel</a>. They&#8217;re one of the top recommended hosts, and the plans <a href="https://share.getf.ly/s63c5k" target="_blank">start at $15 / month</a>. </p>
+<p><em><strong>Thinking to install WordPress multisite but haven&#8217;t made up your mind yet? Feel free to share your thoughts in the comments section below.</strong></em></p>
+<div class="ti_ad pirate">
+		<h5>Free guide</h5>
+		<h3>5 Essential Tips to Speed Up <br>Your WordPress Site</h3>
+		<h4>Reduce your loading time by even 50-80% <br>just by following simple tips.</h4>
+		<a href="https://app.monstercampaigns.com/c/lhkifzgco5uonmkjpkbv/" class="sidebar-btn" rel="nofollow" target="_blank">Download free guide</a>
+	</div>
+					</article>
+							
+					<div class="article-info">
+						
+	<div class="below-single no-desc-display">
+		<div class="author-details">
+			<img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:60/h:60/q:98/https://s15165.pcdn.co/wp-content/uploads/2018/09/vishnu-1.png"  src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:60/h:60/q:eco/https://s15165.pcdn.co/wp-content/uploads/2018/09/vishnu-1.png" width="60" height="60" alt="Vishnu" /><noscript><img src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:60/h:60/q:98/https://s15165.pcdn.co/wp-content/uploads/2018/09/vishnu-1.png" width="60" height="60" alt="Vishnu" /></noscript>			<div class="byline">
+				<h3>By
+					<a href="https://themeisle.com/blog/author/vishnu/">
+						<span>Vishnu</span>
+					</a>
+				</h3>
+				<h4>Themeisle Contributor</h4>
+				<a href="https://themeisle.com/blog/author/vishnu/">
+					<h5>9 Posts</h5>
+				</a>
+			</div>
+					</div>
+		<div class="categories-list">
+			<h3>Posted in: </h3>
+			<a href="https://themeisle.com/blog/category/wordpress/" rel="category tag">WordPress</a>, <a href="https://themeisle.com/blog/category/wordpress-tutorials/" rel="category tag">WordPress Tutorials</a>		</div>
+		<div class="share-now">
+		<h3>Share Now!</h3>
+		<a href="http://www.facebook.com/sharer.php?u=https://themeisle.com/blog/install-wordpress-multisite-on-local-host/" class="share-facebook" target="_blank">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><g><path d="M21,1H3A2,2,0,0,0,1,3V21a2,2,0,0,0,2,2h7.5a.5.5,0,0,0,.5-.5v-7a.5.5,0,0,0-.5-.5h-1a.5.5,0,0,1-.5-.5v-3a.5.5,0,0,1,.5-.5h1a.5.5,0,0,0,.5-.5v-1A4.5,4.5,0,0,1,15.5,5h3a.5.5,0,0,1,.5.5v3a.5.5,0,0,1-.5.5h-3a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h3a.5.5,0,0,1,.49.58l-.5,3A.5.5,0,0,1,18,15H15.5a.5.5,0,0,0-.5.5v7a.5.5,0,0,0,.5.5H21a2,2,0,0,0,2-2V3A2,2,0,0,0,21,1Z" style="fill:#fff"/></g></svg>
+			<span>Share</span>
+		</a>
+		<a href="https://twitter.com/share?url=https://themeisle.com/blog/install-wordpress-multisite-on-local-host/&amp;text=How to Install WordPress Multisite on a Local Host?" class="share-twitter" target="_blank">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><g><path d="M23.87,4.43a.5.5,0,0,0-.6-.1,4.76,4.76,0,0,1-.75.27A4.85,4.85,0,0,0,23.37,3a.5.5,0,0,0-.77-.53,10.59,10.59,0,0,1-2.53,1A5.05,5.05,0,0,0,16.5,2a5.71,5.71,0,0,0-3,.93C11.6,4,11.27,6.47,11.41,8a13,13,0,0,1-9-4.76A.53.53,0,0,0,2,3a.5.5,0,0,0-.4.25,5.35,5.35,0,0,0,.22,5.7c-.15-.1-.31-.22-.47-.35A.5.5,0,0,0,.5,9,5.73,5.73,0,0,0,3,13.64l-.39-.11A.5.5,0,0,0,2,14.2a6.48,6.48,0,0,0,4.19,3.62A9.22,9.22,0,0,1,.56,19a.5.5,0,0,0-.31.93A15.2,15.2,0,0,0,8,22H8a13.35,13.35,0,0,0,10-4.63,13.63,13.63,0,0,0,3.65-9.92A9.81,9.81,0,0,0,23.92,5,.5.5,0,0,0,23.87,4.43ZM8,21.5Z" style="fill:#fff"/></g></svg>
+			<span>Tweet</span>
+		</a>
+	</div>	</div>
+						</div>
+
+					<div id="related-section">
+												
+						
+						
+	<div id="video-with-schema" itemscope itemtype="http://schema.org/VideoObject">
+
+		<meta itemprop="name" content="How To Make A WordPress Website In 2020 [FREE TOOLS]"/>
+		<meta itemprop="thumbnailURL"
+			  content="https://i.ytimg.com/vi/rcBolyuCD4Q/hqdefault.jpg"/>
+		<meta itemprop="embedURL" content="https://youtube.googleapis.com/v/rcBolyuCD4Q"/>
+		<div id="schema-videoobject" class="video-container">
+
+									
+						<div id="youtube-holder">
+							<div id="youtube-mask"></div>
+							<img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/themes/themeisle/img/youtube_video_cover.png"  id="youtube-cover" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:eco/https://s15165.pcdn.co/wp-content/themes/themeisle/img/youtube_video_cover.png" alt="Youtube cover image"><noscript><img id="youtube-cover" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/themes/themeisle/img/youtube_video_cover.png" alt="Youtube cover image"></noscript>
+							<div id="play-youtube">						
+								<svg height="512px" id="play_youtube_svg" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"/></svg>							</div>
+							<h3>Recommended Video</h3>
+							<div id="recommended">
+								<p>Recommended Video</p>
+							</div>
+						</div>
+
+						
+		</div>
+		<meta itemprop="description" content="In 2020, free WordPress tools are so easy to use that you can create a website in a few hours. In this tutorial, you will learn how to make a WordPress website using only free tools (aside from hosting and domain names, which are never free).
+
+The tools we used to make this happen:
+ 
+• Neve WordPress theme: http://bit.ly/NeveWPTheme
+• Get professional hosting from Siteground, with discount* - http://bit.ly/WPHostingOffer
+• Elementor: http://bit.ly/DownloadElementor
+
+1. Domain Wheel - https://domainwheel.com/
+2. Image optimization service by Optimole - http://bit.ly/Optimole
+3. Orbit FOX - http://bit.ly/OrbitFOX
+
+Table of Contents: 
+
+Step #1 - Buy A Domain Name And Hosting 🕓 1:11
+Step #2 - Install WordPress On A New Siteground Account 🕓 6:06
+Step #3 - Create The Homepage With Elementor 🕓 19:55
+Step #4 - Create The Services Page With Elementor 🕓 35:19
+Step #5 - Create The About Page With Elementor 🕓 38:38
+Step #6 - Create The Contact Page With Elementor 🕓 43:30
+
+Website → https://themeisle.com
+WordPress Articles → https://themeisle.com/blog/
+Facebook → https://www.facebook.com/themeisle/
+
+ThemeIsle is the go-to source for the High-Quality WordPress Themes (both free & premium), and plugins every website owner needs. We're passioned about all things WordPress, but we're not afraid to tackle other web related subjects. Our goal is to give those websites easy-to-use themes and designs that can be managed by everyone.
+
+* When purchasing hosting through our link, from Siteground.com, you can get a specific discount available at that moment. Doing it, you will generate a commission for us and that is helpful for making future video-tutorials. Thank you!""""/>
+		<meta itemprop="uploadDate" content="2019-07-09T19:29:47Z"/>
+		</div>
+													<div id="related-section-posts"></div>
+											</div>
+
+					<div class="article-comments">
+						<div class="text-left">
+							<a id="comment-number">Comments</a>
+						</div>
+						<div class="text-right">
+							<a id="show-comments"></a>
+						</div>
+						<div id="comments-container">
+							<div id="disqus_thread"></div>
+						</div>
+						<p class="fb-group">Or start the conversation in our <a href="https://www.facebook.com/groups/WordPressHub/" target="_blank" rel="noopener nofollow">Facebook group for WordPress professionals</a>. Find answers, share tips, and get help from other WordPress experts. Join now (it’s free)!</p>
+					</div>
+					
+														</main>
+			
+			</div>
+				<aside class="sidebar" role="complementary">
+		<div id="authorbox_widget-2" class="widget-odd widget-last widget-first widget-1 widget_authorbox">			<div class="author-wrapper">
+				<div class="author-details">
+										<img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:60/h:60/q:98/https://s15165.pcdn.co/wp-content/uploads/2018/09/vishnu-1.png"  src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:60/h:60/q:eco/https://s15165.pcdn.co/wp-content/uploads/2018/09/vishnu-1.png" width="60" height="60" alt="Vishnu" /><noscript><img src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:60/h:60/q:98/https://s15165.pcdn.co/wp-content/uploads/2018/09/vishnu-1.png" width="60" height="60" alt="Vishnu" /></noscript>
+					<div class="byline">
+						<h3>By 
+							<a href="https://themeisle.com/blog/author/vishnu/">
+								<span>Vishnu</span>
+							</a>
+						</h3>
+						<h4>Themeisle Contributor</h4>
+						<a href="https://themeisle.com/blog/author/vishnu/">
+							<h5>9 Posts</h5>
+						</a>
+					</div>
+				</div>
+				<div class="author-description">
+			<p itemprop="description">Vishnu is a freelance writer by night, works as a data analyst by day. You can find him at vishnusupreet.com</p>
+		</div>			</div>
+
+		</div>		<div class="sticky-sidebar">
+							<div class="share-now">
+					<h3>Show your love!</h3>
+					<a href="http://www.facebook.com/sharer.php?u=https://themeisle.com/blog/install-wordpress-multisite-on-local-host/" class="share-facebook" target="_blank">
+						<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><g><path d="M21,1H3A2,2,0,0,0,1,3V21a2,2,0,0,0,2,2h7.5a.5.5,0,0,0,.5-.5v-7a.5.5,0,0,0-.5-.5h-1a.5.5,0,0,1-.5-.5v-3a.5.5,0,0,1,.5-.5h1a.5.5,0,0,0,.5-.5v-1A4.5,4.5,0,0,1,15.5,5h3a.5.5,0,0,1,.5.5v3a.5.5,0,0,1-.5.5h-3a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h3a.5.5,0,0,1,.49.58l-.5,3A.5.5,0,0,1,18,15H15.5a.5.5,0,0,0-.5.5v7a.5.5,0,0,0,.5.5H21a2,2,0,0,0,2-2V3A2,2,0,0,0,21,1Z" style="fill:#fff"/></g></svg>						<span>Share</span>
+					</a>
+					<a href="https://twitter.com/share?url=https://themeisle.com/blog/install-wordpress-multisite-on-local-host/&amp;text=How to Install WordPress Multisite on a Local Host?" class="share-twitter" target="_blank">
+						<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><g><path d="M23.87,4.43a.5.5,0,0,0-.6-.1,4.76,4.76,0,0,1-.75.27A4.85,4.85,0,0,0,23.37,3a.5.5,0,0,0-.77-.53,10.59,10.59,0,0,1-2.53,1A5.05,5.05,0,0,0,16.5,2a5.71,5.71,0,0,0-3,.93C11.6,4,11.27,6.47,11.41,8a13,13,0,0,1-9-4.76A.53.53,0,0,0,2,3a.5.5,0,0,0-.4.25,5.35,5.35,0,0,0,.22,5.7c-.15-.1-.31-.22-.47-.35A.5.5,0,0,0,.5,9,5.73,5.73,0,0,0,3,13.64l-.39-.11A.5.5,0,0,0,2,14.2a6.48,6.48,0,0,0,4.19,3.62A9.22,9.22,0,0,1,.56,19a.5.5,0,0,0-.31.93A15.2,15.2,0,0,0,8,22H8a13.35,13.35,0,0,0,10-4.63,13.63,13.63,0,0,0,3.65-9.92A9.81,9.81,0,0,0,23.92,5,.5.5,0,0,0,23.87,4.43ZM8,21.5Z" style="fill:#fff"/></g></svg>						<span>Tweet</span>
+					</a>
+					<a href="https://www.youtube.com/channel/UCAQcBsP3h6p5yXgFap4LEGA?sub_confirmation=1" class="share-youtube" target="_blank">
+						<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.80731,7.805a2.79915,2.79915,0,0,0-2.54907-2.53906C17.69061,5.13586,15.36707,5,12.50012,5c-3.45251,0-6.05865.14105-7.74353.27332A2.79932,2.79932,0,0,0,2.1925,7.815C2.08936,8.90021,2,10.33344,2,12.0423c0,1.66632.08862,3.07422.19128,4.14594a2.79852,2.79852,0,0,0,2.56384,2.53833C6.43994,18.85883,9.04657,19,12.50012,19c2.86694,0,5.19049-.13586,6.75812-.266a2.799,2.799,0,0,0,2.54907-2.539C21.91052,15.11548,22,13.69189,22,12S21.91052,8.88452,21.80731,7.805ZM9.77594,14.93878V9.06122L15.574,12Z" style="fill:#fff"/></svg>						<span>Subscribe</span>
+					</a>
+				</div>
+						<div id="search-4" class="widget-odd widget-first widget-1 widget_search"><p class="widget_title">Search Blog</p><form class="search" method="get" action="https://themeisle.com/blog/" role="search">
+	<label for="search-sidebar" aria-label="search sidebar">
+		<input class="search-input" type="search" name="s" id="search-sidebar" placeholder="Type here and press enter ...">
+	</label>
+</form>
+</div><div id="nav_menu-10" class="widget-even widget-2 ti_cat_menu widget_nav_menu"><p class="widget_title">Blog Topics</p><div class="menu-categories-menu-container"><ul id="menu-categories-menu" class="menu"><li id="menu-item-19382" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-19382"><a href="https://themeisle.com/blog/category/wordpress/">WordPress</a>
+<ul class="sub-menu">
+	<li id="menu-item-19383" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19383"><a href="https://themeisle.com/blog/category/wordpress/page-builders/">Page Builders</a></li>
+	<li id="menu-item-19384" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19384"><a href="https://themeisle.com/blog/category/wordpress/resources/">Resources</a></li>
+	<li id="menu-item-19385" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19385"><a href="https://themeisle.com/blog/category/wordpress/reviews/">Reviews</a></li>
+	<li id="menu-item-19386" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19386"><a href="https://themeisle.com/blog/category/wordpress/tools/">Tools</a></li>
+	<li id="menu-item-19387" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19387"><a href="https://themeisle.com/blog/category/wordpress/woocommerce/">WooCommerce</a></li>
+</ul>
+</li>
+<li id="menu-item-19399" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-19399"><a href="https://themeisle.com/blog/category/wordpress-tutorials/">Tutorials</a></li>
+<li id="menu-item-19397" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19397"><a href="https://themeisle.com/blog/category/wordpress-plugins/">Plugins</a></li>
+<li id="menu-item-19398" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19398"><a href="https://themeisle.com/blog/category/wordpress-themes/">Themes</a></li>
+<li id="menu-item-19392" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-19392"><a href="https://themeisle.com/blog/category/wordpress-hosting/">Hosting</a>
+<ul class="sub-menu">
+	<li id="menu-item-19393" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19393"><a href="https://themeisle.com/blog/category/wordpress-hosting/hosting-comparisons/">Hosting Comparisons</a></li>
+	<li id="menu-item-19394" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19394"><a href="https://themeisle.com/blog/category/wordpress-hosting/hosting-reviews/">Hosting Reviews</a></li>
+	<li id="menu-item-19395" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19395"><a href="https://themeisle.com/blog/category/wordpress-hosting/hosting-tips/">Hosting Tips</a></li>
+	<li id="menu-item-19396" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19396"><a href="https://themeisle.com/blog/category/wordpress-hosting/managed-hosting/">Managed Hosting</a></li>
+</ul>
+</li>
+<li id="menu-item-19378" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-19378"><a href="https://themeisle.com/blog/category/blogging/">Blogging</a>
+<ul class="sub-menu">
+	<li id="menu-item-19379" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19379"><a href="https://themeisle.com/blog/category/blogging/marketing-seo/">Marketing &#038; SEO</a></li>
+</ul>
+</li>
+<li id="menu-item-19388" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-19388"><a href="https://themeisle.com/blog/category/wordpress-community/">WordPress Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-19389" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19389"><a href="https://themeisle.com/blog/category/wordpress-community/interviews/">Interviews</a></li>
+	<li id="menu-item-19390" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19390"><a href="https://themeisle.com/blog/category/wordpress-community/wordcamp/">WordCamp</a></li>
+	<li id="menu-item-19391" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19391"><a href="https://themeisle.com/blog/category/wordpress-community/wordpress-news/">WordPress News</a></li>
+</ul>
+</li>
+</ul></div></div><div id="text-5" class="widget-odd widget-3 widget_text"><p class="widget_title">Looking for WP hosting advice?</p>			<div class="textwidget">Our no. 1 goal with the blog is making it a great resource for people working with WordPress. So here&#8217;s our starting point for choosing your hosting service and checking top ranking providers.
+
+<a class="sidebar-btn" href="/blog/best-wordpress-hosting/">Learn More</a></div>
+		</div><div id="custom_html-3" class="widget_text widget-even widget-4 widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://bluehost.com/track/codeinwp/banner_ti?page=/wordpress" target="_blank" rel="nofollow noopener"><img class="alignnone size-full wp-image-18166" src="https://mllj2j8xvfl0.i.optimole.com/w:auto/h:auto/q:auto/https://themeisle.com/blog/wp-content/uploads/2018/09/unspecified-9.png" alt="WordPress Hosting" width="758" height="696" /></a></div></div><div id="recentwithcategory_widget-2" class="widget-odd widget-last widget-5 widget_recentwithcategory"><p class="widget_title">Latest Posts</p><ul>				<li>
+					<a href="https://themeisle.com/blog/wordpress-custom-post-types/">How to Create Custom Post Types in WordPress</a>
+				</li>
+							<li>
+					<a href="https://themeisle.com/blog/elementor-templates/">40+ Gorgeous Elementor Templates for Niche Websites</a>
+				</li>
+							<li>
+					<a href="https://themeisle.com/blog/semrush-review/">SEMrush Review 2020: Is It Really Worth the...</a>
+				</li>
+			</ul></div>		</div>
+	</aside>
+		</div>
+	</div>
+
+			<div id="extra-links" class="container"></div>
+		
+
+			<footer role="contentinfo">
+
+				<div class="container">
+					<div class="white-box" itemscope itemtype="http://schema.org/Organization">
+						<meta itemprop="name" content="VertiStudio">
+						<link itemprop="url" href="http://vertistudio.com/">
+						<meta itemprop="logo" content="http://vertistudio.com/wp-content/uploads/2018/07/VertiStudio_logo1.png">
+						<meta itemprop="vatID" content="RO29109287">
+						<meta itemprop="email" content="friends@themeisle.com">
+						<meta itemprop="legalName" content="Vertigo Studio SRL">
+						<meta itemprop="foundingDate" content="2012">
+						<meta itemprop="foundingLocation" content="Bucharest">
+						<meta itemprop="numberOfEmployees" content="25">
+						<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<meta itemprop="streetAddress" content="20 Povernei Street, 4th Floor, Flat no. 9">
+							<meta itemprop="addressLocality" content="Bucharest">
+							<meta itemprop="addressRegion" content="Bucharest">
+							<meta itemprop="postalCode" content="010641">
+							<meta itemprop="addressCountry" content="Romania">
+						</div>
+						<div itemprop="founder" itemscope itemtype="http://schema.org/Person">
+							<meta itemprop="name" content="Ionut Neagu">
+						</div>
+						<div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+							<meta itemprop="name" content="Themeisle">
+							<link itemprop="url" href="https://themeisle.com/">
+							<meta itemprop="logo" content="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/themes/themeisle/img/logo.png">
+							<div id="text-6" class="widget-odd widget-last widget-first widget-1 widget_text">			<div class="textwidget"><img data-opt-src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:320/h:104/q:98/https://s15165.pcdn.co/wp-content/uploads/2019/05/TI-logo.png"  class="alignnone" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:320/h:104/q:eco/https://s15165.pcdn.co/wp-content/uploads/2019/05/TI-logo.png" alt="Themeisle Logo" width="320" height="104" /><noscript><img class="alignnone" src="https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.z_rT~36d2f/w:320/h:104/q:98/https://s15165.pcdn.co/wp-content/uploads/2019/05/TI-logo.png" alt="Themeisle Logo" width="320" height="104" /></noscript>
+<br>
+We&#8217;re a crew of WordPress professionals sharing our map to WordPress success with brilliant tutorials and tips.</div>
+		</div>							<div class="social">
+								<a itemprop="sameAs" href="https://www.facebook.com/themeisle/" target="_blank"
+									aria-label="Facebook" rel="noopener">
+									<svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="social_facebook_svg" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>								</a>
+								<a itemprop="sameAs" href="https://twitter.com/themeisle" target="_blank"
+									aria-label="Twitter" rel="noopener"><svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="social_twitter_svg" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/></svg></a>
+								<a itemprop="sameAs" href="https://www.youtube.com/channel/UCAQcBsP3h6p5yXgFap4LEGA"
+									target="_blank" aria-label="Youtube" rel="noopener"><svg data-name="Layer 21" height="24" id="social_youtube_svg" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.80731,7.805a2.79915,2.79915,0,0,0-2.54907-2.53906C17.69061,5.13586,15.36707,5,12.50012,5c-3.45251,0-6.05865.14105-7.74353.27332A2.79932,2.79932,0,0,0,2.1925,7.815C2.08936,8.90021,2,10.33344,2,12.0423c0,1.66632.08862,3.07422.19128,4.14594a2.79852,2.79852,0,0,0,2.56384,2.53833C6.43994,18.85883,9.04657,19,12.50012,19c2.86694,0,5.19049-.13586,6.75812-.266a2.799,2.799,0,0,0,2.54907-2.539C21.91052,15.11548,22,13.69189,22,12S21.91052,8.88452,21.80731,7.805ZM9.77594,14.93878V9.06122L15.574,12Z"/></svg></a>
+								<a itemprop="sameAs" href="https://www.linkedin.com/company/themeisle/" target="_blank"
+									aria-label="Linkedin" rel="noopener"><svg data-name="Layer 21" height="24" id="social_linkedin_svg" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title/><rect height="11" width="4" x="3" y="9"/><circle cx="5" cy="5" r="2"/><path d="M16.5,8.25A4.47251,4.47251,0,0,0,13,9.95343V9H9V20h4V13a2,2,0,0,1,4,0v7h4V12.75A4.5,4.5,0,0,0,16.5,8.25Z"/></svg></a>
+								<a itemprop="sameAs" href="https://www.instagram.com/themeislewp/" target="_blank"
+									aria-label="Instagram" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.7 56.7"><path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7 c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/><circle cx="41.5" cy="16.4" r="2.9"/><path d="M49 8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7 0-14.5 5.8-14.5 14.5v20.5c0 4.3 1.4 8 4.2 10.7 2.7 2.6 6.3 3.9 10.4 3.9h20.4c4.3 0 7.9-1.4 10.5-3.9 2.7-2.6 4.1-6.3 4.1-10.6V19.3c0-4.2-1.4-7.8-4-10.4zm-.4 31c0 3.1-1.1 5.6-2.9 7.3s-4.3 2.6-7.3 2.6H18c-3 0-5.5-.9-7.3-2.6C8.9 45.4 8 42.9 8 39.8V19.3c0-3 .9-5.5 2.7-7.3 1.7-1.7 4.3-2.6 7.3-2.6h20.6c3 0 5.5.9 7.3 2.7 1.7 1.8 2.7 4.3 2.7 7.2v20.6z"/></svg></a>
+							</div>
+						</div>
+						
+					</div>
+											<div class="footer-box">
+							<div id="nav_menu-6" class="widget-odd widget-last widget-first widget-1 widget_nav_menu"><p class="widget_title">Top Articles</p><div class="menu-top-articles-footer-container"><ul id="menu-top-articles-footer" class="menu"><li id="menu-item-18123" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-18123"><a href="https://themeisle.com/blog/how-to-install-wordpress/">How to Install WordPress</a></li>
+<li id="menu-item-19785" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-19785"><a href="https://themeisle.com/blog/how-to-make-a-website/">How to Make a Website</a></li>
+<li id="menu-item-18126" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-18126"><a href="https://themeisle.com/blog/how-to-create-a-blog/">How to Create a Blog</a></li>
+<li id="menu-item-19462" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-19462"><a href="https://themeisle.com/blog/siteground-vs-bluehost/">SiteGround vs Bluehost</a></li>
+<li id="menu-item-18125" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-18125"><a href="https://themeisle.com/blog/best-live-chat-plugins-wordpress/">Best Live Chat Plugins</a></li>
+</ul></div></div>						</div>
+										<div class="footer-box">
+						<div id="nav_menu-7" class="widget-odd widget-last widget-first widget-1 widget_nav_menu"><p class="widget_title">Our Network</p><div class="menu-our-network-footer-container"><ul id="menu-our-network-footer" class="menu"><li id="menu-item-18112" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18112"><a target="_blank" rel="noopener" href="https://www.codeinwp.com/blog/">CodeinWP</a></li>
+<li id="menu-item-18116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18116"><a target="_blank" rel="noopener" href="https://optimole.com/">Optimole</a></li>
+<li id="menu-item-18115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18115"><a target="_blank" rel="noopener" href="http://domainwheel.com/">Domain Wheel</a></li>
+<li id="menu-item-18114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18114"><a target="_blank" rel="noopener" href="https://revive.social/">ReviveSocial</a></li>
+</ul></div></div>					</div>
+					<div class="footer-box">
+						<div id="nav_menu-8" class="widget-odd widget-last widget-first widget-1 widget_nav_menu"><p class="widget_title">Company</p><div class="menu-company-footer-container"><ul id="menu-company-footer" class="menu"><li id="menu-item-18106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18106"><a href="https://themeisle.com/about-us/">About us</a></li>
+<li id="menu-item-19314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19314"><a href="https://themeisle.com/blog/newsletter/">Newsletter</a></li>
+<li id="menu-item-18107" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18107"><a href="https://themeisle.com/contact/">Contact us</a></li>
+<li id="menu-item-18109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18109"><a target="_blank" rel="noopener" href="https://themeisle.freshteam.com/jobs">Careers</a></li>
+<li id="menu-item-18108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18108"><a href="https://themeisle.com/blog/write-for-us/">Write for Us</a></li>
+</ul></div></div>					</div>
+				</div>
+
+			</footer>
+
+			<div class="copyright">
+				<div class="container">
+					<div class="text-left">
+						<span>Copyright © 2020</span>
+						<a href="https://themeisle.com/">Themeisle</a> | Powered by <a href="http://vertistudio.com/" rel="noopener" target="_blank">VertiStudio</a>
+					</div>
+					<div class="text-right">
+						<div id="nav_menu-9" class="widget-odd widget-last widget-first widget-1 widget_nav_menu"><div class="menu-footer-links-section-container"><ul id="menu-footer-links-section" class="menu"><li id="menu-item-18110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18110"><a href="https://themeisle.com/terms/">Terms</a></li>
+<li id="menu-item-18111" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18111"><a href="https://themeisle.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div></div>					</div>
+				</div>
+			</div>
+
+		<div id="full-overlay">
+		<div class="psb-container">
+			<div class="psb-form-wrapper">
+				<form role="search" method="get" class="search-form" action="https://themeisle.com/blog/">
+					<input class="search-field" id="psb-search-input" placeholder="What are you searching for?" value="" name="s" type="search" autofocus>
+					<input type="submit" value="Search">
+				</form>
+				<div id="psb-close-search" role="button" >X</div>
+			</div>
+			<div class="psb-article-wrapper"><h3>Most Searched Articles</h3><a href="https://themeisle.com/blog/best-free-blogging-sites/"><div><h4>9 Best Free Blogging Sites to Build Your Blog for Free in 2020: Tested, Compared and Reviewed</h4><p>Looking for some free blog sites to help you start sharing your writing with the world? Whether you just want to share updates with your family and friends or you want to start a blog and build a broader audience, we&#8217;ve put together nine great ...</p></div></a><a href="https://themeisle.com/blog/how-to-create-a-blog/"><div><h4>How to Create and Start a WordPress Blog in 15 Minutes or Less (Step by Step)</h4><p>So you want to create a WordPress blog&#8230; Congratulations! WordPress is an excellent solution for how to start a blog, plus we think blogs are super awesome! Better yet &#8211; it&#8217;s also surprisingly simple to create a WordPress blog. ...</p></div></a><a href="https://themeisle.com/blog/start-a-personal-blog/"><div><h4>The Complete Personal Blog Guide: How to Start a Personal Blog on WordPress</h4><p>There&#8217;s plenty of space on the internet for everybody. People love to share ideas, give shape to their thoughts, and maybe even reach a global audience. How to put yourself on the path to achieve all of that? For once, what if you start a ...</p></div></a></div>
+			<div class="psb-article-wrapper"><h3>Handpicked Articles</h3><a href="https://themeisle.com/blog/how-to-make-a-website/"><div><h4>How to Make a WordPress Website: Step-by-Step Guide for Beginners</h4><p>Believe it or not, but knowing how to make a website from scratch is one of the more essential skills you should master as a small business owner in this day and age. Please bear with me! Here&#8217;s why: If you know how to make your own website, ...</p></div></a><a href="https://themeisle.com/blog/fastest-wordpress-hosting/"><div><h4>6 Fastest WordPress Hosting Companies Compared (Real Test Data)</h4><p>The web host you choose to power your WordPress site plays a key role in its speed and performance. However, with so many claiming to offer the fastest WordPress hosting out there, how do you decide which company to use? In addition to performance, ...</p></div></a><a href="https://themeisle.com/blog/install-xampp-and-wordpress-locally/"><div><h4>How to Install XAMPP and WordPress Locally on Windows PC</h4><p>Want to install XAMPP and WordPress &#8211; aka. install WordPress locally? This is a great idea if you want a development site that can be used for testing or other purposes. XAMPP lets you run a website from your very own computer. And once you ...</p></div></a></div>
+		</div></div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8FFGSH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><style id='dw-style-plugin-inline-css' type='text/css'>
+.select-tlds-checkbox-group {
+right: 143px;
+}
+#domainwheel_generator_root .ant-alert-icon {
+    top: 11px;
+}
+#domainwheel_generator_root {
+    margin: 60px 0 60px;
+}
+#post-23847 h2 {
+    line-height: 1.3;
+    margin: 20px 0 0;
+}
+.ant-spin {
+color: #ff7f66;
+}
+.ant-btn-primary,
+.ant-checkbox-checked .ant-checkbox-inner  {
+    background-color: #ff7f66;
+    border-color: #ff7f66;
+}
+.ant-input:focus {
+    border-color: #ff7f66;
+}
+.ant-btn-ghost:hover, .ant-btn-ghost:focus,
+.ant-btn-dashed:hover, .ant-btn-dashed:focus {
+color: #ff7f66;
+border-color: #ff7f66;
+}
+#domainwheel_generator_root h2 { margin-top: 40px !important; }
+@media (max-width: 1200px) {
+.ant-layout-content {margin-left: 0 !important;margin-right: 0 !important;}
+}
+@media (max-width:768px) {
+.select-tlds-checkbox-group {right: 0}
+}
+</style>
+<link rel='stylesheet' id='su-shortcodes-css'  href='https://s15165.pcdn.co/blog/wp-content/plugins/shortcodes-ultimate/includes/css/shortcodes.css?ver=5.9.3' type='text/css' media='all' />
+<script type='module' defer='defer' src='https://s15165.pcdn.co/blog/wp-content/plugins/instant-page/instantpage.js?ver=5.1.0' id='instantpage-js'></script>
+<script type='text/javascript' defer='defer' src='https://s15165.pcdn.co/blog/wp-content/plugins/pirate-search-booster/assets/js/script.js?ver=1.0.0' id='psb-script-js'></script>
+<script type='text/javascript' defer='defer' src='https://s15165.pcdn.co/blog/wp-content/themes/themeisle/js/fontfaceobserver.js?ver=1.0.38' id='themeisle-fontface-js'></script>
+<script type='text/javascript' defer='defer' src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js?ver=3.4.1' id='jquery-js'></script>
+<script type='text/javascript' defer='defer' src='https://s15165.pcdn.co/blog/wp-content/themes/themeisle/js/script.js?ver=1.0.38' id='themeisle-mainscript-js'></script>
+<script type='text/javascript' id='themeisle-single-script-js-extra'>
+/* <![CDATA[ */
+var tiVars = {"postID":"4935","rest_url":"https:\/\/themeisle.com\/blog\/wp-json\/","extra_links_content":"\t<div class=\"extra-link\">\r\n\t\t<a href=\"https:\/\/themeisle.com\/wordpress-themes\/free\/?utm_source=Tiblog&utm_campaign=Tipicks\">\r\n\t\t\t<img src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/w:auto\/h:auto\/q:auto\/https:\/\/s15165.pcdn.co\/wp-content\/uploads\/2019\/05\/extra-themes.jpg\">\r\n\t\t\t<h4>Our collection of free WordPress themes (blog, business, e-commerce and more)<\/h4>\r\n\t\t<\/a>\r\n\t<\/div>\r\n\t<div class=\"extra-link\">\r\n\t\t<a href=\"https:\/\/themeisle.com\/themes\/neve\/?utm_source=Tiblog&utm_campaign=Tipicks\">\r\n\t\t\t<img data-opt-src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/Lsv2lkg.z_rT~36d2f\/w:auto\/h:auto\/q:98\/https:\/\/s15165.pcdn.co\/wp-content\/uploads\/2020\/03\/neve.png\"  src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/Lsv2lkg.z_rT~36d2f\/w:auto\/h:auto\/q:eco\/https:\/\/s15165.pcdn.co\/wp-content\/uploads\/2020\/03\/neve.png\"><noscript><img src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/Lsv2lkg.z_rT~36d2f\/w:auto\/h:auto\/q:98\/https:\/\/s15165.pcdn.co\/wp-content\/uploads\/2020\/03\/neve.png\"></noscript>\r\n\t\t\t<h4>Check out our latest multipurpose theme Neve - as always, beautifully designed and Gutenberg ready<\/h4>\r\n\t\t<\/a>\r\n\t<\/div>\r\n\t<div class=\"extra-link\">\r\n\t\t<a href=\"https:\/\/themeisle.com\/blog\/hestia-2-0\/?utm_source=Tiblog&utm_campaign=Tipicks\">\r\n\t\t\t<img src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/w:auto\/h:auto\/q:auto\/https:\/\/s15165.pcdn.co\/blog\/wp-content\/themes\/themeisle\/img\/extra-links\/extra-hestia.jpg\">\r\n\t\t\t<h4>Update: Hestia 2.0 has just been released! See what we\u2019ve added to our top FREE theme<\/h4>\r\n\t\t<\/a>\r\n\t<\/div>\r\n\t<div class=\"extra-link\">\r\n\t\t<a href=\"https:\/\/themeisle.com\/plugins\/feedzy-rss-feeds\/?utm_source=Tiblog&utm_campaign=Tipicks\">\r\n\t\t\t<img src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/w:auto\/h:auto\/q:auto\/https:\/\/s15165.pcdn.co\/blog\/wp-content\/uploads\/2019\/05\/extra-feedzy-new.jpg\">\r\n\t\t\t<h4>Discount available: Feedzy RSS feeds plugin with RSS aggregator and autoblogging functionality<\/h4>\r\n\t\t<\/a>\r\n\t<\/div>\r\n\t<div class=\"extra-link\">\r\n\t\t<a href=\"https:\/\/themeisle.com\/blog\/best-logo-maker\/?utm_source=Tiblog&utm_campaign=Tipicks\">\r\n\t\t\t<img data-opt-src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/Lsv2lkg.z_rT~36d2f\/w:auto\/h:auto\/q:98\/https:\/\/s15165.pcdn.co\/wp-content\/uploads\/2020\/03\/logo-makers.png\"  src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/Lsv2lkg.z_rT~36d2f\/w:auto\/h:auto\/q:eco\/https:\/\/s15165.pcdn.co\/wp-content\/uploads\/2020\/03\/logo-makers.png\"><noscript><img src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/Lsv2lkg.z_rT~36d2f\/w:auto\/h:auto\/q:98\/https:\/\/s15165.pcdn.co\/wp-content\/uploads\/2020\/03\/logo-makers.png\"></noscript>\r\n\t\t\t<h4>Ten of the best logo makers compared and how to pick the best one for your business<\/h4>\r\n\t\t<\/a>\r\n\t<\/div>\r\n\t<div class=\"extra-link\">\r\n\t\t<a href=\"https:\/\/themeisle.com\/blog\/how-to-create-a-blog\/?utm_source=Tiblog&utm_campaign=Tipicks\">\r\n\t\t\t<img src=\"https:\/\/mllj2j8xvfl0.i.optimole.com\/w:auto\/h:auto\/q:auto\/https:\/\/s15165.pcdn.co\/blog\/wp-content\/themes\/themeisle\/img\/extra-links\/extra-blog.jpg\">\r\n\t\t\t<h4>A simple step-by-step guide to starting a WordPress blog for beginners<\/h4>\r\n\t\t<\/a>\r\n\t<\/div>","youtubeID":"rcBolyuCD4Q"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer='defer' src='https://s15165.pcdn.co/blog/wp-content/themes/themeisle/js/single_script.js?ver=1.0.38' id='themeisle-single-script-js'></script>
+<script type='text/javascript' defer='defer' src='https://s15165.pcdn.co/blog/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+
+<!-- Shortcodes Ultimate custom CSS - start -->
+<style type="text/css">
+.su-table th,
+.su-table td {
+font-size: 16px !important;
+padding: 10px 15px !important;
+}
+.su-table table th {
+text-align:left !important;
+}
+.su-table caption {
+margin-bottom: 10px;
+}
+.su-table table {
+border: none !important;
+}
+.su-table table th {
+color: #fff !important;
+background-color: #32466b !important;
+font-size: 15px !important;
+text-transform: uppercase;
+line-height: normal;
+padding: 10px 15px !important;
+border: none !important;
+}
+.su-table table th a {
+color: #fff !important;
+font-weight: 700;
+}
+.su-table table td {
+border: none !important;
+padding: 10px 15px !important;
+line-height: normal;
+text-align: left !important;
+}
+.su-table table tbody tr,
+.su-table table tr {
+border-top: 1px solid #ddd;
+}
+.su-table-alternate table tr:nth-child(even) td {
+background-color: #fff !important;
+}
+.su-table table tbody tr:hover td,
+.su-table table tr:hover td {
+background-color: #f3f3f3 !important;
+}
+
+@media (max-width: 480px) {
+.su-table th,
+.su-table td {
+font-size: 13px !important;
+}
+.su-table caption {
+font-size: 16px !important;
+}
+}
+</style>
+<!-- Shortcodes Ultimate custom CSS - end -->
+
+<!-- This site is optimized with Phil Singleton's WP SEO Structured Data Plugin v2.6.13 - https://kcseopro.com/wordpress-seo-structured-data-schema-plugin/ -->
+
+<!-- / WP SEO Structured Data Plugin. -->
+
+
+	</body>
+</html>

@@ -1,3 +1,0 @@
-INDEX VERSION 1.132
-file:/D:/github/2-DevExp/Java/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index
-meta_index
